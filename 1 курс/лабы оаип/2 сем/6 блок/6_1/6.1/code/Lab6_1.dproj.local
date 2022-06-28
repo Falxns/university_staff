@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.234,D:\Work\лабы оаип\4 блок\4.1\Unit3.dfm=D:\Work\лабы оаип\4 блок\4.1\Sorting.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,D:\Work\лабы оаип\4 блок\4.1\Unit2.pas=D:\Work\лабы оаип\4 блок\4.1\Product.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.358,D:\Work\лабы оаип\6 блок\6.1k\Lab6_1.dproj=D:\Work\лабы оаип\6 блок\6.1k\Lab4_1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.647,D:\Work\лабы оаип\4 блок\4.1\Unit1.pas=D:\Work\лабы оаип\4 блок\4.1\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.318,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.193,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Proga\лабы оаип\4 блок\4.1\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.647,D:\Work\лабы оаип\4 блок\4.1\Unit1.dfm=D:\Work\лабы оаип\4 блок\4.1\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.425,=D:\Proga\лабы оаип\4 блок\4.1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.514,D:\Work\лабы оаип\6 блок\6.1k\AddText.dfm=D:\Work\лабы оаип\6 блок\6.1k\Product.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.383,D:\Proga\лабы оаип\4 блок\4.1\Lab4_1.dproj=D:\Proga\лабы оаип\4 блок\4.1\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.234,D:\Work\лабы оаип\4 блок\4.1\Unit3.pas=D:\Work\лабы оаип\4 блок\4.1\Sorting.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.193,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Proga\лабы оаип\4 блок\4.1\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.514,D:\Work\лабы оаип\6 блок\6.1k\AddText.pas=D:\Work\лабы оаип\6 блок\6.1k\Product.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.195,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Proga\лабы оаип\4 блок\4.1\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.762,D:\Work\лабы оаип\6 блок\6.1k\Sorting.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.141,=D:\Work\лабы оаип\4 блок\4.1\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,D:\Work\лабы оаип\4 блок\4.1\Unit2.dfm=D:\Work\лабы оаип\4 блок\4.1\Product.dfm</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Main.pas"/>
+    <File Path="Main.dfm"/>
+    <File Path="AddText.pas"/>
+    <File Path="AddText.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

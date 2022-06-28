@@ -1,0 +1,30 @@
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe.config
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.pdb
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csprojAssemblyReference.cache
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Form1.resources
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Properties.Resources.resources
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.GenerateResource.cache
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.CoreCompileInputs.cache
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.exe
+D:\study\3_course\6_sem\TVOP\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.pdb
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csprojAssemblyReference.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Form1.resources
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Properties.Resources.resources
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.GenerateResource.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.CoreCompileInputs.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.exe
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.pdb
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe.config
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.pdb
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe.config
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.pdb
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csprojAssemblyReference.cache
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Form1.resources
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Properties.Resources.resources
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.GenerateResource.cache
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.csproj.CoreCompileInputs.cache
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.exe
+D:\ТВОП\3 блок\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.pdb

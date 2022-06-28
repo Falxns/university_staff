@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WaveLib</name>
+    </assembly>
+    <members>
+        <member name="T:WaveLib.EffectInfo">
+            <summary>
+            This is a helper class that holds and effect and its user interface
+            </summary>
+        </member>
+        <member name="T:AudioEffects.FxParameterAttribute">
+            <summary>
+            Describes effect parameters
+            </summary>
+        </member>
+        <member name="T:AudioEffects.PhaseShiftEffect">
+            <summary>
+            Implements the "Phase Shifter" effect. 
+            </summary>
+        </member>
+        <member name="T:AudioEffects.InPlaceEffectFloat">
+            <summary>
+            helper class to implement in-place effects using only floating point samples
+            </summary>
+        </member>
+        <member name="T:AudioEffects.InPlaceEffect">
+            <summary>
+            In-place effects should derive from this class
+            </summary>
+        </member>
+        <member name="M:AudioEffects.InPlaceEffect.Connect(WaveLib.WaveFormat)">
+            <summary>
+            Attemps to initialize the filter for a given audio format
+            </summary>
+            <param name="format">format of the data to process</param>
+            <returns>true if the filter can process data in this format</returns>
+        </member>
+        <member name="M:AudioEffects.InPlaceEffectFloat.ProcessMono(System.Single)">
+            <summary>
+            Process a mono audio sample
+            </summary>
+            <param name="x">the sample to process</param>
+            <returns></returns>
+        </member>
+        <member name="M:AudioEffects.InPlaceEffectFloat.ProcessStereo(System.Single@,System.Single@)">
+            <summary>
+            Process a stereo audio sample. The default implementation converts to mono,
+            if you're too lazy to implement the stereo version of your effect
+            </summary>
+            <param name="left">left sample</param>
+            <param name="right">right sample</param>
+        </member>
+        <member name="T:AudioEffects.PhaseShiftEffect.PhaseShiftFilter">
+            <summary>
+            Core phase shifter filter
+            </summary>
+        </member>
+        <member name="M:AudioEffects.PhaseShiftEffect.PhaseShiftFilter.FilterSample(System.Single)">
+            <summary>
+            Apply the effect to one sample
+            </summary>
+            <param name="x">Input sample</param>
+            <returns></returns>
+        </member>
+        <member name="T:AudioEffects.FxForm">
+            <summary>
+            Summary description for FxForm.
+            </summary>
+        </member>
+        <member name="F:AudioEffects.FxForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AudioEffects.FxForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:AudioEffects.FxForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WaveLib.WaveOutPlayer.SetVolume(System.Int32)">
+            <summary>
+            Включение (-1) либо отключение (0) звука ("прм" либо "прд")
+            </summary>
+            <param name="volume"> "-1" или "0"</param>
+        </member>
+        <member name="T:AudioEffects.VolumeEffect">
+            <summary>
+            Implements a simple volume control. 
+            </summary>
+        </member>
+        <member name="T:AudioEffects.NoiseEffect">
+            <summary>
+            Description of NoiseEffect.
+            </summary>
+            
+        </member>
+        <member name="M:AudioEffects.NoiseEffect.GetRandomFloat">
+            <summary>
+            Returns random float number between -1.0 and +1.0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AudioEffects.SinusEffect">
+            <summary>
+            Description of NoiseEffect.
+            </summary>
+            
+        </member>
+        <member name="M:MixerTest.MixerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:MixerTest.MixerForm.Instance">
+            <summary>
+            Singleton для доступа к форме настроек звуковой карты
+            </summary>
+        </member>
+    </members>
+</doc>

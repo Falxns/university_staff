@@ -1,0 +1,59 @@
+{
+  "ThreadInfos": [
+    {
+      "ThreadId": 3,
+      "ThreadTime": 0,
+      "MethodInfos": []
+    },
+    {
+      "ThreadId": 1,
+      "ThreadTime": 409,
+      "MethodInfos": [
+        {
+          "MethodName": "MyMethod",
+          "ClassName": "Foo",
+          "MethodTime": 152,
+          "MethodInfos": [
+            {
+              "MethodName": "InnerMethod",
+              "ClassName": "Bar",
+              "MethodTime": 100,
+              "MethodInfos": []
+            }
+          ]
+        },
+        {
+          "MethodName": "MyMethod",
+          "ClassName": "Foo",
+          "MethodTime": 153,
+          "MethodInfos": [
+            {
+              "MethodName": "InnerMethod",
+              "ClassName": "Bar",
+              "MethodTime": 102,
+              "MethodInfos": []
+            }
+          ]
+        },
+        {
+          "MethodName": "InnerMethod",
+          "ClassName": "Bar",
+          "MethodTime": 104,
+          "MethodInfos": []
+        }
+      ]
+    },
+    {
+      "ThreadId": 4,
+      "ThreadTime": 100,
+      "MethodInfos": [
+        {
+          "MethodName": "InnerMethod",
+          "ClassName": "Bar",
+          "MethodTime": 100,
+          "MethodInfos": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\b\thirdBlock\bin\Debug\thirdBlock.exe.config
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\b\thirdBlock\bin\Debug\thirdBlock.exe
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\b\thirdBlock\bin\Debug\thirdBlock.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlock\Debug\thirdBlock.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlock\Debug\thirdBlock.exe
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlock\Debug\thirdBlock.pdb

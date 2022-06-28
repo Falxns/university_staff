@@ -1,0 +1,143 @@
+object TMaxim: TTMaxim
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'TMaxim'
+  ClientHeight = 402
+  ClientWidth = 286
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 215
+    Height = 24
+    Caption = 'Enter size of the matrix:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Size: TEdit
+    Left = 229
+    Top = 8
+    Width = 36
+    Height = 21
+    TabOrder = 0
+    OnChange = SizeChange
+  end
+  object StringGrid1: TStringGrid
+    Left = 8
+    Top = 78
+    Width = 131
+    Height = 131
+    DefaultColWidth = 24
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    TabOrder = 1
+    ColWidths = (
+      24
+      24
+      24
+      24
+      24)
+    RowHeights = (
+      24
+      24
+      24
+      24
+      24)
+  end
+  object StringGrid2: TStringGrid
+    Left = 8
+    Top = 253
+    Width = 129
+    Height = 129
+    DefaultColWidth = 24
+    TabOrder = 2
+    ColWidths = (
+      24
+      24
+      24
+      24
+      24)
+    RowHeights = (
+      24
+      24
+      24
+      24
+      24)
+  end
+  object Change: TButton
+    Left = 30
+    Top = 214
+    Width = 83
+    Height = 33
+    Caption = 'Change'
+    TabOrder = 3
+  end
+  object Create: TButton
+    Left = 30
+    Top = 38
+    Width = 83
+    Height = 34
+    Caption = 'Create'
+    TabOrder = 4
+  end
+  object MainMenu1: TMainMenu
+    Left = 168
+    Top = 40
+    object File1: TMenuItem
+      Caption = 'File'
+      object Openfile1: TMenuItem
+        Caption = 'Open file'
+        ShortCut = 16463
+      end
+      object Savetofile: TMenuItem
+        Caption = 'Save to file'
+        ShortCut = 16467
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Exit: TMenuItem
+        Caption = 'Exit'
+        ShortCut = 16453
+      end
+    end
+    object About1: TMenuItem
+      Caption = 'About'
+      object Info: TMenuItem
+        Caption = 'Info'
+        ShortCut = 16457
+      end
+      object Developer: TMenuItem
+        Caption = 'Developer'
+        ShortCut = 16452
+      end
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 168
+    Top = 104
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 168
+    Top = 160
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 168
+    Top = 216
+  end
+end

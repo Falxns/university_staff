@@ -1,0 +1,182 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus;
+
+type
+  TMaksim = class(TForm)
+    Text: TLabel;
+    Menu: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    Openfile1: TMenuItem;
+    Savetofile1: TMenuItem;
+    N1: TMenuItem;
+    Info1: TMenuItem;
+    Developer1: TMenuItem;
+    Day: TEdit;
+    Get: TButton;
+    Result: TLabel;
+    OpenFile: TOpenDialog;
+    SaveFile: TSaveDialog;
+    procedure N1Click(Sender: TObject);
+    procedure Info1Click(Sender: TObject);
+    procedure Developer1Click(Sender: TObject);
+    procedure DayChange(Sender: TObject);
+    procedure GetClick(Sender: TObject);
+    procedure Openfile1Click(Sender: TObject);
+    procedure Savetofile1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Maksim: TMaksim;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMaksim.Developer1Click(Sender: TObject);
+begin
+    MessageDlg('Developer: Maksim Gladkiy', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.GetClick(Sender: TObject);
+var
+    Number: Byte;
+begin
+    Number := StrToInt(Day.Text);
+    case Number of
+        1:Result.Caption := 'This day is Monday';
+        2:Result.Caption := 'This day is Tuesday';
+        3:Result.Caption := 'This day is Wednesday';
+        4:Result.Caption := 'This day is Thursday';
+        5:Result.Caption := 'This day is Friday';
+        6:Result.Caption := 'This day is Saturday';
+        7:Result.Caption := 'This day is Sunday';
+    end;
+    Savetofile1.Enabled := true;
+end;
+
+procedure TMaksim.DayChange(Sender: TObject);
+begin
+    Result.Caption := '';
+    if (Length(Day.Text) > 0) then
+    begin
+       Get.Enabled := true;
+       if (StrToInt(Day.Text) > 7) then
+       begin
+           ShowMessage('Error. The number, you have entered, is too high.');
+           Get.Enabled := false;
+           Day.Clear;
+       end;
+    end
+    else
+       Get.Enabled := false;
+end;
+
+procedure TMaksim.Info1Click(Sender: TObject);
+begin
+    MessageDlg('This program defines the day of week by entering numbers 1..7', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.N1Click(Sender: TObject);
+var
+    ButtonSelected: Byte;
+begin
+    ButtonSelected := MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes,mbNo], 0);
+    if ButtonSelected = mrYes then
+        Close;
+end;
+
+procedure TMaksim.Openfile1Click(Sender: TObject);
+var
+    inputFile: TextFile;
+    Temp: double;
+begin
+    Day.Clear;
+    Result.Caption := '';
+    if OpenFile.Execute then
+    begin
+        try
+            AssignFile(inputFile, OpenFile.FileName);
+            Reset(inputFile);
+            if SeekEof(inputFile) then
+            begin
+                MessageDlg('This file is empty. Try again.', mtError, [mbRetry], 0);
+                Day.Clear;
+                CloseFile(inputFile);
+            end
+            else
+            begin
+                ReadLn(inputFile, Temp);
+                Day.Text := FloatToStr(Temp);
+                DayChange(Sender);
+                CloseFile(inputFile);
+            end;
+        except
+            MessageDlg('Check entered data. Try again.', mtError, [mbRetry], 0);
+            Day.Clear;
+            CloseFile(inputFile);
+        end;
+    end;
+end;
+
+function CheckFileName(MyFile: string): string;
+var
+   i: byte;
+   IsCorrect: boolean;
+begin
+   IsCorrect := false;
+   i := 1;
+   while  not IsCorrect and (i <= length(MyFile)) do
+   begin
+      if MyFile[i] = '.' then
+         IsCorrect := true;
+      inc(i);
+   end;
+   if not IsCorrect then
+      MyFile := MyFile + '.txt';
+   CheckFileName := MyFile;
+end;
+
+procedure TMaksim.Savetofile1Click(Sender: TObject);
+var
+   OutputFile: TextFile;
+   MyFile: string;
+   ButtonSelected: byte;
+begin
+   if SaveFile.Execute then
+   begin
+      MyFile := SaveFile.FileName;
+      MyFile := CheckFileName(MyFile);
+      if FileExists(MyFile) then
+      begin
+         ButtonSelected := MessageDlg('Do you want to rewrite the file?', mtConfirmation, [mbYes,mbNo], 0);
+         if ButtonSelected = mrYes then
+         begin
+            AssignFile(OutputFile, MyFile);
+            Rewrite(OutputFile);
+            Writeln(OutputFile, result.Caption);
+            CloseFile(OutputFile);
+         end
+         else
+            DayChange(Sender);
+      end
+      else
+      begin
+         AssignFile(OutputFile, MyFile);
+         Rewrite(OutputFile);
+         WriteLn(OutputFile, result.Caption);
+         CloseFile(OutputFile);
+      end;
+   end;
+end;
+
+end.

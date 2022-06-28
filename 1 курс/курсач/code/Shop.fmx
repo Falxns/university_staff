@@ -1,0 +1,255 @@
+object ShopF: TShopF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Shop'
+  ClientHeight = 210
+  ClientWidth = 260
+  Fill.Color = claAquamarine
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object CoinsLbl: TLabel
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 70.000000000000000000
+    Size.Width = 90.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    Text = 'Coins:'
+    TabOrder = 7
+  end
+  object Coins: TLabel
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 160.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    Text = '100'
+    TabOrder = 3
+  end
+  object BullRate: TLabel
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.Y = 30.000000000000000000
+    Size.Width = 151.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    Text = 'Bullet rate'
+    TabOrder = 6
+  end
+  object BulletUpgr: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 160.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Upgrade'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    OnClick = BulletUpgrClick
+  end
+  object Bull1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.Y = 60.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Bull2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 30.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Bull3: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 60.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Bull4: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 90.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Bull5: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 120.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object CoinsKoef: TLabel
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.Y = 90.000000000000000000
+    Size.Width = 151.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    Text = 'Coins * x'
+    TabOrder = 5
+  end
+  object CoinsUpgr: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 160.000000000000000000
+    Position.Y = 105.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Upgrade'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    OnClick = CoinsUpgrClick
+  end
+  object Coins1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.Y = 120.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Coins2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 30.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Coins3: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 60.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object BullDmg: TLabel
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.Y = 150.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    Text = 'Bullet dmg'
+    TabOrder = 4
+  end
+  object DmgUpgr: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 160.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Upgrade'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+    OnClick = DmgUpgrClick
+  end
+  object Dmg1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.Y = 180.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Dmg2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 30.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Dmg3: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 60.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Dmg4: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 90.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Dmg5: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 120.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

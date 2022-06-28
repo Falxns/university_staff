@@ -1,0 +1,10 @@
+2020-12-01 18:16:15.6862|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl1
+2020-12-01 18:16:15.7364|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl1
+2020-12-01 18:16:15.7436|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl2
+2020-12-01 18:16:15.7436|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.MySqlRepository
+2020-12-01 18:16:15.7615|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl`1[TestProject.IRepository]
+2020-12-01 18:16:15.7615|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.MySqlRepository
+2020-12-01 18:16:15.7786|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.RepositoryImpl
+2020-12-01 18:16:15.7786|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl
+2020-12-01 18:16:15.7923|DEBUG|Dependency_Injection_Library.DependencyProvider|Created object with type of: TestProject.ServiceImpl1
+2020-12-01 18:16:15.7923|INFO|Dependency_Injection_Library.DependencyProvider|Set value TestProject.ServiceImpl1 to object TestProject.ServiceImpl1

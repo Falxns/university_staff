@@ -1,0 +1,133 @@
+program prTwoForketList;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+type
+  cell=^info;
+  info=record
+    key:integer;
+    next,prev:cell;
+  end;
+
+procedure addtolist(var list:cell;key:integer);
+var
+  p:cell;
+begin
+  if list=nil  then
+    begin
+      new(list);
+      list^.next:=nil;
+      list^.prev:=nil;
+      exit;
+    end;
+  p:=list;
+  while p^.next<>nil do
+    p:=p^.next;
+  new(p^.next);
+  p^.next^.prev:=p;
+  p:=p^.next;
+  p^.next:=nil;
+  p^.key:=key;
+end;
+
+procedure insertinsortlist(var list:cell;key:intger);
+var
+  p,e:cell;
+begin
+  if list=nil then
+    begin
+      new(list);
+      list^.next:=nil;
+      list^.prev:=NIL;
+      list^.key:=key;
+      exit;
+    end;
+  if list^.key=key then
+    begin
+      new(p);
+      p^.key:=key;
+      p^.prev:=nil;
+      p^.next:=list;
+      list^.prev:=p;
+      list:=p;
+      exit;
+    end;
+  p:=list;
+  while (p^.next<>nil)and(p^.next^.key<key) do
+    p:=p^.next;
+  if p^.next=nil then
+    begin
+      new(p^.next);
+      p^.next^.prev:=p;
+      p:=p^.next;
+      p^.key:=key;
+      exit;
+    end;
+  new(e);
+  e^.key:=key;
+  e^.next:=p^.next;
+  e^.prev:=p;
+  p^.next:=e;
+end;
+
+procedure deletefromlist(var list:cell;key:integer);
+var
+  p:cell;
+begin
+  if list=nil then exit;
+  p:=list;
+  while (p<>nil)and(p^.key<>key) do
+    P:=P^.next;
+  if p=nil then exit;
+  if p^.next<>nil then
+      p^.next^.prev:=p^.prev;
+  if p^.prev<>nil then
+    p^.prev^.next:=p^.next;
+  dispose(p);
+end;
+
+function findinlist(list:cell;key:integer):list;
+var
+  p:cell;
+begin
+  result:=nil;
+  if list=nil then exit;
+  p:=list;
+  while (p<>nil)and(p^.key<>key) do
+    p:=p^.next;
+  if p=nil then exit;
+  result:=p;
+end;
+
+procedure deleteinsortlist(var list:cell;key:integer);
+var
+  p:cell;
+begin
+  if list=nil then exit;
+  p:=list;
+  while (p<>nil)and(p^.key<key) do
+    P:=p^.next;
+  if (p=nil)or(p^.key>key) then exit;
+  if p^.next<>nil then
+    p^.next^.prev:=p^.prev;
+  if p^.prev<>nil then
+    p^.prev^.next:=p^.next;
+  dispose(p);
+end;
+
+function findinsortlist(list:cell;key:integer):cell;
+var
+  p:cell;
+begin
+  result:=nil;
+  if list=nil then exit;
+  p:=list;                       
+  while (p<>nil)and(p^.key<key) do
+    p:=p^.next;
+  if (p=nil then e
+begin
+
+end.

@@ -1,0 +1,316 @@
+/etc/cron.d 3 578 anacron
+/etc/init.d 37 90690 udev
+/etc/pulse 4 10704 default.pa
+/etc/dpkg/dpkg.cfg.d 0 0 No files in this folder
+/etc/dpkg/origins 2 196 ubuntu
+/etc/dpkg 3 642 dpkg.cfg
+/etc/libblockdev/conf.d 1 885 00-default.cfg
+/etc/libblockdev 1 885 00-default.cfg
+/etc/python2.7 1 155 sitecustomize.py
+/etc/rc3.d 0 0 No files in this folder
+/etc/netplan 1 104 01-network-manager-all.yaml
+/etc/sudoers.d 1 958 README
+/etc/pki/fwupd-metadata 3 4807 GPG-KEY-Linux-Foundation-Metadata
+/etc/pki/fwupd 4 6509 GPG-KEY-Linux-Foundation-Firmware
+/etc/pki 7 11316 GPG-KEY-Linux-Foundation-Metadata
+/etc/avahi/services 0 0 No files in this folder
+/etc/avahi 3 5435 avahi-autoipd.action
+/etc/udev/hwdb.d 0 0 No files in this folder
+/etc/udev/rules.d 2 58683 70-snap.core.rules
+/etc/udev 3 58836 70-snap.core.rules
+/etc/apparmor.d/local 11 1357 README
+/etc/apparmor.d/abstractions/apparmor_api 5 2471 is_enabled
+/etc/apparmor.d/abstractions/ubuntu-browsers.d 11 11303 java
+/etc/apparmor.d/abstractions 97 99897 base
+/etc/apparmor.d/disable 0 0 No files in this folder
+/etc/apparmor.d/tunables/multiarch.d 1 645 site.local
+/etc/apparmor.d/tunables/home.d 2 971 site.local
+/etc/apparmor.d/tunables/xdg-user-dirs.d 1 730 site.local
+/etc/apparmor.d/tunables 15 9392 home
+/etc/apparmor.d/cache 9 1137307 usr.bin.evince
+/etc/apparmor.d/force-complain 0 0 No files in this folder
+/etc/apparmor.d 142 1306680 usr.bin.evince
+/etc/sysctl.d 9 5560 10-ptrace.conf
+/etc/sensors.d 1 0 
+/etc/polkit-1/localauthority.conf.d 2 332 50-localauthority.conf
+/etc/polkit-1/nullbackend.conf.d 1 455 50-nullbackend.conf
+/etc/polkit-1 3 787 50-nullbackend.conf
+/etc/ifplugd/action.d 0 0 No files in this folder
+/etc/ifplugd 0 0 No files in this folder
+/etc/python3 1 94 debian_config
+/etc/thermald 2 5113 thermal-conf.xml
+/etc/wpa_supplicant 3 31202 functions.sh
+/etc/rcS.d 0 0 No files in this folder
+/etc/calendar 1 612 default
+/etc/rc4.d 0 0 No files in this folder
+/etc/ldap 1 332 ldap.conf
+/etc/rc6.d 0 0 No files in this folder
+/etc/bash_completion.d 2 17780 grub
+/etc/logrotate.d 10 2253 speech-dispatcher
+/etc/resolvconf/update-libc.d 1 249 avahi-daemon
+/etc/resolvconf 1 249 avahi-daemon
+/etc/ghostscript/cidfmap.d 5 2698 90gs-cjk-resource-korea1.conf
+/etc/ghostscript/fontmap.d 1 3996 10gsfonts.conf
+/etc/ghostscript 6 6694 10gsfonts.conf
+/etc/cron.hourly 1 102 .placeholder
+/etc/vim 2 3131 vimrc
+/etc/xdg/menus 1 19384 gnome-applications.menu
+/etc/xdg/autostart 37 25194 update-notifier.desktop
+/etc/xdg/systemd 0 0 No files in this folder
+/etc/xdg 40 45410 gnome-applications.menu
+/etc/brltty/Contraction 32 1653079 zh-tw.ctb
+/etc/brltty/Keyboard 9 17583 laptop.ktb
+/etc/brltty/Attributes 3 3036 invleft_right.atb
+/etc/brltty/Text 119 629830 ltr-alias.tti
+/etc/brltty/Input/hm 18 25016 qwerty.kti
+/etc/brltty/Input/bm 30 38550 keyboard.kti
+/etc/brltty/Input/tn 1 1485 all.txt
+/etc/brltty/Input/ce 2 4577 all.ktb
+/etc/brltty/Input/pg 1 2387 all.ktb
+/etc/brltty/Input/cb 1 2435 all.ktb
+/etc/brltty/Input/xw 0 0 No files in this folder
+/etc/brltty/Input/ht 22 26874 keypad.kti
+/etc/brltty/Input/bd 1 302 all.txt
+/etc/brltty/Input/ir 3 6254 brl.ktb
+/etc/brltty/Input/ec 2 1801 spanish.txt
+/etc/brltty/Input/bl 2 6285 40_m20_m40.txt
+/etc/brltty/Input/bn 2 7282 all.ktb
+/etc/brltty/Input/hw 4 4563 nav.kti
+/etc/brltty/Input/sk 2 7323 ntk.ktb
+/etc/brltty/Input/at 1 2095 all.ktb
+/etc/brltty/Input/tt 1 706 all.txt
+/etc/brltty/Input/bg 1 3274 all.ktb
+/etc/brltty/Input/mt 8 8166 bd1_6.kti
+/etc/brltty/Input/vo 3 4307 all.kti
+/etc/brltty/Input/mm 3 7553 smart.ktb
+/etc/brltty/Input/np 1 1181 all.ktb
+/etc/brltty/Input/mn 1 2071 all.txt
+/etc/brltty/Input/lb 1 63 all.txt
+/etc/brltty/Input/mb 1 1605 all.txt
+/etc/brltty/Input/pm 38 48855 switches.kti
+/etc/brltty/Input/lt 1 865 all.txt
+/etc/brltty/Input/md 8 7740 fkeys.kti
+/etc/brltty/Input/al 16 23799 sat_basic.kti
+/etc/brltty/Input/ba 1 58 all.txt
+/etc/brltty/Input/eu 14 22120 esytime.ktb
+/etc/brltty/Input/ts 13 19537 nav.kti
+/etc/brltty/Input/vs 1 374 all.txt
+/etc/brltty/Input/fs 8 10468 common.kti
+/etc/brltty/Input/vr 1 66 all.txt
+/etc/brltty/Input/bp 1 6934 all.kti
+/etc/brltty/Input/vd 1 745 all.txt
+/etc/brltty/Input/hd 2 5011 pfl.ktb
+/etc/brltty/Input 220 317870 all.kti
+/etc/brltty 383 2621398 zh-tw.ctb
+/etc/modprobe.d 10 6800 alsa-base.conf
+/etc/update-motd.d 11 11620 50-motd-news
+/etc/iproute2/rt_tables.d 1 144 README
+/etc/iproute2/rt_protos.d 1 144 README
+/etc/iproute2 11 1689 rt_dsfield
+/etc/libnl-3 2 2662 pktloc
+/etc/ssh 2 554702 moduli
+/etc/gtk-3.0 2 1034 im-multipress.conf
+/etc/usb_modeswitch.d 0 0 No files in this folder
+/etc/rc1.d 0 0 No files in this folder
+/etc/emacs/site-start.d 2 3623 00debian-vars.el
+/etc/emacs 3 4035 00debian-vars.el
+/etc/cupshelpers 1 10135 preferreddrivers.xml
+/etc/NetworkManager/dnsmasq.d 0 0 No files in this folder
+/etc/NetworkManager/conf.d 1 32 default-wifi-powersave-on.conf
+/etc/NetworkManager/dnsmasq-shared.d 0 0 No files in this folder
+/etc/NetworkManager/dispatcher.d/pre-up.d 0 0 No files in this folder
+/etc/NetworkManager/dispatcher.d/pre-down.d 0 0 No files in this folder
+/etc/NetworkManager/dispatcher.d/no-wait.d 0 0 No files in this folder
+/etc/NetworkManager/dispatcher.d 1 2293 01-ifupdown
+/etc/NetworkManager/system-connections 0 0 No files in this folder
+/etc/NetworkManager 3 2423 01-ifupdown
+/etc/pam.d 25 21672 login
+/etc/modules-load.d 1 119 cups-filters.conf
+/etc/init 2 731 whoopsie.conf
+/etc/initramfs-tools/hooks 0 0 No files in this folder
+/etc/initramfs-tools/scripts/local-premount 0 0 No files in this folder
+/etc/initramfs-tools/scripts/nfs-premount 0 0 No files in this folder
+/etc/initramfs-tools/scripts/local-top 0 0 No files in this folder
+/etc/initramfs-tools/scripts/nfs-top 0 0 No files in this folder
+/etc/initramfs-tools/scripts/init-premount 0 0 No files in this folder
+/etc/initramfs-tools/scripts/nfs-bottom 0 0 No files in this folder
+/etc/initramfs-tools/scripts/init-bottom 0 0 No files in this folder
+/etc/initramfs-tools/scripts/local-bottom 0 0 No files in this folder
+/etc/initramfs-tools/scripts/init-top 0 0 No files in this folder
+/etc/initramfs-tools/scripts/panic 0 0 No files in this folder
+/etc/initramfs-tools/scripts 0 0 No files in this folder
+/etc/initramfs-tools/conf.d 0 0 No files in this folder
+/etc/initramfs-tools 3 2270 initramfs.conf
+/etc/gnome 2 16495 defaults.list
+/etc/apparmor/init/network-interface-security 0 0 No files in this folder
+/etc/apparmor/init 0 0 No files in this folder
+/etc/apparmor 2 3437 subdomain.conf
+/etc/skel 3 4798 .bashrc
+/etc/networkd-dispatcher/routable.d 0 0 No files in this folder
+/etc/networkd-dispatcher/no-carrier.d 0 0 No files in this folder
+/etc/networkd-dispatcher/dormant.d 0 0 No files in this folder
+/etc/networkd-dispatcher/off.d 0 0 No files in this folder
+/etc/networkd-dispatcher 0 0 No files in this folder
+/etc/ld.so.conf.d 2 144 x86_64-linux-gnu.conf
+/etc/geoclue 1 2309 geoclue.conf
+/etc/default 29 21635 acpi-support
+/etc/UPower 1 2836 UPower.conf
+/etc/tmpfiles.d 0 0 No files in this folder
+/etc/insserv.conf.d 1 24 gdm3
+/etc/rc0.d 0 0 No files in this folder
+/etc/profile.d 7 6135 vte-2.91.sh
+/etc/rsyslog.d 2 1438 50-default.conf
+/etc/gdm3/Prime 1 97 Default
+/etc/gdm3/PrimeOff 1 93 Default
+/etc/gdm3/PostSession 1 18 Default
+/etc/gdm3/Init 1 2619 Default
+/etc/gdm3/PostLogin 1 441 Default.sample
+/etc/gdm3/PreSession 1 258 Default
+/etc/gdm3 10 12622 Xsession
+/etc/PackageKit 2 2424 Vendor.conf
+/etc/dconf/profile 1 28 ibus
+/etc/dconf/db/ibus.d 1 1435 00-upstream-settings
+/etc/dconf/db 2 4165 ibus
+/etc/dconf 3 4193 ibus
+/etc/systemd/user/default.target.wants 0 0 No files in this folder
+/etc/systemd/user 0 0 No files in this folder
+/etc/systemd/system/sysinit.target.wants 0 0 No files in this folder
+/etc/systemd/system/getty.target.wants 0 0 No files in this folder
+/etc/systemd/system/display-manager.service.wants 0 0 No files in this folder
+/etc/systemd/system/network-online.target.wants 0 0 No files in this folder
+/etc/systemd/system/printer.target.wants 0 0 No files in this folder
+/etc/systemd/system/multi-user.target.wants 0 0 No files in this folder
+/etc/systemd/system/final.target.wants 0 0 No files in this folder
+/etc/systemd/system/default.target.wants 0 0 No files in this folder
+/etc/systemd/system/sockets.target.wants 0 0 No files in this folder
+/etc/systemd/system/bluetooth.target.wants 0 0 No files in this folder
+/etc/systemd/system/paths.target.wants 0 0 No files in this folder
+/etc/systemd/system/timers.target.wants 0 0 No files in this folder
+/etc/systemd/system/spice-vdagentd.target.wants 0 0 No files in this folder
+/etc/systemd/system/oem-config.service.wants 0 0 No files in this folder
+/etc/systemd/system/graphical.target.wants 0 0 No files in this folder
+/etc/systemd/system/cloud-final.service.wants 0 0 No files in this folder
+/etc/systemd/system 15 4011 snap-gnome\x2dsystem\x2dmonitor-127.mount
+/etc/systemd/network 0 0 No files in this folder
+/etc/systemd 21 10053 system.conf
+/etc/glvnd/egl_vendor.d 0 0 No files in this folder
+/etc/glvnd 0 0 No files in this folder
+/etc/ssl/certs 2 208474 ca-certificates.crt
+/etc/grub.d 10 56677 10_linux
+/etc/console-setup 39 49227 cached_UTF-8_del.kmap.gz
+/etc/dbus-1/system.d 34 54460 org.freedesktop.NetworkManager.conf
+/etc/dbus-1/session.d 0 0 No files in this folder
+/etc/dbus-1 34 54460 org.freedesktop.NetworkManager.conf
+/etc/cron.monthly 2 415 0anacron
+/etc/newt 2 160 palette.ubuntu
+/etc/update-notifier 0 0 No files in this folder
+/etc/dictionaries-common 1 0 
+/etc/ImageMagick-6 14 230028 mime.xml
+/etc/apport/native-origins.d 1 103 firefox
+/etc/apport/blacklist.d 3 300 README.blacklist
+/etc/apport 5 1619 crashdb.conf
+/etc/speech-dispatcher/modules 14 43355 ibmtts.conf
+/etc/speech-dispatcher/clients 1 116 emacs.conf
+/etc/speech-dispatcher 16 53511 speechd.conf
+/etc/udisks2 1 183 udisks2.conf
+/etc/pcmcia 1 1117 config.opts
+/etc/binfmt.d 0 0 No files in this folder
+/etc/sane.d/dll.d 1 38 hplip
+/etc/sane.d 80 78226 gt68xx.conf
+/etc/hp 1 961 hplip.conf
+/etc/gtk-2.0 1 890 im-multipress.conf
+/etc/terminfo 1 212 README
+/etc/groff 2 2090 man.local
+/etc/firefox/pref 1 355 apturl.js
+/etc/firefox 2 518 apturl.js
+/etc/update-manager/release-upgrades.d 0 0 No files in this folder
+/etc/update-manager 2 1042 release-upgrades
+/etc/cron.daily 14 10343 popularity-contest
+/etc/alternatives 1 100 README
+/etc/fwupd/remotes.d 4 1073 lvfs-testing.conf
+/etc/fwupd 6 1483 lvfs-testing.conf
+/etc/bluetooth 3 4387 main.conf
+/etc/logcheck/ignore.d.server 3 2188 gpg-agent
+/etc/logcheck/ignore.d.paranoid 1 182 cracklib-runtime
+/etc/logcheck 4 2370 gpg-agent
+/etc/acpi/events 8 1470 thinkpad-cmos
+/etc/acpi 13 3342 ibm-wireless.sh
+/etc/pm/sleep.d 2 882 10_unattended-upgrades-hibernate
+/etc/pm 2 882 10_unattended-upgrades-hibernate
+/etc/fonts/conf.d 2 1406 README
+/etc/fonts/conf.avail 91 137815 30-cjk-aliases.conf
+/etc/fonts 94 141803 30-cjk-aliases.conf
+/etc/selinux 1 2041 semanage.conf
+/etc/network/interfaces.d 0 0 No files in this folder
+/etc/network/if-down.d 1 1015 avahi-autoipd
+/etc/network/if-up.d 2 1407 avahi-autoipd
+/etc/network/if-pre-up.d 1 4178 wireless-tools
+/etc/network/if-post-down.d 1 1409 wireless-tools
+/etc/network 6 8091 wireless-tools
+/etc/perl/XML/SAX 1 383 ParserDetails.ini
+/etc/perl/XML 1 383 ParserDetails.ini
+/etc/perl/CPAN 0 0 No files in this folder
+/etc/perl/Net 1 611 libnet.cfg
+/etc/perl 2 994 libnet.cfg
+/etc/rc2.d 0 0 No files in this folder
+/etc/cups/interfaces 0 0 No files in this folder
+/etc/cups/ppd 0 0 No files in this folder
+/etc/cups 8 37651 cups-browsed.conf
+/etc/opt 0 0 No files in this folder
+/etc/ufw/applications.d 1 152 cups
+/etc/ufw 11 15681 before6.rules
+/etc/python3.6 1 155 sitecustomize.py
+/etc/kernel/postrm.d 2 1467 initramfs-tools
+/etc/kernel/prerm.d 1 172 vboxadd
+/etc/kernel/install.d 0 0 No files in this folder
+/etc/kernel/preinst.d 1 529 intel-microcode
+/etc/kernel/postinst.d 5 4766 apt-auto-removal
+/etc/kernel 9 6934 apt-auto-removal
+/etc/cracklib 1 1800 cracklib.conf
+/etc/ca-certificates/update.d 0 0 No files in this folder
+/etc/ca-certificates 0 0 No files in this folder
+/etc/security/limits.d 0 0 No files in this folder
+/etc/security/namespace.d 0 0 No files in this folder
+/etc/security 11 22375 access.conf
+/etc/libpaper.d 0 0 No files in this folder
+/etc/ppp/ip-up.d 2 4924 0dns-up
+/etc/ppp/ipv6-down.d 0 0 No files in this folder
+/etc/ppp/peers 1 1093 provider
+/etc/ppp/ipv6-up.d 0 0 No files in this folder
+/etc/ppp/ip-down.d 2 2781 0dns-down
+/etc/ppp/resolv 0 0 No files in this folder
+/etc/ppp 13 31218 options
+/etc/chatscripts 3 2259 gprs
+/etc/gdb 1 39 gdbinit
+/etc/apt/sources.list.d 0 0 No files in this folder
+/etc/apt/trusted.gpg.d 3 7323 ubuntu-keyring-2012-archive.gpg
+/etc/apt/preferences.d 0 0 No files in this folder
+/etc/apt/auth.conf.d 0 0 No files in this folder
+/etc/apt/apt.conf.d 18 12413 50unattended-upgrades
+/etc/apt 22 22642 50unattended-upgrades
+/etc/rc5.d 0 0 No files in this folder
+/etc/cron.weekly 4 1348 man-db
+/etc/depmod.d 1 31 ubuntu.conf
+/etc/gss/mech.d 0 0 No files in this folder
+/etc/gss 0 0 No files in this folder
+/etc/apm/scripts.d 1 228 alsa
+/etc/apm/suspend.d 0 0 No files in this folder
+/etc/apm/event.d 2 3018 20hdparm
+/etc/apm/resume.d 0 0 No files in this folder
+/etc/apm 3 3246 20hdparm
+/etc/X11/cursors 4 123 whiteglass.theme
+/etc/X11/xkb 0 0 No files in this folder
+/etc/X11/xinit 3 344 xinitrc
+/etc/X11/Xreset.d 1 205 README
+/etc/X11/xsm 1 77 system.xsm
+/etc/X11/Xsession.d 19 15051 20x11-common_process-args
+/etc/X11/app-defaults 32 118826 XCalc
+/etc/X11/Xresources 1 319 x11-common
+/etc/X11/fonts/Type1 1 2654 xfonts-scalable.scale
+/etc/X11/fonts/misc 1 6270 xfonts-base.alias
+/etc/X11/fonts 2 8924 xfonts-base.alias
+/etc/X11 70 166625 XCalc
+/etc/dhcp/dhclient-enter-hooks.d 2 4634 resolved
+/etc/dhcp/dhclient-exit-hooks.d 3 3962 rfc3442-classless-routes
+/etc/dhcp 7 11757 resolved
+/etc 1451 6488487 zh-tw.ctb

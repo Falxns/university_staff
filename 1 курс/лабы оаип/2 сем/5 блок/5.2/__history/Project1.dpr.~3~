@@ -1,0 +1,14 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  MainUn in 'MainUn.pas' {Main};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TMain, Main);
+  Application.Run;
+end.

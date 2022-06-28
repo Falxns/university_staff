@@ -1,0 +1,64 @@
+object SettingsF: TSettingsF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'SETTINGS'
+  ClientHeight = 300
+  ClientWidth = 300
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object imgSettingsBack: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Size.Width = 300.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnMute: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 50.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'MUTE'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnMuteClick
+  end
+  object imgPlayer1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 50.000000000000000000
+    Position.Y = 150.000000000000000000
+  end
+  object imgPlayer2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 200.000000000000000000
+    Position.Y = 150.000000000000000000
+  end
+  object btnPlayer1: TRadioButton
+    Position.X = 68.000000000000000000
+    Position.Y = 210.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object btnPlayer2: TRadioButton
+    Position.X = 218.000000000000000000
+    Position.Y = 210.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+end

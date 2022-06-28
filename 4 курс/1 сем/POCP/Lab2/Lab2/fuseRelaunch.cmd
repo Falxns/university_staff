@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/maksf/Desktop/POCP/Lab2/Lab2/TB_sum_1_isim_beh.exe" -prj "C:/Users/maksf/Desktop/POCP/Lab2/Lab2/TB_sum_1_beh.prj" "work.TB_sum_1" 

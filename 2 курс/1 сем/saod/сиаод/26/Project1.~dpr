@@ -1,0 +1,248 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System, SysUtils, Windows;
+
+type
+  TList = ^list;
+    list = record
+      data: integer;
+      next: TList;
+    end;
+
+procedure Input(var headF, headSecond: TList);
+var
+  PFirst, PSecond: TList;
+  inputInt: integer;
+  flag: boolean;
+  numOfEl: integer;
+  i: integer;
+
+begin
+  flag := true;
+  writeln('Введите количество элементов первого списка:');
+  readln(numOfEl);
+  writeln;
+  writeln('Введите элементы первого списка (', numOfEl, '):');
+  for i := 1 to numOfEl do
+  begin
+    readln(inputInt);
+        if flag then
+          begin
+            new(PFirst);
+            PFirst^.next:= nil;
+            PFirst^.data:= inputInt;
+            flag := false;
+            headF:= PFirst;
+          end
+        else
+          begin
+            new(PFirst^.next);
+            PFirst:= PFirst^.next;
+            PFirst^.next:= nil;
+            PFirst^.data:= inputInt;
+          end;
+  end;
+  flag := true;
+  writeln;
+  writeln('Введите количество элементов второго списка:');
+  readln(numOfEl);
+  writeln;
+  writeln('Введите элементы второго списка (', numOfEl, '):');
+  for i := 1 to numOfEl do
+  begin
+    readln(inputInt);
+        if flag then
+          begin
+            new(PSecond);
+            PSecond^.next:= nil;
+            PSecond^.data:= inputInt;
+            flag := false;
+            headSecond:= PSecond;
+          end
+        else
+          begin
+            new(PSecond^.next);
+            PSecond:= PSecond^.next;
+            PSecond^.next:= nil;
+            PSecond^.data:= inputInt;
+          end;
+  end;
+end;
+
+procedure Move(var headF, headSecond: TList);
+var
+  PFirst, PSecond, temp, pred: TList;
+
+begin
+  PFirst := headF;
+  pred := nil;
+  while PFirst <> nil do
+    begin
+      if PFirst^.data >= 0 then
+        begin
+          new(temp);
+          temp^.next:= headSecond;
+          headSecond:= temp;
+          temp^.data:= PFirst^.data;
+          if PFirst = headF then
+            begin
+              PFirst:= PFirst^.next;
+              Dispose(headF);
+              headF:= PFirst;
+            end
+          else
+            if PFirst^.next = nil then
+              begin
+                if pred <> nil  then
+                  pred^.next:= nil;
+                break;
+              end
+            else
+              begin
+                pred^.next:= PFirst^.next;
+                PFirst:= PFirst^.next;
+              end;
+        end
+      else
+        begin
+          pred:= PFirst;
+          PFirst:= PFirst^.next;
+        end;
+    end;
+  PSecond:= headSecond;
+  pred:= nil;
+  while PSecond <> nil do
+    begin
+      if PSecond^.data < 0 then
+        begin
+          new(temp);
+          temp^.next:= headF;
+          headF:= temp;
+          temp^.data:= PSecond^.data;
+          if PSecond = headSecond then
+            begin
+              PSecond:= PSecond^.next;
+              Dispose(headSecond);
+              headSecond:= PSecond;
+            end
+          else
+            if PSecond^.next = nil then
+              begin
+                if pred <> nil then
+                  pred^.next:= nil;
+                break;
+              end
+            else
+              begin
+                pred^.next:= PSecond^.next;
+                PSecond:= PSecond^.next;
+              end;
+        end
+      else
+        begin
+          pred:= PSecond;
+          PSecond:= PSecond^.next;
+        end;
+    end;
+end;
+
+procedure Sort(var headF, headSecond: TList);
+var
+  PFirst, PSecond, temp: TList;
+  tempdata: integer;
+
+begin
+  new(PFirst);
+  new(PSecond);
+  PFirst:= headF;
+  PSecond:= headSecond;
+  if PFirst <> nil then
+    temp:= PFirst^.next;
+  while (PFirst <> nil) and (PFirst^.next <> nil) do
+    begin
+      while temp <> nil do
+        begin
+          if PFirst^.data > temp^.data then
+            begin
+              tempdata := PFirst^.data;
+              PFirst^.data := temp^.data;
+              temp^.data := tempdata;
+            end;
+          temp:= temp^.next;
+        end;
+      PFirst:= PFirst^.next;
+      temp:=PFirst^.next;
+    end;
+  if PSecond <> nil then
+    temp:= PSecond^.next;;
+  while (PSecond <> nil) and (PSecond^.next <> nil) do
+    begin
+      while temp <> nil do
+        begin
+          if PSecond^.data > temp^.data then
+            begin
+              tempdata:= PSecond^.data;
+              PSecond^.data:= temp^.data;
+              temp^.data:= tempdata;
+            end;
+          temp:= temp^.next;
+        end;
+      PSecond:= PSecond^.next;
+      temp:=PSecond^.next;
+    end;
+end;
+
+procedure Output(headF, headSecond: TList);
+var
+  PFirst, PSecond: TList;
+
+begin
+  PFirst:= headF;
+  PSecond:= headSecond;
+  writeln;
+  writeln('Первый список (отрицательные элементы):');
+  while PFirst <> nil do
+    begin
+      writeln(PFirst^.data);
+      PFirst:= PFirst^.next;
+    end;
+  writeln;
+  writeln('Второй список (положительные элементы):');
+  while PSecond <> nil do
+    begin
+      writeln(PSecond^.data);
+      PSecond:= PSecond^.next
+    end;
+end;
+
+procedure Main;
+var
+  headF, headSecond: TList;
+
+begin
+  Input(headF, headSecond);
+  Move(headF,headSecond);
+  Sort(headF, headSecond);
+  Output(headF,headSecond);
+end;
+
+begin
+try
+  SetConsoleCP(1251);
+  SetConsoleOutPutCP(1251);
+  Main;
+  readln;
+
+except
+  begin
+    writeln('Произошла ошибка. Проверьте введенные данные.');
+    readln;
+  end;
+end;
+
+end.

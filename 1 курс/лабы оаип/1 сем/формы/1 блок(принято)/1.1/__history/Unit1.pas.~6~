@@ -1,0 +1,55 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus;
+
+type
+  TMaksim = class(TForm)
+    Text: TLabel;
+    Menu: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    Openfile1: TMenuItem;
+    Savetofile1: TMenuItem;
+    N1: TMenuItem;
+    Info1: TMenuItem;
+    Developer1: TMenuItem;
+    procedure N1Click(Sender: TObject);
+    procedure Info1Click(Sender: TObject);
+    procedure Developer1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Maksim: TMaksim;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMaksim.Developer1Click(Sender: TObject);
+begin
+    MessageDlg('Developer: Maksim Gladkiy', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.Info1Click(Sender: TObject);
+begin
+    MessageDlg('This program defines the day of week by entering numbers 1..7', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.N1Click(Sender: TObject);
+var
+   ButtonSelected: Byte;
+begin
+   ButtonSelected := MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes,mbNo], 0);
+   if ButtonSelected = mrYes then
+      Close;
+end;
+
+end.

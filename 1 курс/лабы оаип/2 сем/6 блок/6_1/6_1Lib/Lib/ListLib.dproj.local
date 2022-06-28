@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.913,=C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019.04.28 08:07:40.344,C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\ListLib.dproj=C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019.04.28 08:08:03.314,D:\Проги\Блок 6\6_3\6_1\6_1Lib\6.1\Lib\ListLib.dproj=C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\ListLib.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

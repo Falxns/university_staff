@@ -1,0 +1,595 @@
+<!-- (C) 2010 Nesterenkov Sergey, BSUIR -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU">
+<HTML>
+<HEAD>
+<LINK rel=stylesheet href="../Оболочка/css/style.css" type=text/css>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<META HTTP-EQUIV="Content-Language" CONTENT="ru">
+<title>Программа дисциплины "Тестирование веб-ориентированных приложений"</title>
+<base target="_top">
+</HEAD><BODY onMouseMove="tryShow()">
+
+<!--MENUSTART (don`t forget to set onMouseMove="tryShow()" in BODY!)-->
+<STYLE>
+.TABLE{
+Width:            600px;                    /*Ширина меню в пикселах*/
+Font-family:      Tahoma, Verdana, sans-serif;          /*Шрифт*/
+Font-size:        14;                     /*Размер шрифта в пунктах*/
+Border-right:     #808080 transparent 0px;  /*Рамка*/
+Border-bottom:    #808080 transparent 0px;
+Border-left:      #808080 solid 1px;
+Border-top:       #808080 solid 1px;
+Filter:           Alpha(opacity=90,style=0);/*Непрозрачность меню в процентах*/
+}
+A {
+	color: #6495ED;
+	text-decoration: none;
+}
+
+A:HOVER {
+	color: #115ADB;
+	text-decoration: underline;
+}
+var {text-align: right; text-transform: none; font-family: Tahoma, Verdana, sans-serif;  color: #FFFAFA;   margin-top: 0; 	font: normal;  font-style: normal;  font-size: 90%; font-variant: normal;  font-weight: normal;    }
+.black { margin-left: 10px;  color: Black;   }
+.hvr{
+background-color: #FFFBFB;                  /*Цвет фона активного пункта меню*/
+Color:            #000000;                  /*Цвет текста активного пункта меню*/
+Border-top:       #808080 transparent 0px;  /*Рамка*/
+Border-left:      #808080 transparent 0px;
+Border-right:     #808080 solid 1px;
+Border-bottom:    #808080 solid 1px;
+Cursor:           hand;                     /*Курсор*/
+Text-indent:      10px;                     /*Отступ от края таблицы*/
+}
+.out{
+background-color: #E0E0E0;                  /*Цвет фона неактивного пункта меню*/
+Color:            #000000;                  /*Цвет текста неактивного пункта меню*/
+Border-top:       #808080 transparent 0px;  /*Рамка*/
+Border-left:      #808080 transparent 0px;
+Border-right:     #808080 solid 1px;
+Border-bottom:    #808080 solid 1px;
+Cursor:           hand;                     /*Курсор*/
+Text-indent:      10px;                     /*Отступ от края таблицы*/
+}
+SMALL{
+Text-indent:      7px;
+Font-size:        9pt;
+Color:            #A0A0A0;
+}
+
+</STYLE>
+<SCRIPT Language="JavaScript">
+<!--
+//Положение
+function tryShow()
+{if ((content.style.visibility == "hidden") &&
+(event.x < 10)
+)
+{ content.style.left = event.offsetX + 5;
+content.style.top = event.offsetY - 25;
+showcont();
+}
+}
+//Появление оглавления
+function showcont(){
+content.style.visibility = "visible";
+}
+//Исчезновение
+function hidecont(){
+content.style.visibility = "hidden";
+}
+//-->
+</SCRIPT>
+
+<DIV Id="content" Style="visibility:hidden; position:absolute;">
+<TABLE CellPadding="0" CellSpacing="0" border="0" onMouseOver="showcont()" onMouseOut="hidecont()" Width="600" Class="table">
+<TBODY>
+<TR><TD onMouseOver="this.className='hvr'" onMouseOut= "this.className='out'" Class="out"><B>Содержание ЭУМК</B></TR>
+<TR><TD onMouseOver="this.className='hvr'" onMouseOut= "this.className='out'" Class="out"><B>Перейти:</B>&nbsp;<CENTER><A HREF="index.htm"><IMG SRC="./Теория/images/eumk_contents.gif" ALT="Оглавление ЭУМК (эта страница)" BORDER=0 WIDTH=20 HEIGHT=20></A>&nbsp;<A HREF="../Программа/index.htm"><IMG SRC="./Теория/images/program.gif" ALT="Перейти к программе дисциплины" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Теория/index.htm"><IMG SRC="./Теория/images/theory.gif" ALT="Перейти к теоретическим материалам" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Практика/index.htm"><IMG SRC="./Теория/images/prakt.gif" ALT="Перейти к материалам для практических/лабораторных занятий" BORDER=0 WIDTH=75 HEIGHT=20></A><A HREF="./Контроль_знаний/index.htm"><IMG SRC="./Теория/images/control.gif" ALT="Перейти к разделу проверки знаний" BORDER=0 WIDTH=75 HEIGHT=20></A>&nbsp;<A HREF="./Программа/help.htm"><IMG SRC="./Теория/images/help.gif" ALT="Перейти к разделу помощи и информации о продукте" BORDER=0 WIDTH=20 HEIGHT=20></A></TR>
+</TBODY>
+</TABLE></DIV>
+<!--MENUEND-->
+<table width="100%" border="0" cellpadding="0" cellspacing="3" background="../Оболочка/images/background.jpg">
+  <tr> 
+    <td width="13%" rowspan=3 align="center" ><img src="../Оболочка/images/logo_left.png" width=117 height=97 align="middle"></td>
+  <tr> 
+    <td width="70%" colspan=2 align="center" valign="middle"> <H1 align="center" >электронный 
+        учебно-методический комплекс по дисциплине<BR>
+        "ТЕСТИРОВАНИЕ ВЕБ-ОРИЕНТИРОВАННЫХ ПРИЛОЖЕНИЙ"<BR> для специальности: </H1>
+	  1-40 01 01 «Программное обеспечение информационных технологий».
+    </td>
+    <td width="12%" rowspan=3 align="center" >&nbsp;</td>
+  <Tr>
+    <td align=center colspan=2><var class="normal"><A HREF="../index.htm">Оглавление</A> | <B>Программа</B> | <A HREF="../Теория/index.htm">Теория</A> | <A HREF="../Практика/index.htm">Практика</A> | <A HREF="../Контроль_знаний/index.htm">Контроль знаний</A> | <A HREF="../Об авторах/index.htm">Об авторах</A></var></var> </td>
+  <tr>
+</table>
+<P class="margined"><FONT SIZE=4><CENTER>
+</CENTER>
+</FONT>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<p align="center"><a href="content/rp/index.htm" target="_new">Полный вариант рабочей программы (откроется в новом окне).</a><br />
+
+
+
+
+  <br /><br /><br />
+  Краткий вариант программы:<br /><br /><br />
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>ПОЯСНИТЕЛЬНАЯ ЗАПИСКА</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><b><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>Цель преподавания дисциплины. </span><span
+  style='color:windowtext;font-weight:normal'>Формирование устойчивых
+  теоретических знаний и практических навыков в области обеспечения качества <span
+  class=GramE>интернет-ориентированных</span> приложений; формирование навыков
+  использования средств автоматизированного тестировании
+  интернет-ориентированных приложений и программных продуктов, реализующих
+  управление процессом обеспечения качества интернет-ориентированных приложений.<o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><b><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>Задачи изучения дисциплины.</span><span
+  style='color:windowtext;font-weight:normal'> Применение навыков тестирования
+  веб-ориентированных приложений в учебном и производственном процессе;&nbsp;
+  формирование необходимой базы знаний и навыков для последующей эффективной
+  работы на предприятиях отрасли.<o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>В
+  результате изучения курса студент должен:</span><span lang=EN-US
+  style='color:windowtext;mso-ansi-language:EN-US'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><b><span lang=RU
+  style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>знать:</span><span
+  style='color:windowtext;layout-grid-mode:both;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>основные понятия обеспечения качества
+  программных средств, функционирующих в <span class=SpellE>распределенной</span>
+  информационной среде;</span><span style='color:windowtext;layout-grid-mode:
+  both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>принципы анализа и тестирования
+  проектной и продуктной документации;</span><span style='color:windowtext;
+  layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>принципы проектирования и разработки
+  тестовых случаев и тестовых сценариев;</span><span style='color:windowtext;
+  layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>процесс выполнения тестовых случаев и
+  документирования обнаруженных дефектов;</span><span style='color:windowtext;
+  layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>принципы автоматизации тестирования <span
+  class=GramE>интернет-ориентированных</span> приложений.</span><span
+  style='color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><b><span lang=RU
+  style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>уметь:</span><span
+  style='color:windowtext;layout-grid-mode:both;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>проводить анализ технической
+  документации, обнаруживать и исправлять дефекты в документации такого рода;</span><span
+  style='color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>проектировать, разрабатывать и
+  выполнять тестовые случаи и тестовые сценарии;</span><span style='color:windowtext;
+  layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>документировать обнаруженные дефекты,
+  управлять жизненным циклом отчётов об обнаруженных дефектах;</span><span
+  style='color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='margin-left:36.0pt;text-indent:-18.0pt'><span
+  lang=RU style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>-</span><span
+  style='font-size:7.0pt;color:windowtext'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='color:windowtext'>использовать средства автоматизации
+  тестирования <span class=GramE>интернет-ориентированных</span> приложений.</span><span
+  style='color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;layout-grid-mode:both'>&nbsp;<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>ПЕРЕЧЕНЬ ТЕМ ЛАБОРАТОРНЫХ
+  ЗАНЯТИЙ, </span><span style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>ИХ НАИМЕНОВАНИЕ И ОБЪЕМ В ЧАСАХ</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=803
+   style='width:170.0mm;margin-left:5.4pt;border-collapse:collapse;mso-yfti-tbllook:
+   1184;mso-padding-alt:0mm 0mm 0mm 0mm'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>№ <span
+    class=SpellE>пп</span></span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border:solid windowtext 1.0pt;
+    border-left:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>Название
+    темы</span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>Содержание</span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border:solid windowtext 1.0pt;
+    border-left:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>Объем
+    в часах</span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>1</span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>2</span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>3</span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>4</span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>1.</span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Анализ и тестирование требований к <span
+    class=GramE>интернет-магазину</span>.</span><span style='font-size:12.0pt;
+    color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>Исследование, анализ и
+    повышение качества требований к <span class=GramE>интернет-магазину</span>.</span><span
+    style='font-size:12.0pt;color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>4</span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>2.</span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Поиск и документирование дефектов в отдельном
+    модуле <span class=GramE>интернет-ориентированного</span> приложения.</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>Использование тестовых случаев
+    для поиска и документирования дефектов в произвольно выбранном модуле <span
+    class=GramE>интернет-ориентированного</span> магазина.</span><span
+    style='font-size:12.0pt;color:windowtext;layout-grid-mode:both'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>4</span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:4'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>3.</span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Поиск и документирование дефектов в
+    администраторской части <span class=GramE>интернет-ориентированного</span>
+    приложения.</span><span style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU;layout-grid-mode:line'><span style='color:windowtext'>Применение тестовых случаев
+    для поиска и документирования дефектов в </span><span style='color:windowtext;
+    layout-grid-mode:both'>администраторской части <span class=GramE>интернет-ориентированного</span>
+    приложения.</span><span style='font-size:12.0pt;color:windowtext;
+    layout-grid-mode:both'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>4</span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:5'>
+    <td width=83 valign=top style='width:49.65pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>4.</span></span></p>
+    </td>
+    <td width=236 valign=top style='width:50.0mm;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Автоматизация тестирования безопасности <span
+    class=GramE>интернет-ориентированного</span> приложения.</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=354 valign=top style='width:212.6pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Автоматизация тестирования безопасности <span
+    class=GramE>интернет-ориентированного</span> приложения с применением
+    произвольного бесплатного средства автоматизации.</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>4</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:6;page-break-inside:avoid'>
+    <td width=673 colspan=3 valign=top style='width:404.0pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Итого: 9 семестр</span><span style='font-size:
+    12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>16</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;page-break-inside:avoid'>
+    <td width=673 colspan=3 valign=top style='width:404.0pt;border:solid windowtext 1.0pt;
+    border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent><span lang=RU style='font-size:10.0pt;
+    mso-ansi-language:RU'><span
+    style='color:windowtext'>Всего за учебный год</span><span style='font-size:
+    12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+    <td width=130 valign=top style='width:77.95pt;border-top:none;border-left:
+    none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+    padding:0mm 5.4pt 0mm 5.4pt'>
+    <p class=MsoBodyTextIndent align=center style='text-align:center'><span
+    lang=RU style='font-size:10.0pt;mso-ansi-language:RU'><span style='color:windowtext'>16</span><span
+    style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoBodyTextIndent><span lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent><span lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;<o:p></o:p></span></span></p>
+  <h3 align=center style='text-align:center'><span lang=RU style='font-size:
+  14.0pt;mso-fareast-font-family:"Times New Roman";mso-ansi-language:RU'><span style='color:windowtext'>ЛИТЕРАТУРА</span><span
+  style='font-size:13.5pt;color:windowtext'><o:p></o:p></span></span></h3>
+  <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+  lang=RU style='font-size:14.0pt;mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='font-size:12.0pt;color:windowtext'><o:p></o:p></span></span></p>
+  <h6 align=center style='text-align:center'><span lang=RU style='mso-fareast-font-family:
+  "Times New Roman";text-transform:uppercase;mso-ansi-language:RU'><span style='color:windowtext'>Основная</span><span
+  style='color:windowtext;text-transform:none'><o:p></o:p></span></span></h6>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>1. Савин, Р. Тестирование Дот Ком, или Пособие по <span
+  class=SpellE>жесткому</span> обращению с багами в интернет-стартапах / Р.
+  Савин. - М.<span class=GramE> :</span> Дело, 2007.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>2.&nbsp; Блэк, Р. Ключевые процессы тестирования /
+  Р. Блэк. - М.<span class=GramE> :</span> </span><span lang=EN-US
+  style='color:windowtext;mso-ansi-language:EN-US'>BHV</span><span
+  style='color:windowtext'>, 2008. <o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>3. <span class=SpellE>Тамрэ</span>, Л. Введение в
+  тестирование программного обеспечения
+  /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Л. <span
+  class=SpellE>Тамрэ</span>. - М.<span class=GramE> :</span> <span
+  class=SpellE>Издат</span>. дом <Вильямс>, 2005.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>4. Бек, К. Экстремальное программирование<span
+  class=GramE> :</span> разработка через тестирование / К. Бек. - СПб<span
+  class=GramE>. : </span>Питер, 2005.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>5. Бейзер, Б. Тестирование <span class=SpellE>черного</span>
+  ящика. Технологии функционального тестирования ПО / Б. Бейзер. - СПб<span
+  class=GramE>. : </span>Питер, 2006.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='text-transform:uppercase;mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;text-transform:none;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <h6 align=center style='text-align:center'><span lang=RU style='mso-fareast-font-family:
+  "Times New Roman";text-transform:uppercase;mso-ansi-language:RU'><span style='color:windowtext'>Дополнительная</span><span
+  style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+  color:windowtext;text-transform:none'><o:p></o:p></span></span></h6>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>1. <span class=SpellE>Дастин</span>, Э.
+  Автоматизированное тестирование программного обеспечения / Э. <span
+  class=SpellE>Дастин</span>. - М.<span class=GramE> :</span> Лори, 2005.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>2. <span class=SpellE>Стотлемайер</span>, Д. </span><span
+  style='font-size:13.5pt;color:windowtext'>Тестирование Web-приложений /</span><span
+  style='color:windowtext'> </span><span style='font-size:13.5pt;color:windowtext'>Д.
+  <span class=SpellE>Стотлемайер</span>. - М.<span class=GramE> :</span></span><span
+  style='color:windowtext'> <span class=SpellE>Кудиц</span>-образ, 2003.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>3. Ауэр, К. Экстремальное программирование<span
+  class=GramE> :</span> постановка процесса /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; К.
+  Ауэр. - СПб<span class=GramE>. : </span>Питер, 2004.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>4. <span class=SpellE>Макгрегор</span>, Д.
+  Тестирование объектно-ориентированного программного обеспечения. Практическое
+  пособие / Д. <span class=SpellE>Макгрегор</span>. - М.<span class=GramE> :</span>
+  <span class=SpellE>Диасофт</span>, 2005.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>5. <span class=SpellE>Роббинс</span>, Д. Отладка
+  приложений / Д. <span class=SpellE>Роббинс</span>. - М.<span class=GramE> :</span>&nbsp;
+  BHV, 2002.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:35.45pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>&nbsp;<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center'><b><span
+  lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>ПЕРЕЧЕНЬ КОМПЬЮТЕРНЫХ ПРОГРАММ,
+  НАГЛЯДНЫХ И ДРУГИХ ПОСОБИЙ, МЕТОДИЧЕСКИХ УКАЗАНИЙ И МАТЕРИАЛОВ И ТЕХНИЧЕСКИХ
+  СРЕДСТВ&nbsp; ОБУЧЕНИЯ</span><span style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent><b><span lang=RU style='mso-ansi-language:RU'><span style='color:windowtext'>&nbsp;</span><span
+  style='color:windowtext;font-weight:normal'><o:p></o:p></span></span></b></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>1. Операционные системы: MS-Windows XP, MS-Windows
+  Vista, Fedora Core, <span class=SpellE>Mandriva</span>, FreeBSD. <o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>2. Системы управления базами данных: MySQL, <span
+  class=SpellE>PostgreSQL</span>, Oracle, DB2, Informix.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>3. Среды разработки на языках программирования: C++,
+  C#, ASP.NET, Java, PHP.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>4. Веб-серверы: Apache, IIS. <o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>5. Средства автоматизации тестирования: <span
+  class=SpellE>OpenQA</span> Selenium, <span class=SpellE>AutomatedQA</span>,
+  Test Complete, Compuware <span class=SpellE>TestPartner</span>, <span
+  class=SpellE>Empirix</span> <span class=SpellE>ePartner</span>, <span
+  class=SpellE>HTTPUnit</span>, JUnit, <span class=SpellE>NUnit</span>, Mercury
+  Interactive <span class=SpellE>WinRunner</span>, Mercury <span class=SpellE>QuickTest</span>
+  Pro, Microsoft Test Services, Rational Robot, Rational <span class=SpellE>JRobot</span>,
+  Rational <span class=SpellE>TeamTest</span>, Rational XDE Tester, Borland SilkTest,
+  Rational XDE Tester.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>6. Средства виртуализации: <span class=SpellE>VMWare</span>,
+  <span class=SpellE>Virtual</span> PC.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>7. Средства нагрузочного тестирования: НP <span
+  class=SpellE>Loadrunner</span>, <span class=SpellE>SilkPerformer</span>,
+  Apache <span class=SpellE>Jmeter</span>, <span class=SpellE>TestMaker</span>,
+  <span class=SpellE>TheGrinder</span>.<o:p></o:p></span></span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span style='color:windowtext'>8. </span><span
+  lang=RU style='color:windowtext;mso-ansi-language:RU'>Системы</span><span
+  lang=RU style='color:windowtext'> </span><span lang=RU style='color:windowtext;
+  mso-ansi-language:RU'>управления</span><span lang=RU style='color:windowtext'>
+  </span><span lang=RU style='color:windowtext;mso-ansi-language:RU'>жизненным</span><span
+  lang=RU style='color:windowtext'> </span><span lang=RU style='color:windowtext;
+  mso-ansi-language:RU'>циклом</span><span lang=RU style='color:windowtext'> </span><span
+  class=SpellE><span lang=RU style='color:windowtext;mso-ansi-language:RU'>отчетов</span></span><span
+  lang=RU style='color:windowtext'> </span><span lang=RU style='color:windowtext;
+  mso-ansi-language:RU'>о</span><span lang=RU style='color:windowtext'> </span><span
+  lang=RU style='color:windowtext;mso-ansi-language:RU'>дефектах</span><span
+  style='color:windowtext'>: Rational Clear Quest, <span class=SpellE>Jira</span>,
+  <span class=SpellE>Bugzilla</span>, Test Director.</span></p>
+  <p class=MsoBodyTextIndent style='text-indent:36.0pt'><span lang=RU
+  style='mso-ansi-language:RU'><span
+  style='color:windowtext'>9. Раздаточный материал (презентации и видеоролики)
+  по дисциплине.<o:p></o:p></span></span></p>
+  <b><span lang=RU style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  mso-fareast-font-family:"Times New Roman";mso-ansi-language:RU;mso-fareast-language:
+  EN-US;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:
+  line-break;page-break-before:always'>
+  </span></b></td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='mso-bookmark:bottom'><span style='mso-fareast-font-family:
+"Times New Roman"'>&nbsp;</span></span><span style='mso-bookmark:bottom'></span><span
+style='mso-fareast-font-family:"Times New Roman";color:windowtext;mso-ansi-language:
+RU'> <span lang=RU><o:p></o:p></span></span></p>
+
+
+<a name="bottom">&nbsp;</a>
+<table width="100%" height=25px border="0" cellpadding="0" cellspacing="3" bordercolor="#316AC5" background="../Оболочка/images/background.jpg">
+  <tr >
+  <td align=center><var><B>(С)  БГУИР</var></td>
+  </tr>
+</table>
+</BODY></HTML>

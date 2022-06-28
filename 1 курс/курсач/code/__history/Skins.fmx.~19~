@@ -1,0 +1,85 @@
+object SkinsF: TSkinsF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Skins'
+  ClientHeight = 200
+  ClientWidth = 300
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object FirstChoice: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.Y = 135.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Choose'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+  end
+  object SecChoice: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 100.000000000000000000
+    Position.Y = 135.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Choose'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+  end
+  object ThirdChoice: TButton
+    StyledSettings = [Family]
+    PopupMenu = MainF.BlankPop
+    Position.X = 200.000000000000000000
+    Position.Y = 135.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Choose'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claOrangered
+  end
+  object Canon1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    PopupMenu = MainF.BlankPop
+    Size.Width = 100.000000000000000000
+    Size.Height = 135.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Canon2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    PopupMenu = MainF.BlankPop
+    Position.X = 100.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 135.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Canon3: TImage
+    MultiResBitmap = <
+      item
+      end>
+    PopupMenu = MainF.BlankPop
+    Position.X = 200.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 135.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

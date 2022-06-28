@@ -1,0 +1,4 @@
+ToolSet: w64 6.0 (local)@D:\Programs\CLion 2019.2.1\MinGW x64\mingw32
+Options: 
+
+Options:

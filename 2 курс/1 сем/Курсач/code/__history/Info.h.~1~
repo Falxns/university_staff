@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+#ifndef InfoH
+#define InfoH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+//---------------------------------------------------------------------------
+class TInfoF : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TInfoF(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TInfoF *InfoF;
+//---------------------------------------------------------------------------
+#endif

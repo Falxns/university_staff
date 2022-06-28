@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Lab2" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MY_AND3 - Struct D:|7sem|POCP|Lab2|Lab2|MY_AND3.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>mux_4x2 - struct (C:/Users/maksf/Desktop/POCP/Lab2/Lab2/mux_4x2.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000137000000020000000000000000000000000200000064ffffffff000000810000000300000002000001370000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>mux_4x2 - struct (C:/Users/maksf/Desktop/POCP/Lab2/Lab2/mux_4x2.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000182000000010000000100000000000000000000000064ffffffff000000810000000000000001000001820000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002e80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000182000000010000000100000000000000000000000064ffffffff000000810000000000000001000001820000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001880000009701000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MY_AND3 - Struct D:|7sem|POCP|Lab2|Lab2|MY_AND3.vhd</ClosedNode>
+         <ClosedNode>/MY_AND5 - Struct D:|7sem|POCP|Lab2|Lab2|AND5.vhd</ClosedNode>
+         <ClosedNode>/MY_MUX - Struct D:|7sem|POCP|Lab2|Lab2|MY_MUX_1.vhd</ClosedNode>
+         <ClosedNode>/MY_SCHEMA_V14 - Struct C:|Users|maksf|Desktop|POCP|Lab2|Lab2|MY_SCHEMA_V14.vhd</ClosedNode>
+         <ClosedNode>/MY_SCHEMA_V14 - Struct D:|7sem|POCP|Lab2|Lab2|MY_SCHEMA_V14.vhd</ClosedNode>
+         <ClosedNode>/TB_AND5 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_AND5.vhd</ClosedNode>
+         <ClosedNode>/TB_AND5 - behavior D:|7sem|POCP|Lab2|Lab2|TB_AND5.vhd</ClosedNode>
+         <ClosedNode>/TB_DMUX - behavior D:|7sem|POCP|Lab2|Lab2|TB_DMUX.vhd</ClosedNode>
+         <ClosedNode>/TB_MY_AND3 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_MY_AND3.vhd</ClosedNode>
+         <ClosedNode>/TB_MY_AND3 - behavior D:|7sem|POCP|Lab2|Lab2|TB_MY_AND3.vhd</ClosedNode>
+         <ClosedNode>/TB_MY_DECODER - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_MY_DECODER.vhd/uut_str - MY_DECODER - Struct</ClosedNode>
+         <ClosedNode>/TB_MY_MUX - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_MY_MUX.vhd</ClosedNode>
+         <ClosedNode>/TB_MY_MUX - behavior D:|7sem|POCP|Lab2|Lab2|TB_MY_MUX.vhd</ClosedNode>
+         <ClosedNode>/TB_MY_SUM2 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_MY_SUM2.vhd</ClosedNode>
+         <ClosedNode>/TB_and_3 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_and_3.vhd</ClosedNode>
+         <ClosedNode>/TB_and_5 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_and_5.vhd</ClosedNode>
+         <ClosedNode>/TB_decoder - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_decoder.vhd</ClosedNode>
+         <ClosedNode>/TB_demux_1x4 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_demux_1x4.vhd</ClosedNode>
+         <ClosedNode>/TB_mux - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_mux.vhd</ClosedNode>
+         <ClosedNode>/TB_mux_4x2 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_mux_4x2.vhd</ClosedNode>
+         <ClosedNode>/TB_or_3 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_or_3.vhd</ClosedNode>
+         <ClosedNode>/TB_sum_1 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_sum_1.vhd</ClosedNode>
+         <ClosedNode>/TB_sum_2 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_sum_2.vhd</ClosedNode>
+         <ClosedNode>/TB_var_3 - behavior C:|Users|maksf|Desktop|POCP|Lab2|Lab2|TB_var_3.vhd</ClosedNode>
+         <ClosedNode>/mux_4x2 - struct C:|Users|maksf|Desktop|POCP|Lab2|Lab2|mux_4x2.vhd</ClosedNode>
+         <ClosedNode>/sum_1 - struct C:|Users|maksf|Desktop|POCP|Lab2|Lab2|components.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>TB_sum_1 - behavior (C:/Users/maksf/Desktop/POCP/Lab2/Lab2/TB_sum_1.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000182000000010000000100000000000000000000000064ffffffff000000810000000000000001000001820000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000182000000010000000100000000000000000000000064ffffffff000000810000000000000001000001820000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TB_MY_MUX - behavior D:|7sem|POCP|Lab2|Lab2|TB_MY_MUX.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000125000000020000000000000000000000000200000064ffffffff000000810000000300000002000001250000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut_beh - MY_MUX - Behavioral</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000125000000020000000000000000000000000200000064ffffffff000000810000000300000002000001250000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>uut_beh - MY_MUX - Behavioral</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostMapSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

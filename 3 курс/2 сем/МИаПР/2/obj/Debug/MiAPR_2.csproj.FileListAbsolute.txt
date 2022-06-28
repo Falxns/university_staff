@@ -1,0 +1,9 @@
+E:\Лабы\МиАПР\MiAPR_2\bin\Debug\MiAPR_2.exe.config
+E:\Лабы\МиАПР\MiAPR_2\bin\Debug\MiAPR_2.exe
+E:\Лабы\МиАПР\MiAPR_2\bin\Debug\MiAPR_2.pdb
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.csprojResolveAssemblyReference.cache
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.Form1.resources
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.Properties.Resources.resources
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.csproj.GenerateResource.Cache
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.exe
+E:\Лабы\МиАПР\MiAPR_2\obj\Debug\MiAPR_2.pdb

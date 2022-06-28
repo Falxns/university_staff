@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.716,=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.930,=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.740,D:\Work\курсач\code\Unit1.pas=D:\Work\курсач\code\Queue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,D:\Work\курсач\code\Unit1.pas=D:\Work\курсач\code\Game.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.083,D:\Work\курсач\code\Game.dproj=D:\Work\курсач\code\BallBlast.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.036,=C:\Users\User\Downloads\icon.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.342,=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.575,D:\Work\курсач\code\Unit1.pas=D:\Work\курсач\code\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.921,D:\Work\курсач\code\Unit1.fmx=D:\Work\курсач\code\Shop.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.575,D:\Work\курсач\code\Unit1.fmx=D:\Work\курсач\code\Main.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,D:\Work\курсач\code\Play.fmx=D:\Work\курсач\code\Game.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.831,D:\Work\курсач\code\Play.fmx=D:\Work\курсач\code\Game.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.921,D:\Work\курсач\code\Unit1.pas=D:\Work\курсач\code\Shop.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.660,=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,D:\Work\курсач\code\Unit1.fmx=D:\Work\курсач\code\Game.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.919,D:\Work\курсач\code\Project1.dproj=D:\Work\курсач\code\Game.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,D:\Work\курсач\code\Play.pas=D:\Work\курсач\code\Game.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.831,D:\Work\курсач\code\Play.pas=D:\Work\курсач\code\Game.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.619,D:\Work\лабы оаип\projects\Unit1.fmx=D:\Work\курсач\code\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.998,=C:\Users\User\Downloads\icon (1).bmp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.736,=D:\Work\лабы оаип\projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.619,D:\Work\лабы оаип\projects\Unit1.pas=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.951,C:\Users\User\Downloads\ext.bmp=C:\Users\User\Downloads\icon (1).bmp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.212,C:\Users\User\Downloads\ext.bmp=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.127,D:\Work\лабы оаип\projects\Project1.dproj=D:\Work\курсач\code\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,D:\Work\курсач\code\Backgrounds.pas=D:\Work\курсач\code\Skins.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.186,D:\Work\курсач\code\Skins.fmx=D:\Work\курсач\code\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.074,C:\Users\User\Downloads\icon.png=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,D:\Work\курсач\code\Backgrounds.fmx=D:\Work\курсач\code\Skins.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.298,D:\Work\курсач\code\Skins.pas=D:\Work\курсач\code\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.695,D:\Work\курсач\code\Queue.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.298,D:\Work\курсач\code\Skins.fmx=D:\Work\курсач\code\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.186,D:\Work\курсач\code\Skins.pas=D:\Work\курсач\code\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

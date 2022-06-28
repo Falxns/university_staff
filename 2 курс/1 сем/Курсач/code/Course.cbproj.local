@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.697,D:\Work\Курсач\code\Unit1.fmx=D:\Work\Курсач\code\Settings.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.570,D:\Soft\Delphi Projects\Main.cpp=D:\Soft\Delphi Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.702,=D:\Soft\Delphi Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.922,D:\Soft\Delphi Projects\CoursePCH1.h=D:\Soft\Delphi Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.118,D:\Work\Курсач\code\CoursePCH1.h=D:\Soft\Delphi Projects\CoursePCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.878,D:\Work\Курсач\code\Course.cbproj=D:\Soft\Delphi Projects\Course.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.570,D:\Soft\Delphi Projects\Main.h=D:\Soft\Delphi Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.362,D:\Work\Курсач\code\Unit1.h=D:\Work\Курсач\code\Info.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.697,D:\Work\Курсач\code\Unit1.h=D:\Work\Курсач\code\Settings.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.362,D:\Work\Курсач\code\Unit1.fmx=D:\Work\Курсач\code\Info.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.362,D:\Work\Курсач\code\Unit1.cpp=D:\Work\Курсач\code\Info.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.697,D:\Work\Курсач\code\Unit1.cpp=D:\Work\Курсач\code\Settings.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.935,D:\Soft\Delphi Projects\Course.cbproj=D:\Soft\Delphi Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,D:\Work\Курсач\code\Main.h=D:\Soft\Delphi Projects\Main.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,D:\Work\Курсач\code\Main.fmx=D:\Soft\Delphi Projects\Main.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.570,D:\Soft\Delphi Projects\Main.fmx=D:\Soft\Delphi Projects\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.169,=D:\Soft\Delphi Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,D:\Work\Курсач\code\Main.cpp=D:\Soft\Delphi Projects\Main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.878,=D:\Work\Курсач\code\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.113,=D:\Work\Курсач\code\Unit1.cpp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Course.cpp"/>
+    <File Path="CoursePCH1.h"/>
+    <File Path="Info.cpp"/>
+    <File Path="Info.cpp"/>
+    <File Path="Info.fmx"/>
+    <File Path="Info.h"/>
+    <File Path="Main.cpp"/>
+    <File Path="Main.cpp"/>
+    <File Path="Main.fmx"/>
+    <File Path="Main.h"/>
+    <File Path="Settings.cpp"/>
+    <File Path="Settings.cpp"/>
+    <File Path="Settings.fmx"/>
+    <File Path="Settings.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

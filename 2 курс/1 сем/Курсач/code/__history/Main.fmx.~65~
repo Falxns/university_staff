@@ -1,0 +1,167 @@
+object MainF: TMainF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'GEOMETRY DASH'
+  ClientHeight = 500
+  ClientWidth = 600
+  Position = DesktopCenter
+  Quality = HighPerformance
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object imgMenu: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Size.Width = 600.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object imgBackgr: TImage
+    MultiResBitmap = <
+      item
+      end>
+    PopupMenu = BlankPop
+    Size.Width = 1250.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object imgLevel: TImage
+    MultiResBitmap = <
+      item
+      end>
+    PopupMenu = BlankPop
+    Position.X = 100.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnSettings: TButton
+    StyledSettings = [Style, FontColor]
+    PopupMenu = BlankPop
+    Position.X = 200.000000000000000000
+    Position.Y = 250.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'SETTINGS'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnSettingsClick
+  end
+  object BlankPop: TPopupMenu
+    Left = 600
+    Top = 448
+  end
+  object btnRight: TButton
+    StyledSettings = [Style, FontColor]
+    PopupMenu = BlankPop
+    Position.X = 500.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = '>'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 70.000000000000000000
+    OnClick = btnRightClick
+  end
+  object btnReturn: TButton
+    StyledSettings = [Style, FontColor]
+    PopupMenu = BlankPop
+    Position.X = 100.000000000000000000
+    Position.Y = 450.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'GO BACK'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnReturnClick
+  end
+  object btnGo: TButton
+    StyledSettings = [Style, FontColor]
+    PopupMenu = BlankPop
+    Position.X = 300.000000000000000000
+    Position.Y = 450.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'PLAY'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnGoClick
+  end
+  object imgPlayer: TImage
+    MultiResBitmap.Height = 750
+    MultiResBitmap.Width = 750
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 100.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object BackgrMove: TTimer
+    OnTimer = BackgrMoveTimer
+    Left = 512
+  end
+  object btnPlay: TButton
+    StyledSettings = [FontColor]
+    PopupMenu = BlankPop
+    Position.X = 200.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'PLAY'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnPlayClick
+  end
+  object Music: TMediaPlayer
+    Left = 472
+  end
+  object btnLeft: TButton
+    StyledSettings = [Style, FontColor]
+    PopupMenu = BlankPop
+    Size.Width = 100.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = '<'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 70.000000000000000000
+    OnClick = btnLeftClick
+  end
+  object btnInfo: TButton
+    StyledSettings = [Style, FontColor]
+    Position.Y = 450.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = '?'
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+  end
+  object CycleMusic: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = CycleMusicTimer
+    Left = 568
+  end
+end

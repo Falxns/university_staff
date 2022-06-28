@@ -1,0 +1,16 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Time: TTimer
+    Left = 336
+    Top = 344
+  end
+end

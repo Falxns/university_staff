@@ -1,0 +1,359 @@
+------------------------------Tags-----------------------------
+int
+float
+char
+double
+short
+byte
+bool
+int64
+string
+Temp
+Node
+Fall
+ui
+INT
+---------------------------------------------------------------
+--------------------Variables-----------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+b
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+i
+Cin     : YES
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 47
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+j
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 29
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+k
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 8
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+t
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 4
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+n
+Cin     : YES
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 3
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+mas
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 16
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+size
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 8
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+arr
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 7
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+left
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+right
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+test
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : NO
+Const   : YES
+Idle    : NO
+Rule    : NO
+Amount  : 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+test1
+Cin     : YES
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+honor
+Cin     : YES
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+tmp
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+pivot
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 3
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+maximum
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 3
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+position
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 4
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+buf
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+count
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 4
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+a
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+hmd
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+l
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+b
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+d
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : YES
+Rule    : NO
+Amount  : 0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+counter
+Cin     : NO
+Cout    : NO
+Defined : YES
+Updated : YES
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 4
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+iter
+Cin     : NO
+Cout    : NO
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : NO
+Rule    : YES
+Amount  : 1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+abc
+Cin     : NO
+Cout    : YES
+Defined : NO
+Updated : NO
+Const   : NO
+Idle    : NO
+Rule    : NO
+Amount  : 1
+Number of different vars: 28
+===========================================================================
+Spen: 150
+b  :  0
+i  :  47
+j  :  29
+k  :  8
+t  :  4
+n  :  3
+mas  :  16
+size  :  8
+arr  :  7
+left  :  0
+right  :  0
+test  :  1
+test1  :  2
+honor  :  1
+tmp  :  2
+pivot  :  3
+maximum  :  3
+position  :  4
+buf  :  2
+count  :  4
+a  :  0
+hmd  :  0
+l  :  0
+b  :  0
+d  :  0
+counter  :  4
+iter  :  1
+abc  :  1
+
+===========================================================================
+Full Chepyn metric Q: 52
+---------------------------------------------------------------------------
+P: test1,  honor,  
+Number of P metrics: 2
+---------------------------------------------------------------------------
+M: n,   test,   tmp,   position,   buf,   
+Number of M metrics: 5
+---------------------------------------------------------------------------
+C: i,   j,   k,   t,   mas,   size,   arr,   pivot,   maximum,   count,   counter,   iter,   
+Number of C metrics: 12
+---------------------------------------------------------------------------
+T: b,  left,  right,  a,  hmd,  l,  b,  d,  abc,  
+Number of T metrics: 9
+===========================================================================
+===========================================================================
+IO Chepyn metric Q: 7
+---------------------------------------------------------------------------
+P: test1,  honor,  
+Number of P metrics: 2
+---------------------------------------------------------------------------
+M: n,   
+Number of M metrics: 1
+---------------------------------------------------------------------------
+C: i,   
+Number of C metrics: 1
+---------------------------------------------------------------------------
+T: abc,  
+Number of T metrics: 1
+===========================================================================

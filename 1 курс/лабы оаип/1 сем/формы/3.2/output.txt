@@ -1,0 +1,2 @@
+Sequence number is: 2
+Set itself is: 12

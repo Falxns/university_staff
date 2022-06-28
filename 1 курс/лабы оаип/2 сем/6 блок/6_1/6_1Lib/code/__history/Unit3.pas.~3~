@@ -1,0 +1,105 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.Grids, Vcl.StdCtrls;
+
+type
+  TSortF = class(TForm)
+    SGR: TStringGrid;
+    SortMenu: TMainMenu;
+    Help: TMenuItem;
+    Close: TButton;
+    procedure HelpClick(Sender: TObject);
+    procedure CloseClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  SortF: TSortF;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2, Unit1;
+
+procedure TSortF.CloseClick(Sender: TObject);
+begin
+    MainForm.Visible := true;
+end;
+
+procedure TSortF.FormShow(Sender: TObject);
+var
+    NewArr, Sorted: TBaseProd;
+    i, j, LeftF, Right, Size: Byte;
+    Temp: TProduct;
+begin
+    with SGR as TStringGrid do
+    begin
+        RowCount := 1;
+        Cells[0, 0] := 'Product title';
+        Cells[1, 0] := 'Sort';
+        Cells[2, 0] := 'Price';
+        Cells[3, 0] := 'Date of delivery';
+    end;
+    with MainForm as TMainForm do
+    begin
+        Size := High(ProdList);
+        Left := Size;
+        Right := Size;
+        SetLength(NewArr, Size * 2 + 1);
+        NewArr[Size] := ProdList[0];
+        for i := 1 to Size do
+        begin
+            Temp := ProdList[i];
+            if Temp.Title[1] >= ProdList[0].Title[1] then
+            begin
+                Inc(Right);
+                j := Right;
+                while Temp.Title[1] < NewArr[j - 1].Title[1] do
+                begin
+                    NewArr[j] := NewArr[j-1];
+                    Dec(j);
+                end;
+                NewArr[j] := Temp;
+            end
+            else
+            begin
+                Dec(LeftF);
+                j := LeftF;
+                while Temp.Title[1] > NewArr[j + 1].Title[1] do
+                begin
+                    NewArr[j] := NewArr[j + 1];
+                    Inc(j);
+                end;
+            end;
+            NewArr[j] := Temp;
+        end;
+        for j := 0 to Size do
+            Sorted[j] := NewArr[j + Left];
+    end;
+    with SGR as TStringGrid do
+    begin
+        for i := 0 to High(Sorted) do
+        begin
+            Cells[0, i + 1] := Sorted[i].Title;
+            Cells[1, i + 1] := Sorted[i].Sort;
+            Cells[2, i + 1] := Sorted[i].Price;
+            Cells[3, i + 1] := Sorted[i].Date;
+        end;
+    end;
+end;
+
+procedure TSortF.HelpClick(Sender: TObject);
+begin
+    MessageDlg('This page shows products of 1 sort, which were brought last month, in alphabet order.', mtInformation, [mbOk], 0);
+end;
+
+end.

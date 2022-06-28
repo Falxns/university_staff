@@ -1,0 +1,22 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  System.SysUtils;
+
+var
+    Volume,d : real;
+    i : byte;
+
+begin
+    d := 0.105;
+    Volume := 3.14*d*d*d/6;
+    for i := 2 to 12 do
+    begin
+        Volume := Volume + 3.14*d*d*d/6;
+        d := d + 0.005;
+    end;
+    writeln('The volume of balls is ', Volume:0:7 ,' liters');
+    readln;
+end.

@@ -1,0 +1,265 @@
+program Project11;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+type
+    TArr = array[1..100] of Integer;
+    TArrCount = array[1..100] of Byte;
+
+const
+    MinNumber = 1;
+    MaxNumber = 100;
+
+procedure OutputConsole(Number: Byte; MyArray: TArr);
+var
+    i: Byte;
+begin
+    Write('Your Array is: ');
+    for i := 1 to Number do
+        Write(MyArray[i],'  ');
+    Writeln;
+end;
+
+procedure ChangeArray(Number: Byte; var MyArray: TArr);
+var
+    i, j: Byte;
+    Temp: Integer;
+    ArrayofCounters: TArrCount;
+    NewArray: TArr;
+begin
+    for i := 1 to Number do
+        ArrayofCounters[i] := 1;
+    for i := 1 to Number - 1 do
+        for j := i + 1 to Number do
+            if MyArray[i] < MyArray[j] then
+                inc(ArrayofCounters[j])
+            else
+                inc(ArrayofCounters[i]);
+    NewArray := MyArray;
+    for i := 1 to Number do
+    begin
+         j := ArrayofCounters[i];
+         NewArray[j] := MyArray[i];
+         OutputConsole(Number, NewArray);
+    end;
+    MyArray := NewArray;
+end;
+
+function ChoiceInput(): Char;
+var
+    Input: Char;
+    IsCorrect: Boolean;
+begin
+    repeat
+        Readln(Input);
+        Input := UpCase(Input);
+        if (Input = 'Y')or(Input = 'N') then
+            IsCorrect := true
+        else
+        begin
+            IsCorrect := false;
+            Write('Incorrect input. Enter Y(Yes) or N(No): ');
+        end;
+    until IsCorrect;
+    ChoiceInput := Input;
+end;
+
+procedure ShowAnswerFile(var NewFile: TextFile; Answer: String);
+var
+    i, j: Byte;
+    Code: Integer;
+begin
+    val(Answer[1], j, Code);
+    if j <> 0 then
+    begin
+        Write(NewFile, 'Sequence number is: ');
+        Writeln(NewFile, Answer[1]);
+        Write(NewFile, 'Set itself is: ');
+        for i := 2 to Length(Answer) do
+            Write(NewFile, Answer[i]);
+    end
+    else
+        Writeln(NewFile, 'There is no such set.');
+end;
+
+procedure OutputFile(Answer: String);
+var
+    IsCorrect: Boolean;
+    NewFile: TextFile;
+    NameOfFile: String;
+begin
+    Write('Enter the name of file (.txt): ');
+    IsCorrect := false;
+    repeat
+        Readln(NameOfFile);
+        if (not FileExists(NameOfFile)) then
+            Write('File does not exist. Try again: ')
+        else
+        begin
+            IsCorrect := true;
+            Assign(NewFile, NameOfFile);
+            Write('Would you like to rewrite the file? Enter Y(Yes) or N(No): ');
+            if ChoiceInput = 'Y' then
+                try
+                    Rewrite(NewFile);
+                    ShowAnswerFile(NewFile, Answer);
+                except
+                    Write('Access is not allowed. Try again: ');
+                    IsCorrect:= false;
+                end
+            else
+                try
+                    Append(NewFile);
+                    ShowAnswerFile(NewFile, Answer);
+                except
+                    Write('Access is not allowed. Try again: ');
+                    IsCorrect:= false;
+                end;
+        end;
+    until IsCorrect;
+    Close(NewFile);
+end;
+
+function CheckDigit(): Integer;
+var
+    Digit: Integer;
+    IsCorrect: Boolean;
+begin
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Digit);
+            IsCorrect := true;
+        except
+            Writeln('Check entered data. Enter number from interval [', MinNumber, '..', MaxNumber, ']: ');
+        end;
+    until IsCorrect;
+    CheckDigit := Digit;
+end;
+
+function CheckNumber(): Byte;
+var
+    Num: Integer;
+    IsCorrect: Boolean;
+begin
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Num);
+            if (Num >= MinNumber) and (Num <= MaxNumber) then
+                IsCorrect := true
+            else
+                Writeln('Enter number from interval [', MinNumber, '..', MaxNumber, ']: ');
+        except
+            Writeln('Check entered data. Enter number from interval [', MinNumber, '..', MaxNumber, ']: ');
+        end;
+    until IsCorrect;
+    CheckNumber := Num;
+end;
+
+procedure GetDataConsole(var Number: Byte; var MyArray: TArr);
+var
+    i: Byte;
+begin
+    Write('Enter number of elements: ');
+    Number := CheckNumber();
+    for i := 1 to Number do
+    begin
+        Write('Enter element[', i,']: ');
+        MyArray[i] := CheckDigit();
+    end;
+end;
+
+{function CheckStringFile(var MyFile: TextFile; var Num: Byte): String;
+var
+    MyStr: String;
+    Len: Byte;
+begin
+    Readln(MyFile, MyStr);
+    Len := Length(MyStr);
+    if (Len < MinLength) or (Len > MaxLength) then
+        inc(Num);
+    CheckStringFile := MyStr;
+end;
+
+procedure ReadFromFile(var MyFile: TextFile; var Number: Byte; var ArrayofStrings: TArr);
+var
+    i, Num: Byte;
+begin
+    Reset(MyFile);
+    Number := 0;
+    Num := 0;
+    while (Number < 10)and(not Eof(MyFile)) do
+    begin
+        inc(Number);
+        ArrayofStrings[Number] := CheckStringFile(MyFile, Num);
+        Readln(MyFile);
+    end;
+    if Num <> 0 then
+    begin
+        Number := 0;
+        Writeln('Enter string with length from interval [', MinLength, '..', MaxLength, '].');
+    end;
+end;
+
+procedure GetDataFile(var Number: Byte; var ArrayofStrings: TArr);
+var
+    IsCorrect: Boolean;
+    NameOfFile: String;
+    MyFile: TextFile;
+begin
+    Write('Enter file name(.txt): ');
+    repeat
+        Readln(NameOfFile);
+        if (not FileExists(NameOfFile)) then
+        begin
+            WriteLn('File does not exist. Try again: ');
+            IsCorrect := false;
+        end
+        else
+        begin
+            AssignFile(MyFile, NameOfFile);
+            Reset(MyFile);
+            if SeekEof(MyFile) then
+            begin
+                Writeln('File is empty. Try again: ');
+                IsCorrect := false;
+            end
+            else
+            begin
+                IsCorrect := true;
+                ReadFromFile(MyFile, Number, ArrayofStrings);
+            end;
+        end;
+    until IsCorrect;
+    CloseFile(MyFile);
+end;}
+
+procedure Main();
+var
+    MyArray: TArr;
+    Number: Byte;
+begin
+    Writeln('This program sorts array by counting method.');
+    Write('Would you like to use File input instead of Console input? Enter Y(Yes) or N(No): ');
+    if ChoiceInput = 'Y' then
+        //GetDataFile(Number, MyArray)
+    else
+        GetDataConsole(Number, MyArray);
+    OutputConsole(Number, MyArray);
+    ChangeArray(Number, MyArray);
+    Write('Would you like to write down the answer to File instead of Console? Enter Y(Yes) or N(No): ');
+    if ChoiceInput = 'Y' then
+        //OutputFile(MyArray)
+    else
+        OutputConsole(Number, MyArray);
+    Writeln('Press "Enter" to exit.');
+    Readln;
+end;
+
+begin
+    Main();
+end.

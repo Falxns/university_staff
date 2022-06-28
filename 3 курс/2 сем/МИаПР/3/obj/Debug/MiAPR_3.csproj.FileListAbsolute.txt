@@ -1,0 +1,19 @@
+F:\Лабы\МиАПР\MiAPR_3\bin\Debug\MiAPR_3.exe.config
+F:\Лабы\МиАПР\MiAPR_3\bin\Debug\MiAPR_3.exe
+F:\Лабы\МиАПР\MiAPR_3\bin\Debug\MiAPR_3.pdb
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.csprojResolveAssemblyReference.cache
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.Form1.resources
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.Properties.Resources.resources
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.csproj.GenerateResource.Cache
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.exe
+F:\Лабы\МиАПР\MiAPR_3\obj\Debug\MiAPR_3.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\bin\Debug\MiAPR_3.exe.config
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\bin\Debug\MiAPR_3.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\bin\Debug\MiAPR_3.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.csprojAssemblyReference.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.Form1.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.Properties.Resources.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.csproj.GenerateResource.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.csproj.CoreCompileInputs.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\3\obj\Debug\MiAPR_3.pdb

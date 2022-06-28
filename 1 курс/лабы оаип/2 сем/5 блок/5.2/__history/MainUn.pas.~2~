@@ -1,0 +1,64 @@
+unit MainUn;
+
+interface
+
+uses
+    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+    Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls, Vcl.StdCtrls,
+    Vcl.Grids;
+
+type
+    TBoard = array [0..7] of array [0..7] of Integer;
+  TMain = class(TForm)
+    StringGrid1: TStringGrid;
+    Menu: TMainMenu;
+    BlankPopUp: TPopupMenu;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Tick: TTimer;
+    Info: TMenuItem;
+    Developer: TMenuItem;
+    Exit: TMenuItem;
+    procedure InfoClick(Sender: TObject);
+    procedure DeveloperClick(Sender: TObject);
+    procedure ExitClick(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Main: TMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMain.DeveloperClick(Sender: TObject);
+begin
+    MessageDlg('Developer: Maksim Hladki, 851001', mtInformation, [mbOk], 0);
+end;
+
+procedure TMain.ExitClick(Sender: TObject);
+begin
+    close;
+end;
+
+procedure TMain.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+var
+    ButtonSelected: Byte;
+begin
+    ButtonSelected := MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes,mbNo], 0);
+    if ButtonSelected <> mrYes then
+        CanClose := False;
+end;
+
+procedure TMain.InfoClick(Sender: TObject);
+begin
+    MessageDlg('This program is knight chess bypass. You can choose position where to start.', mtInformation, [mbOk], 0);
+end;
+
+end.

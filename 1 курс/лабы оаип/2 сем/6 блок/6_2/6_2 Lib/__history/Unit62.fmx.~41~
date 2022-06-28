@@ -1,0 +1,151 @@
+object Lab_6_2: TLab_6_2
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Maksim Gladkiy. Group: 851001'
+  ClientHeight = 385
+  ClientWidth = 800
+  Fill.Color = claLightblue
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCloseQuery = FormCloseQuery
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object AddPanel: TPanel
+    Position.Y = 280.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'panelstyle'
+    TabOrder = 0
+    object AddRight: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 0
+      Text = 'Add right'
+      OnClick = AddRightClick
+    end
+    object AddLeft: TButton
+      Position.Y = 10.000000000000000000
+      TabOrder = 1
+      Text = 'Add left'
+      OnClick = AddLeftClick
+    end
+    object Delete: TButton
+      Position.X = 496.000000000000000000
+      Position.Y = 120.000000000000000000
+      TabOrder = 2
+      Text = 'Delete'
+    end
+    object Find: TButton
+      Position.X = 160.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 4
+      Text = 'Find'
+      OnClick = FindClick
+    end
+    object Result: TLabel
+      Position.X = 10.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 745.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 752
+    Top = 16
+    object Help: TMenuItem
+      Text = 'Help'
+      object AboutTheDeveloper: TMenuItem
+        Locked = True
+        ShortCut = 16452
+        Text = 'About the developer.'
+        OnClick = AboutTheDeveloperClick
+      end
+      object AboutTheProgram: TMenuItem
+        Locked = True
+        ShortCut = 16464
+        Text = 'About the program.'
+        OnClick = AboutTheProgramClick
+      end
+      object HowToUse: TMenuItem
+        Locked = True
+        ShortCut = 16456
+        Text = 'How to use'
+        OnClick = HowToUseClick
+      end
+    end
+    object Exit: TMenuItem
+      ShortCut = 16453
+      Text = 'Exit'
+      OnClick = ExitClick
+    end
+  end
+  object PointLabel: TLabel
+    Position.X = 10.000000000000000000
+    Position.Y = 250.000000000000000000
+    Size.Width = 133.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.Height = 125
+        MultiResBitmap.Width = 301
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 301
+            Height = 125
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000012D0000007D0806000000F71A35
+              AD000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              02F549444154785EEDD94B6EE3301040C124F7BF73660C988346467628897F56
+              2DAC7D037C68D21F0000000000000000F3F97C7E8172BE9FDF0767AC300385B2
+              62B02267AD108384B25E452B71E66E324028EBB76825CEDE450607E509574586
+              06F58857058605F589574186046DE486EBC1B97CC370A02DF1BAC950A00FF1BA
+              C830A02FF13AC910600C1EEB3389168C45BC7E215A3026F17A41B4605CDEBB0E
+              88168C4FBC02D1827988D75FA205F3D93A5EA205F3DAF2B15EB4607E5BC54BB4
+              600DDB5C19450BD6B27CBC440BD6B46CBC440BD6B65CBC440BF6B0CC63BD68C1
+              5EA68F9768C19EA68D9768C1BEA67CEF122D60AA788916904C112FD1027E1A3A
+              5EA205BC32E463BD6801BF192A5EA205E41A225EA2059CD1FDBD4BB4802BBAC5
+              4BB4803B9AC74BB480129AC54BB48092AA3FD68B165043B5788916504B952BA3
+              6801B5158D976801AD1489976801ADDD8A976801BD5C7AAC172DA0B753F1122D
+              601459F14AD13A73C704E8E6112DC102A6F1F5FC024C41B480A978D302A6E2DF
+              43601439CBD3A7680123C80AD6BF1F804EB263958816D043EE3BFA7F8D122DA0
+              B5D3DB55245A402B97B7AB48B480166E6D5791680135158B55225A400D45AE82
+              47440B28ADF876158916504AB5ED2A122DA084AADB55245AC01DCD6295881670
+              4593ABE011D102CE6ABE5D45A205E4EAB65D45A205E4E8BA5D45A205BC334CAC
+              12D1028E0C71153C225AC04FC36D57916801C9B0DB55245AC0C3D0DB55245AB0
+              B76962958816EC698AABE011D182FD4CB75D45A205FB9876BB8A440BF630F576
+              158916AC6D995825A2056B5AE22A7844B4603DCB6D579168C13A96DDAE22D182
+              352CBD5D45A20573DB26568968C19CB6B80A1E112D98CF76DB55245A308F6DB7
+              AB48B4600E5B6F579168C1D8C4EA07D18231B90ABE205A301EDBD51BA205E3B0
+              5D65102D1883ED2A9321405F62759261401FAE82171908B467BBBAC160A01DB1
+              2AC080A00DC12AC490A08D77D1720E4FF87A7E813E04EB24038376E2B6E5EC01
+              0000000000000000000000000000000000C0763E3EFE00BF3563677CC8869D00
+              00000049454E44AE426082}
+            FileName = 'C:\Users\'#1040#1083#1077#1082#1089#1077#1081'\Pictures\pointer.bmp'
+          end>
+        Name = 'pointer'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'pointer'
+            SourceRect.Right = 301.000000000000000000
+            SourceRect.Bottom = 125.000000000000000000
+          end>
+      end>
+    Left = 952
+    Top = 8
+  end
+end

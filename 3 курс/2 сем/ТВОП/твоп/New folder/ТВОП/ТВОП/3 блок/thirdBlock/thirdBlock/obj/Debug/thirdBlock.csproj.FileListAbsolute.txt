@@ -1,0 +1,6 @@
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojResolveAssemblyReference.cache
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb

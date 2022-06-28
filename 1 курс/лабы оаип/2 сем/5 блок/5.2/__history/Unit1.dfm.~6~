@@ -1,0 +1,76 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 581
+  ClientWidth = 735
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PopupMenu = BlankPopUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StringGrid1: TStringGrid
+    Left = 96
+    Top = 64
+    Width = 320
+    Height = 120
+    PopupMenu = BlankPopUp
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 192
+    Top = 384
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    PopupMenu = BlankPopUp
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 376
+    Top = 392
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    PopupMenu = BlankPopUp
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 456
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    PopupMenu = BlankPopUp
+    TabOrder = 3
+  end
+  object Menu: TMainMenu
+    Left = 80
+    Top = 496
+    object Info: TMenuItem
+      Caption = 'Info'
+      OnClick = InfoClick
+    end
+    object Developer: TMenuItem
+      Caption = 'Developer'
+      OnClick = DeveloperClick
+    end
+    object Exit: TMenuItem
+      Caption = 'Exit'
+    end
+  end
+  object BlankPopUp: TPopupMenu
+    Left = 216
+    Top = 504
+  end
+  object Tick: TTimer
+    Left = 384
+    Top = 472
+  end
+end

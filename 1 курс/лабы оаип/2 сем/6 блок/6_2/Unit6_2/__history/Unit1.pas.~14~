@@ -1,0 +1,123 @@
+unit Unit1;
+
+interface
+
+uses
+   FMX.Forms,FMX.StdCtrls, FMX.Objects, System.UITypes,System.SysUtils, FMX.Graphics, System.Types;
+
+   procedure AddL;
+   procedure Start(Width: Single);
+   procedure CirDraw(Form: TForm);
+   procedure AddR;
+   procedure DrawL(Form: TForm);
+
+type
+   PTree = ^Tree;
+
+   Tree = record
+      Num, LeftCount, RightCount: Byte;
+      Up: PTree;
+      Left: PTree;
+      Right: PTree;
+   end;
+
+var
+   ArrC: array [1..63] of TCircle;
+   Root, PTemp: PTree;
+   Count, Step, Buffer: Integer;
+   Element, k: Byte;
+   IsRight: Boolean;
+   Values: array [1..63] of Byte;
+
+const
+   Wid = 20;
+   down = 40;
+
+implementation
+
+procedure AddR;
+begin
+   New(PTemp^.Right);
+   PTemp^.Right^.Up := PTemp;
+   PTemp := PTemp^.Right;
+   IsRight := True;
+end;
+
+procedure DrawL(Form: TForm);
+var
+   Brush: TStrokeBrush;
+begin
+   Brush := TStrokeBrush.Create(TBrushKind.Solid, TAlphaColorRec.Black);
+   Brush.Thickness := 1;
+   with Form, Canvas do
+   begin
+      BeginScene;
+      if not (IsRight) then
+         DrawLine(PointF(step + Count * 2 + wid/2, Buffer - 2*down + wid),PointF(PointRect.Position.X + PointRect.Width + wid/2, PointRect.Position.Y),1, Brush)
+      else
+         DrawLine(PointF(step - Count * 2 + wid/2, Buffer - 2*down + wid),PointF(PointRect.Position.X + PointRect.Width + wid/2, PointRect.Position.Y),1, Brush);
+      EndScene;
+   end;
+end;
+
+procedure AddL;
+begin
+   New(PTemp^.Left);
+   PTemp^.Left^.Up := PTemp;
+   PTemp := PTemp^.Left;
+   IsRight := False;
+end;
+
+procedure Start(Width: Single);
+begin
+   k := 1;
+   Buffer := 0;
+   Step := 0;
+   Count := Trunc((Width - wid) / 2);
+   Element := 1;
+   New(Root);
+   Root^.Up := nil;
+   PTemp := Root;
+   IsRight := True;
+end;
+
+procedure CirDraw(Form: TForm);
+var
+   TempC: TCircle;
+   TempL: TLabel;
+begin
+   PTemp^.Num := Element;
+   PTemp^.Left := nil;
+   PTemp^.Right := nil;
+   TempC := TCircle.Create(Form);
+   TempC.Parent := Form;
+   TempC.Width := Wid;
+   TempC.Height := Wid;
+   if IsRight then
+      TempC.Position.X := Count + Step
+   else
+      TempC.Position.X := Step - Count;
+   Step := Trunc(TempC.Position.X);
+   Count := Count div 2;
+   //PointRect.Position.X := Step - 50;
+   //PointRect.Position.Y := Buffer;
+   TempC.Position.Y := Buffer;
+   TempC.Fill.Color := TAlphaColorRec.Red;
+   TempL := TLabel.Create(TempC);
+   TempL.Parent := TempC;
+   TempL.Width := wid;
+   TempL.Height := wid;
+   TempL.Position.X := 3;
+   TempL.Text := IntToStr(Element);
+   ArrC[Element] := TempC;
+   Buffer := Buffer + Down;
+   {if (Buffer > (5 * Down)) then
+   begin
+      AddRight.Enabled := False;
+      AddLeft.Enabled := False;
+   end;
+   PointLabel.Text := 'You are at the vertex ' + IntToStr(Element); }
+   Inc(Element);
+end;
+
+end.

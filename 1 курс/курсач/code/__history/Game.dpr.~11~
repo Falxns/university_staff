@@ -1,0 +1,20 @@
+program Game;
+
+
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Main in 'Main.pas' {MainF},
+  Play in 'Play.pas' {GameF},
+  Backgrounds in 'Backgrounds.pas' {BackgrF};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainF, MainF);
+  Application.CreateForm(TGameF, GameF);
+  Application.CreateForm(TBackgrF, BackgrF);
+  Application.Run;
+end.

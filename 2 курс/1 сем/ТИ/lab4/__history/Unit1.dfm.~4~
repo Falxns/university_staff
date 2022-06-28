@@ -1,0 +1,206 @@
+object EDS: TEDS
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'EDS'
+  ClientHeight = 347
+  ClientWidth = 790
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 8
+    Width = 54
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' Q'
+  end
+  object Label2: TLabel
+    Left = 128
+    Top = 8
+    Width = 52
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' P'
+  end
+  object Label3: TLabel
+    Left = 232
+    Top = 8
+    Width = 52
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' h'
+  end
+  object Label4: TLabel
+    Left = 438
+    Top = 8
+    Width = 52
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' X'
+  end
+  object Label5: TLabel
+    Left = 566
+    Top = 8
+    Width = 6
+    Height = 13
+    Caption = 'Y'
+  end
+  object Label6: TLabel
+    Left = 356
+    Top = 8
+    Width = 7
+    Height = 13
+    Caption = 'G'
+  end
+  object Label7: TLabel
+    Left = 630
+    Top = 12
+    Width = 51
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' k'
+  end
+  object Label8: TLabel
+    Left = 701
+    Top = 12
+    Width = 79
+    Height = 13
+    Caption = #1061#1077#1096' '#1089#1086#1086#1073#1097#1077#1085#1080#1103
+  end
+  object QNumber: TEdit
+    Left = 8
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 0
+  end
+  object PNumber: TEdit
+    Left = 111
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 1
+  end
+  object HNumber: TEdit
+    Left = 214
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 2
+  end
+  object XNumber: TEdit
+    Left = 420
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 3
+  end
+  object YNumber: TEdit
+    Left = 523
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 4
+  end
+  object Calculate: TButton
+    Left = 8
+    Top = 58
+    Width = 612
+    Height = 25
+    Caption = #1042#1099#1095#1080#1089#1083#1080#1090#1100' '#1082#1083#1102#1095
+    TabOrder = 5
+    OnClick = CalculateClick
+  end
+  object GNumber: TEdit
+    Left = 317
+    Top = 31
+    Width = 97
+    Height = 21
+    TabOrder = 6
+  end
+  object FileText: TMemo
+    Left = 8
+    Top = 96
+    Width = 185
+    Height = 89
+    TabOrder = 7
+  end
+  object Open: TButton
+    Left = 199
+    Top = 160
+    Width = 90
+    Height = 25
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083
+    TabOrder = 8
+    OnClick = OpenClick
+  end
+  object generate: TButton
+    Left = 626
+    Top = 58
+    Width = 156
+    Height = 25
+    Caption = ' '#1087#1086#1076#1087#1080#1089#1100
+    TabOrder = 9
+    OnClick = generateClick
+  end
+  object KNumber: TEdit
+    Left = 626
+    Top = 31
+    Width = 63
+    Height = 21
+    TabOrder = 10
+  end
+  object hashtext: TEdit
+    Left = 701
+    Top = 31
+    Width = 81
+    Height = 21
+    TabOrder = 11
+  end
+  object Save: TButton
+    Left = 199
+    Top = 129
+    Width = 90
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '
+    TabOrder = 12
+    OnClick = SaveClick
+  end
+  object sign: TEdit
+    Left = 626
+    Top = 96
+    Width = 156
+    Height = 21
+    TabOrder = 13
+  end
+  object OpenCipher: TButton
+    Left = 199
+    Top = 98
+    Width = 169
+    Height = 25
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1087#1086#1076#1087#1080#1089#1072#1085#1085#1099#1081' '#1092#1072#1081#1083' '
+    TabOrder = 14
+    OnClick = OpenCipherClick
+  end
+  object Check: TButton
+    Left = 374
+    Top = 98
+    Width = 143
+    Height = 25
+    Caption = #1055#1088#1086#1074#1077#1088#1080#1090#1100' '#1087#1086#1076#1087#1080#1089#1100
+    TabOrder = 15
+    OnClick = CheckClick
+  end
+  object OpenF: TOpenDialog
+    Left = 32
+    Top = 168
+  end
+  object SaveF: TSaveDialog
+    Left = 72
+    Top = 168
+  end
+end

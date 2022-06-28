@@ -1,0 +1,3074 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="ERwin.files/filelist.xml">
+<link rel=Edit-Time-Data href="ERwin.files/editdata.mso">
+<link rel=OLE-Object-Data href="ERwin.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Информационное моделирование в среде CASE-средства ERwin</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>296</o:TotalTime>
+  <o:Created>2012-06-30T09:42:00Z</o:Created>
+  <o:LastSaved>2012-06-30T09:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>6746</o:Words>
+  <o:Characters>38454</o:Characters>
+  <o:Company>home</o:Company>
+  <o:Lines>320</o:Lines>
+  <o:Paragraphs>90</o:Paragraphs>
+  <o:CharactersWithSpaces>45110</o:CharactersWithSpaces>
+  <o:Version>11.5703</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>TextFit</w:Zoom>
+  <w:DontDisplayPageBoundaries/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 пт</w:DrawingGridHorizontalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-update:auto;
+	mso-style-next:"Заголовок 2\,Заголовок 2 Знак";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:104.4pt;
+	text-indent:-49.6pt;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	mso-list:l22 level1 lfo1;
+	tab-stops:54.0pt list 104.4pt;
+	font-size:20.0pt;
+	mso-bidi-font-size:24.0pt;
+	font-family:"Arial Black";
+	mso-bidi-font-family:Arial;
+	text-transform:uppercase;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-name:"Заголовок 2\,Заголовок 2 Знак";
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:normal;
+	font-style:italic;}
+h3
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial Black";
+	mso-bidi-font-family:Arial;}
+h4
+	{mso-style-update:auto;
+	mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:16.0pt;
+	font-family:"Arial Black";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 480.25pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{mso-style-update:auto;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:none;
+	mso-list:l0 level1 lfo2;
+	tab-stops:list 18.0pt;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:54.0pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 42.5pt 62.35pt 70.9pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-119;
+	mso-list-type:simple;
+	mso-list-template-ids:388786264;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"Маркированный список";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:132068716;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:166095989;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:176619609;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:234970742;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:393429180;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:553395767;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:559285673;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1440433402 -582050362 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l7:level1
+	{mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:60.55pt;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;}
+@list l7:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:627245223;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:670521589;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:776143314;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:828206075;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1967709264 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l11:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l11:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level3
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level5
+	{mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level6
+	{mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level8
+	{mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l11:level9
+	{mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l12
+	{mso-list-id:836306430;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:927932848;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:970742175;
+	mso-list-type:simple;
+	mso-list-template-ids:-856885306;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0cm;
+	mso-level-number-position:left;
+	margin-left:2.0cm;
+	text-indent:-21.25pt;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:1035347002;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:1126660060;
+	mso-list-type:simple;
+	mso-list-template-ids:68747281;}
+@list l16:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l17
+	{mso-list-id:1170413911;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:1201090377;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:1281839914;
+	mso-list-type:simple;
+	mso-list-template-ids:-856885306;}
+@list l19:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0cm;
+	mso-level-number-position:left;
+	margin-left:2.0cm;
+	text-indent:-21.25pt;
+	font-family:Symbol;}
+@list l20
+	{mso-list-id:1360812385;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:1368750314;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:1460219351;
+	mso-list-template-ids:-759037036;}
+@list l22:level1
+	{mso-level-style-link:"Заголовок 1";
+	mso-level-tab-stop:104.4pt;
+	mso-level-number-position:left;
+	margin-left:104.4pt;
+	text-indent:-49.6pt;
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Arial Black";
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;}
+@list l22:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:70.9pt;
+	mso-level-number-position:left;
+	margin-left:70.9pt;
+	text-indent:-42.55pt;
+	mso-ansi-font-size:18.0pt;
+	mso-bidi-font-size:18.0pt;
+	font-family:"Arial Black";
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;}
+@list l22:level3
+	{mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:118.6pt;
+	mso-level-number-position:left;
+	margin-left:118.6pt;
+	text-indent:-63.8pt;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Arial Black";
+	color:windowtext;
+	mso-text-animation:none;
+	mso-ansi-font-weight:bold;
+	mso-ansi-font-style:normal;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+@list l22:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:323.7pt;
+	mso-level-number-position:left;
+	margin-left:323.7pt;
+	text-indent:-54.0pt;
+	mso-ansi-font-weight:bold;}
+@list l22:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:359.15pt;
+	mso-level-number-position:left;
+	margin-left:359.15pt;
+	text-indent:-54.0pt;
+	mso-ansi-font-weight:bold;}
+@list l22:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:412.6pt;
+	mso-level-number-position:left;
+	margin-left:412.6pt;
+	text-indent:-72.0pt;
+	mso-ansi-font-weight:bold;}
+@list l22:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:466.05pt;
+	mso-level-number-position:left;
+	margin-left:466.05pt;
+	text-indent:-90.0pt;
+	mso-ansi-font-weight:bold;}
+@list l22:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:501.5pt;
+	mso-level-number-position:left;
+	margin-left:501.5pt;
+	text-indent:-90.0pt;
+	mso-ansi-font-weight:bold;}
+@list l22:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:554.95pt;
+	mso-level-number-position:left;
+	margin-left:554.95pt;
+	text-indent:-108.0pt;
+	mso-ansi-font-weight:bold;}
+@list l23
+	{mso-list-id:1477800370;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1497306305;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l24:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1641616800;
+	mso-list-type:simple;
+	mso-list-template-ids:68747281;}
+@list l25:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l26
+	{mso-list-id:1647853246;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1722828126;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l27:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l28
+	{mso-list-id:1835147726;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l29
+	{mso-list-id:1876040348;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l29:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l30
+	{mso-list-id:2002852829;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l31
+	{mso-list-id:2048330910;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l31:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l32
+	{mso-list-id:2115979230;
+	mso-list-type:simple;
+	mso-list-template-ids:68747265;}
+@list l32:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h2 align=center style='margin-top:18.0pt;margin-right:0cm;margin-bottom:18.0pt;
+margin-left:0cm;text-align:center;tab-stops:2.0cm'><a name="_Toc435602929"></a><a
+name="_Toc452864050"></a><a name="_Toc157591095"><span style='mso-bookmark:
+_Toc452864050'><span style='mso-bookmark:_Toc435602929'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:20.0pt;mso-bidi-font-size:14.0pt;font-family:
+"Arial Black";mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;
+font-style:normal'>2. Лабораторный практикум</span></b></span></span></a><span
+style='mso-bookmark:_Toc157591095'><span style='mso-bookmark:_Toc452864050'><span
+style='mso-bookmark:_Toc435602929'><span style='font-size:20.0pt;mso-bidi-font-size:
+14.0pt;font-family:"Arial Black";mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:bold;font-style:normal'> «</span></span></span></span><span
+style='mso-bookmark:_Toc157591095'><span style='mso-bookmark:_Toc452864050'><span
+style='mso-bookmark:_Toc435602929'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:20.0pt;mso-bidi-font-size:14.0pt;font-family:"Arial Black";
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;font-style:normal'>Информационное
+моделирование</span></b></span></span></span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:20.0pt;mso-bidi-font-size:14.0pt;font-family:
+"Arial Black";mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;
+font-style:normal'> <br>
+в среде CASE-средства ERwin» <br>
+<br>
+Теоретические и практические сведения к выполнению <br>
+четвертой лабораторной работы<o:p></o:p></span></b></h2>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><span style='font-size:18.0pt;mso-bidi-font-size:
+14.0pt;mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'>2.1. Информационное моделирование<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Целью
+информационного моделирования является идентификация концептуальных сущностей,
+составляющих предметную область. Информационное моделирование используется, как
+правило, при разработке информационных систем с целью проектирования структуры
+применяемой базы данных. Для ускорения процесса проектирования в настоящее
+время используются различные <span lang=EN-US style='mso-ansi-language:EN-US'>CASE</span>-средства.
+Одним из широко применяемых недорогих <span lang=EN-US style='mso-ansi-language:
+EN-US'>CASE</span>-средств является <b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span></b>. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В настоящее
+время <span lang=EN-US style='mso-ansi-language:EN-US'>ERwin </span>входит в
+состав линейки CASE-средств <b style='mso-bidi-font-weight:normal'>CA ERwin
+Modeling Suite (AllFusion Modeling Suite) </b>под названием <b
+style='mso-bidi-font-weight:normal'>CA ERwin Data Modeler (AllFusion Data
+Modeler</b>), см. подразд. 6.6 раздела «Теория» ЭУМКД.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin -
+средство разработки структуры базы данных (БД), сочетающее графический
+интерфейс Windows, инструменты для построения ER-диаграмм (Entities-<span
+lang=EN-US style='mso-ansi-language:EN-US'>R</span>elationships-диаграммы или
+диаграммы «сущность-связь»), редакторы для создания логического и физического
+описания модели данных и прозрачную поддержку ведущих реляционных СУБД и
+настольных баз данных. С помощью ERwin можно создавать базы данных или проводить
+их обратное проектирование (реинженеринг).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Реализация
+моделирования в ERwin базируется на теории реляционных баз данных и на
+стандартизированной методологии семантического моделирования данных IDEF1X (см.
+подразд. 5.4 раздела «Теория» ЭУМКД). </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Методология
+IDEF1X определяет стандарты терминологии, используемой при информационном
+моделировании, и графического изображения типовых элементов на
+IDEF1X-диаграммах.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Возможны две
+точки зрения на информационную модель и соответственно два уровня модели.
+Первый - логический (точка зрения пользователя) - описывает реальные сущности
+(объекты) предметной области. Второй - физический (точка зрения программиста) -
+определяет представление информации в БД. ERwin объединяет их в единую
+диаграмму, имеющую несколько уровней представления. </p>
+
+<h4><a name="_Toc435602930"></a><a name="_Toc452864051"></a><a
+name="_Toc157591096"><span style='mso-bookmark:_Toc452864051'><span
+style='mso-bookmark:_Toc435602930'>2.1.1. Реляционные базы данных</span></span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В реляционной
+модели все данные представляются в виде сущностей и связей между ними.
+Например, система резервирования билетов содержит сущности &quot;Рейс&quot; и
+&quot;Пассажир&quot;, между которыми существует связь &quot;перевозит&quot;
+(&quot;Рейс&quot; &quot;перевозит&quot; &quot;Пассажиров&quot;).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Сущность</i> <i style='mso-bidi-font-style:
+normal'>(объект)</i> – это абстракция некоторого множества предметов реального
+мира (например, человек, место, вещь, событие, концепция), для которого все
+предметы множества (<i style='mso-bidi-font-style:normal'>экземпляры</i>) имеют
+одни и те же характеристики, подчинены и согласуются с одним и тем же набором
+правил и линий поведения. Сущности именуются существительными (например,
+&quot;Покупатель&quot;, &quot;Компьютер&quot;, &quot;Служащий&quot;,
+&quot;Студент&quot; и т.д.). </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Связь</i> - это абстракция набора отношений,
+которые систематически возникают между различными видами предметов в реальном
+мире. Таким образом, связи определяют функциональные зависимости между
+сущностями. Связи именуются глаголами. Например, &quot;Студент&quot; «<i
+style='mso-bidi-font-style:normal'>работает на»</i> &quot;Компьютере&quot;.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Все предметы
+в реальном мире имеют некоторые характеристики (например, высота, температура,
+возраст). <i style='mso-bidi-font-style:normal'>Атрибут </i>– это абстракция
+характеристики, которой обладают все возможные экземпляры сущности. Каждый
+атрибут обеспечивается именем, уникальным в пределах сущности. Для
+определенного экземпляра сущности атрибут принимает конкретное значение.
+Например, сущность «Служащий» имеет атрибуты «Фамилия», «Имя», «Дата рождения»
+и т.д. Экземпляр данной сущности имеет значения данных атрибутов «Иванов»,
+«Петр», «12.08.78».</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Общепринятым
+видом графического изображения реляционной модели данных является ER-диаграмма.
+На такой диаграмме сущности (таблицы) изображаются прямоугольниками,
+соединенными между собой линиями (связями). Такое графическое представление
+облегчает восприятие структуры базы данных по сравнению с текстовым описанием.
+Представление ER-диаграмм в <span lang=EN-US style='mso-ansi-language:EN-US'>ERwin
+</span>подробно описано ниже. </p>
+
+<h4><a name="_Toc435602931"></a><a name="_Toc452864052"></a><a
+name="_Toc157591097"><span style='mso-bookmark:_Toc452864052'><span
+style='mso-bookmark:_Toc435602931'>2.1.2. Сущности и атрибуты в реляционной
+модели</span></span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Сущность
+вместе с атрибутами на информационной модели может интерпретироваться как
+таблица. Столбцы таблицы соответствуют атрибутам. Каждая строка таблицы
+описывает один экземпляр сущности. Строка заполняется значениями атрибутов,
+соответствующими данному экземпляру. Набор атрибутов каждого экземпляра
+постоянен.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Так, сущность
+«Служащий» интерпретируется в виде таблицы, содержащей три колонки:</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='font-size:12.0pt;
+mso-bidi-font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent style='text-indent:280.0pt'><span style='mso-tab-count:
+1'> </span>Служащий</p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:47.95pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid black 1.5pt;mso-yfti-tbllook:191;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.75pt solid black;mso-border-insidev:.75pt solid black'>
+ <thead>
+  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:14.55pt'>
+   <td width=164 valign=top style='width:122.85pt;border:solid black 1.5pt;
+   border-right:solid black 1.0pt;mso-border-alt:solid black 1.5pt;mso-border-right-alt:
+   solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+   <p class=MsoNormal align=center style='text-align:center'>Фамилия</p>
+   </td>
+   <td width=164 valign=top style='width:122.85pt;border-top:solid black 1.5pt;
+   border-left:none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+   mso-border-left-alt:solid black .75pt;mso-border-top-alt:1.5pt;mso-border-left-alt:
+   .75pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:.75pt;mso-border-color-alt:
+   black;mso-border-style-alt:solid;padding:0cm 5.4pt 0cm 5.4pt;height:14.55pt'>
+   <p class=MsoNormal align=center style='text-align:center'>Имя</p>
+   </td>
+   <td width=164 valign=top style='width:122.85pt;border:solid black 1.5pt;
+   border-left:none;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt;
+   height:14.55pt'>
+   <p class=MsoNormal align=center style='text-align:center'>Дата рождения</p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='mso-yfti-irow:1'>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.5pt;mso-border-bottom-alt:solid black .75pt;
+  mso-border-right-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Сидоров</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-left-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-bottom-alt:solid black .75pt;mso-border-right-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Николай</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-bottom-alt:solid black .75pt;mso-border-right-alt:solid black 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>25.12.53</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  mso-border-left-alt:solid black 1.5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Иванов</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Петр</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.5pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;mso-border-right-alt:solid black 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>12.08.78</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  solid black 1.5pt;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-top-alt:.75pt;mso-border-left-alt:
+  1.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:.75pt;mso-border-color-alt:
+  black;mso-border-style-alt:solid;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Петров</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;mso-border-bottom-alt:solid black 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Федор</p>
+  </td>
+  <td width=164 valign=top style='width:122.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.5pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>18.03.64</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Имя таблицы и
+имена ее колонок составляют структуру таблицы: <i style='mso-bidi-font-style:
+normal'>Служащий</i> <i style='mso-bidi-font-style:normal'>(Фамилия, Имя, Дата
+рождения).</i> В реляционной модели все значения данных являются элементарными,
+т.е. нельзя в ячейке таблицы хранить список значений. </p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc435602932"></a><a
+name="_Toc452864053"></a><a name="_Toc157591098"><span style='mso-bookmark:
+_Toc452864053'><span style='mso-bookmark:_Toc435602932'><span style='font-size:
+18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.2. Моделирование в ERwin</span></span></span></a><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Процесс построения
+информационной модели в <span lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>
+состоит из следующих <i style='mso-bidi-font-style:normal'>шагов:<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>определение сущностей; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>определение взаимосвязей между сущностями; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>задание первичных и альтернативных ключей; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>определение атрибутов сущностей; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>приведение модели к требуемому уровню нормальной
+формы; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>переход к физическому описанию модели: назначение
+соответствий между именем сущности и именем таблицы, атрибутом сущности и
+колонкой таблицы; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>задание триггеров, процедур и ограничений; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l2 level1 lfo3;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>генерация базы данных.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin создает
+визуальное представление (модель данных) для решаемой задачи. Это представление
+может использоваться как часть документации, необходимой в цикле разработки.
+ERwin автоматически создает базу данных (таблицы, индексы, хранимые процедуры,
+триггеры для обеспечения ссылочной целостности и другие объекты, необходимые
+для управления данными).</p>
+
+<h4><a name="_Toc435602933"></a><a name="_Toc452864054"></a><a
+name="_Toc157591099"><span style='mso-bookmark:_Toc452864054'><span
+style='mso-bookmark:_Toc435602933'>2.2.1. Отображение логического и физического
+уровня модели данных в ERwin</span></span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В ERwin
+существуют два уровня представления и моделирования - логический и физический.
+На логическом уровне отображаются предметы (факты) из реальной жизни (например,
+люди, отделы, явления, события являются реальными объектами). Они именуются на
+естественном языке. На логическом уровне не рассматривается использование
+конкретной СУБД, не определяются типы данных и не определяются индексы для
+таблиц.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Целевая СУБД,
+имена объектов и типы данных, индексы составляют второй (физический) уровень
+модели ERwin.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin
+предоставляет возможности создавать и управлять этими двумя различными уровнями
+представления одной модели и иметь много вариантов отображения на каждом
+уровне.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<h4><a name="_Toc435602934"></a><a name="_Toc452864055"></a><a
+name="_Toc157591100"><span style='mso-bookmark:_Toc452864055'><span
+style='mso-bookmark:_Toc435602934'>2.2.2. Компоненты диаграммы ERwin <br>
+и основные виды представлений диаграммы</span></span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Диаграмма
+ERwin содержит три основных компонента - сущности, атрибуты и связи между
+сущностями. Если рассматривать диаграмму как графическое представление правил
+предметной области, то сущности именуются существительными, а связи -
+глаголами.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Выбор между
+логическим и физическим уровнем отображения осуществляется через линейку
+инструментов или меню. Внутри каждого из этих уровней есть следующие <i
+style='mso-bidi-font-style:normal'>режимы отображения</i>:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;сущности&quot; - внутри прямоугольников
+отображается имя сущности (для логической модели) или имя таблицы (для
+физической модели); данный режим служит для удобства обзора большой диаграммы
+или размещения сущностей на диаграмме; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;определение сущности&quot; - служит
+для презентации диаграммы другим людям;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;атрибуты&quot; - при переходе от
+предметной области к модели требуется вводить информацию о том, что
+представляет собой сущность; эта информация вводится путем задания атрибутов
+(на физическом уровне - колонок таблиц); в данном режиме прямоугольник-сущность
+делится линией на две части - в верхней части отображаются атрибуты (колонки),
+составляющие первичный ключ, а в нижней - остальные атрибуты; этот режим
+является основным при проектировании на логическом и физическом уровнях; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;первичные ключи&quot; - внутри
+прямоугольников-сущностей показываются только атрибуты (колонки), составляющие
+первичный ключ; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;пиктограммы&quot; - для
+презентационных целей каждой таблице может быть поставлена в соответствие
+пиктограмма (bitmap); </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l29 level1 lfo4;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>режим &quot;показ глагольной фразы&quot; - на
+связях показываются глагольные фразы, связывающие сущности (для логического
+уровня) или имена внешних ключей (для физического уровня).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Диаграмма
+может занимать более чем один экран и более чем один лист при печати. Для обзора
+модели предусмотрены, кроме прокруток экрана, режимы уменьшения/увеличения
+изображения, отображения всей модели, отображения выделенной части модели.</p>
+
+<h4><a name="_Toc452864056"></a><a name="_Toc157591101"><span style='mso-bookmark:
+_Toc452864056'>2.2.3. Инструменты для создания модели в ERwin</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Основные
+инструменты создания модели доступны как из меню, так и через панель
+инструментов. С их помощью создаются различные виды сущностей, связей,
+атрибутов и текстовые элементы.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Нажатием мыши
+над сущностью производится вход в один из редакторов Erwin. Существуют
+следующие виды редакторов:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l13 level1 lfo5;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>редакторы, связанные с сущностью в целом
+(определение сущности, дополнительная информация, триггеры, индексы,
+характеристики таблицы, связанные с таблицей хранимые процедуры); </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l13 level1 lfo5;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>редакторы атрибутов (определение атрибутов, колонки
+таблицы в физическом представлении модели, репозиторий средства 4GL). <span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+
+<h4><a name="_Toc452864057"></a><a name="_Toc157591102"><span style='mso-bookmark:
+_Toc452864057'>2.2.4. Идентификация сущностей. Сущности (Entities) в ERwin</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>На <span
+lang=EN-US style='mso-ansi-language:EN-US'>ER</span>-диаграмме сущность
+изображается прямоугольником. В зависимости от режима представления диаграммы прямоугольник
+может содержать имя сущности, ее описание, список ее атрибутов и другие
+сведения.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Горизонтальная
+линия прямоугольника разделяет атрибуты сущности на два набора. Атрибуты,
+составляющие первичный ключ, записаны в<span style='mso-spacerun:yes'> 
+</span>верхней части прямоугольника. Прочие атрибуты (не входящие в первичный
+ключ) записаны в нижней части.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Сущность
+представляет собой множество реальных или абстрактных экземпляров (например,
+люди, места, события, факты), имеющих общие характеристики. Сущность - это
+логическое понятие. Сущности соответствует таблица в реальной СУБД. В ERwin
+сущность визуально представляет три основных вида информации:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l4 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>атрибуты, составляющие первичный ключ; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l4 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>неключевые атрибуты; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l4 level1 lfo6;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>тип сущности (независимая/зависимая).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Первичный ключ</i> - это атрибут или набор
+атрибутов, уникально идентифицирующий экземпляр сущности. Если несколько
+наборов атрибутов могут уникально идентифицировать сущность, то выбор одного из
+них осуществляется разработчиком на основании анализа предметной области.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для каждого
+первичного ключа ERwin создает при генерации структуры БД уникальный индекс.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Экземпляры <i
+style='mso-bidi-font-style:normal'>независимой сущности</i> могут быть
+уникально идентифицированы без определения ее связей с другими сущностями. <i
+style='mso-bidi-font-style:normal'>Зависимая сущность</i> не может быть
+уникально идентифицирована без определения ее связей с другими сущностями.
+Зависимая сущность отображается в ERwin прямоугольником с закругленными углами.</p>
+
+<h4><a name="_Toc452864058"></a><a name="_Toc157591103"><span style='mso-bookmark:
+_Toc452864058'>2.2.5. Связи (relationships) в ERwin</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Связь</i> - это функциональная зависимость
+между двумя сущностями. Например, между сущностями &quot;отдел&quot; и
+&quot;сотрудник&quot; существует связь &quot;состоит из&quot; (отдел <i
+style='mso-bidi-font-style:normal'>состоит</i> из сотрудников). Связь - это
+понятие логического уровня, которому соответствует внешний ключ на физическом
+уровне. В ERwin связи определяются пятью основными элементами информации:</p>
+
+<p class=MsoNormal style='margin-left:63.8pt;text-align:justify;text-indent:
+-1.0cm;mso-list:l9 level1 lfo7;tab-stops:list 63.8pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>тип связи (идентифицирующая, неидентифицирующая,
+полная/ неполная категория, неспецифическая связь); </p>
+
+<p class=MsoNormal style='margin-left:63.8pt;text-align:justify;text-indent:
+-1.0cm;mso-list:l9 level1 lfo7;tab-stops:list 63.8pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>родительская сущность; </p>
+
+<p class=MsoNormal style='margin-left:63.8pt;text-align:justify;text-indent:
+-1.0cm;mso-list:l9 level1 lfo7;tab-stops:list 63.8pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>дочерняя (зависимая) сущность; </p>
+
+<p class=MsoNormal style='margin-left:63.8pt;text-align:justify;text-indent:
+-1.0cm;mso-list:l9 level1 lfo7;tab-stops:list 63.8pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>мощность связи (cardinality); </p>
+
+<p class=MsoNormal style='margin-left:63.8pt;text-align:justify;text-indent:
+-1.0cm;mso-list:l9 level1 lfo7;tab-stops:list 63.8pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>допустимость пустых (null) значений.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Связь
+называется <i style='mso-bidi-font-style:normal'>идентифицирующей</i>, если
+экземпляр дочерней сущности идентифицируется через ее связь с родительской
+сущностью. Атрибуты, составляющие первичный ключ родительской сущности, при
+этом входят в первичный ключ дочерней сущности. Дочерняя сущность при
+идентифицирующей связи всегда является зависимой.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Связь
+называется <i style='mso-bidi-font-style:normal'>неидентифицирующей</i>, если
+экземпляр дочерней сущности не идентифицируется через связь с родительской
+сущностью. Атрибуты, составляющие первичный ключ родительской сущности, при
+этом входят в состав неключевых атрибутов дочерней сущности.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для определения
+связи в ERwin выбирается тип связи, затем мышью указывается родительская и
+дочерняя сущность. Идентифицирующая связь изображается сплошной линией;
+неидентифицирующая - пунктирной линией. Линии заканчиваются точкой со стороны
+дочерней сущности. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>При
+определении связи происходит миграция атрибутов первичного ключа родительской
+сущности в соответствующую область атрибутов дочерней сущности. Поэтому такие
+атрибуты не вводятся вручную. Атрибуты первичного ключа родительской сущности
+по умолчанию мигрируют со своими именами. ERwin позволяет ввести для них <i
+style='mso-bidi-font-style:normal'>роли</i> - новые имена, под которыми
+мигрирующие атрибуты будут представлены в дочерней сущности. В случае
+неоднократной миграции атрибута такое переименование необходимо. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Например,
+первичный ключ &quot;код предприятия&quot; сущности &quot;Предприятие&quot;
+имеет две роли в дочерней сущности &quot;Посредническая сделка&quot; - это
+атрибуты &quot;код предприятия-продавца&quot; и &quot;код
+предприятия-покупателя&quot;. На физическом уровне имя роли - это имя колонки
+внешнего ключа в дочерней таблице. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Мощность
+связи представляет собой отношение количества экземпляров родительской сущности
+к соответствующему количеству экземпляров дочерней сущности. Для любой связи,
+кроме неспецифической, эта связь записывается как 1:<span style='font-size:
+16.0pt;mso-bidi-font-size:14.0pt'>n</span>. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>ERwin в соответствии с
+методологией IDEF1X предоставляет четыре варианта значения <span
+style='font-size:16.0pt;mso-bidi-font-size:14.0pt'>n</span>: </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l19 level1 lfo8;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ноль, один или более (по умолчанию); </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l19 level1 lfo8;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>один или более; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l19 level1 lfo8;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ноль или один; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l19 level1 lfo8;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>ровно N, </p>
+
+<p class=MsoNormal>где N - конкретное число.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Допустимость
+пустых (<span lang=EN-US style='mso-ansi-language:EN-US'>NULL</span>) значений
+в неидентифицирующих связях <span lang=EN-US style='mso-ansi-language:EN-US'>Erwin</span>
+изображается пустым ромбиком на дуге связи со стороны родительской сущности.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Имя связи на
+логическом уровне представляет собой &quot;глагол&quot;, связывающий сущности.
+Физическое имя связи (которое может отличаться от логического) для ERwin
+означает имя ограничения (constraint) или индекса.</p>
+
+<h4><a name="_Toc452864059"></a><a name="_Toc157591104"><span style='mso-bookmark:
+_Toc452864059'>2.2.6. Связи категоризации</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='mso-spacerun:yes'> </span>Некоторые сущности определяют категорию
+подобных объектов. В ERwin в таком случае создаются сущности для определения
+категории и каждого элемента категории. Родительская сущность категории
+называется <i style='mso-bidi-font-style:normal'>супертипом</i>, а дочерние
+сущности категории - <i style='mso-bidi-font-style:normal'>подтипами</i>. Связь
+между супертипом и подтипами называется <i style='mso-bidi-font-style:normal'>связью
+категоризации (связью супертип-подтип)</i>.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Пример</i>. Пусть сущность
+&quot;Служащий&quot; содержит данные о штатных работниках и совместителях.
+Первые и вторые имеют различные, частично пересекающиеся наборы атрибутов.
+Общая часть этих атрибутов, включая первичный ключ, помещается в
+сущность-супертип &quot;Служащий&quot;. Различающиеся части помещаются в
+сущности-подтипы.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В
+сущности-супертипе вводится <i style='mso-bidi-font-style:normal'>атрибут-дискриминатор</i>,
+позволяющий различать конкретные экземпляры сущности-подтипа.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В конструкции
+супертип-подтип один реальный экземпляр представляется комбинацией экземпляра
+супертипа и экземпляра одного подтипа.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В зависимости
+от того, все ли возможные сущности-подтипы включены в модель, категорийная
+связь является <i style='mso-bidi-font-style:normal'>полной</i> или <i
+style='mso-bidi-font-style:normal'>неполной</i>. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Если в предыдущем примере
+супертип может содержать данные об уволенных сотрудниках, то связь
+категоризации является неполной, если не существует соответствующих
+сущностей-подтипов.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В ERwin
+полная категория изображается окружностью с двумя подчеркиваниями, а неполная -
+окружностью с одним подчеркиванием.</p>
+
+<h4><a name="_Toc452864060"></a><a name="_Toc157591105"><span style='mso-bookmark:
+_Toc452864060'>2.2.7. Графическое редактирование модели</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Все объекты
+модели ERwin могут редактироваться средствами, принятыми в Windows, -
+группировка, копирование, удаление, перемещение, использование системного
+буфера, установка цветов и шрифтов.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Компоненты
+модели, представленные текстом (имена сущностей, атрибутов, текстовые
+элементы), могут редактироваться непосредственно на экране.</p>
+
+<h4><a name="_Toc452864061"></a><a name="_Toc157591106"><span style='mso-bookmark:
+_Toc452864061'>2.2.8. Альтернативные ключи</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Альтернативный ключ</i> - это атрибут (или
+группа атрибутов), несовпадающий с первичным ключом и уникально
+идентифицирующий экземпляр сущности. Например, для сущности «Служащий»
+(идентификатор служащего, фамилия, имя, отчество) идентификатор служащего
+является первичным ключом, а группа атрибутов &quot;Фамилия&quot;,
+&quot;Имя&quot;, &quot;отчество&quot; является альтернативным ключом (в
+предположении, что на предприятии не работают полные тезки).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для
+альтернативного ключа, как и для первичного, ERwin автоматически создает
+индексы при генерации БД.</p>
+
+<h4><a name="_Toc452864062"></a><a name="_Toc157591107"><span style='mso-bookmark:
+_Toc452864062'>2.2.9. Инвертированные индексы</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Атрибуты,
+составляющие альтернативный ключ, однозначно (уникально) идентифицируют
+экземпляры сущности. В ERwin можно также составлять группы атрибутов, которые
+не идентифицируют уникально экземпляры сущности, но часто используются для доступа
+к данным. Для каждой такой группы атрибутов ERwin создает неуникальные индексы.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Одни и те же
+атрибуты сущности могут входить в различные группы ключей.</p>
+
+<h4><a name="_Toc452864063"></a><a name="_Toc157591108"><span style='mso-bookmark:
+_Toc452864063'>2.2.10. Унификация атрибутов</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='mso-spacerun:yes'> </span>Зависимая сущность может наследовать один и
+тот же внешний ключ от более чем одной родительской сущности или от одной и той
+же родительской сущности через несколько связей. Если не введены различные роли
+для такого множественного наследования, ERwin считает, что в зависимой сущности
+атрибуты внешнего ключа появляются только один раз.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Унификация</i> - это объединение двух или
+более групп атрибутов внешних ключей в один внешний ключ (группу атрибутов) в
+предположении, что значения одноименных атрибутов в дочерней сущности всегда
+одинаковы.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Пример</i>. Пусть сущность
+&quot;Служащий&quot; имеет первичный ключ &quot;Код служащего&quot; и связан
+идентифицирующей связью с сущностями &quot;Супруга&quot; и &quot;Дети&quot;.
+При этом происходит миграция первичного ключа в зависимые сущности. В свою
+очередь, сущность &quot;Супруга&quot; связана неидентифицирующей связью с
+сущностью &quot;Дети&quot;. Имеются два пути миграции ключа, однако в сущности
+&quot;Дети&quot; атрибут &quot;Код служащего&quot; появляется один раз в
+качестве элемента первичного ключа.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Существуют
+случаи, когда унификация атрибутов дает неверный с точки зрения предметной
+области результат. Имена ролей отменяют унификацию атрибутов.</p>
+
+<h4><a name="_Toc452864064"></a><a name="_Toc157591109"><span style='mso-bookmark:
+_Toc452864064'>2.2.11. Реализация ссылочной целостности с помощью ERwin</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Ссылочная целостность</i> - это обеспечение
+соответствия значения внешнего ключа экземпляра дочерней сущности значению
+первичного ключа в родительской сущности. Ссылочная целостность может
+контролироваться при всех операциях, изменяющих данные (INSERT / UPDATE /
+DELETE). Средства контроля ссылочной целостности в ERwin включают
+автоматическую генерацию триггеров и использование механизмов декларативной
+ссылочной целостности (для тех СУБД, которые поддерживают данные механизмы).</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для каждой
+связи на логическом уровне могут быть заданы требования по обработке операций
+INSERT / UPDATE / DELETE для родительской и дочерней сущности. ERwin
+предоставляет следующие варианты обработки этих событий:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l27 level1 lfo9;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>отсутствие проверки; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l27 level1 lfo9;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>проверка допустимости; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l27 level1 lfo9;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>запрет операции; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l27 level1 lfo9;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>каскадное выполнение операции (DELETE / UPDATE);
+</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l27 level1 lfo9;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>установка пустого (NULL-значения) или заданного
+по умолчанию значения.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В
+соответствии с выбранным вариантом ERwin автоматически создает необходимые
+триггеры на диалекте SQL целевой СУБД. При этом ERwin пользуется библиотекой
+шаблонов триггеров, которые можно модифицировать.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>При генерации структуры базы
+данных триггеры, обеспечивающие ссылочную целостность, могут быть
+переопределены на трех уровнях:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l25 level1 lfo10;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='mso-list:Ignore'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>триггеры, обеспечивающие правила для всей модели;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l25 level1 lfo10;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>триггеры, указанные для конкретной связи;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l25 level1 lfo10;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='mso-list:Ignore'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>триггеры, указанные для конкретной таблицы.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Тип переопределения указывается
+разработчиком при генерации схемы базы данных.</p>
+
+<h4><a name="_Toc452864065"></a><a name="_Toc157591110"><span style='mso-bookmark:
+_Toc452864065'>2.2.12. Хранение информации в модели ERwin</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Обычно модели
+ERwin сохраняются на диске в виде файла. Имеется возможность хранить модель в
+целевой СУБД. Для этого с помощью самого ERwin в целевой СУБД создается метабаза
+ERwin. В этой базе данных сохраняется информация модели. В частном случае базой
+данных могут быть и dBase-файлы, с которыми ERwin работает через ODBC.</p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc452864066"></a><a
+name="_Toc157591111"><span style='mso-bookmark:_Toc452864066'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.3. Расширенные функции
+Erwin</span></span></a><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'><o:p></o:p></span></h3>
+
+<h4><a name="_Toc452864067"></a><a name="_Toc157591112"><span style='mso-bookmark:
+_Toc452864067'>2.3.1. Обратное проектирование (Reverse engineering)</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Обратное проектирование,
+то есть построение информационной модели по существующей базе данных,
+используется при выборе оптимальной платформы (rightsizing) для существующей
+настольной (desktop) базы данных или базы данных на mainframe, а также при
+модификации существующей структуры, которая была построена без необходимой
+сопроводительной документации. После завершения процесса восстановления модели
+ERwin автоматически формирует <span lang=EN-US style='mso-ansi-language:EN-US'>ER</span>-диаграмму.
+Это позволяет выполнять модификации уже с использованием логической схемы - добавлять
+сущности, атрибуты, комментарии, связи и т.д. По завершении изменений одна
+команда - синхронизировать модель с базой данных - актуализирует все
+проведенные изменения.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Построение
+модели может быть выполнено как на основании данных каталога базы данных, так и
+на основании пакета операторов SQL, с помощью которого была создана база
+данных.</p>
+
+<h4><a name="_Toc452864068"></a><a name="_Toc157591113"><span style='mso-bookmark:
+_Toc452864068'>2.3.2. Синхронизация с базой данных</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В процессе
+разработки информационной системы может возникнуть ситуация, когда структура
+базы данных и информационная модель не соответствуют друг другу. ERwin
+предоставляет возможность привести их в соответствие.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для этого
+предусмотрена функция синхронизации с базой данных. После подключения к СУБД
+предлагается список несоответствий между существующей структурой данных и
+моделью. Например, если в базе данных создана новая таблица, то ERwin предложит
+провести включение ее в модель. Если в модель добавлена новая таблица, ERwin
+предложит создать ее в реальной базе данных. Аналогично при добавлении колонок
+в базе данных или в модели ERwin предлагает провести соответствующие операции
+по синхронизации. Выбор синхронизируемых таблиц иллюстрирует рис.2.1.<span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:481.5pt;
+ height:549.75pt' o:ole="" o:preferrelative="f" fillcolor="window">
+ <v:imagedata src="ERwin.files/image001.png" o:title="" gain="218453f"
+  grayscale="t"/>
+ <o:lock v:ext="edit" aspectratio="f"/>
+</v:shape><![endif]--><![if !vml]><img width=642 height=733
+src="ERwin.files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1402561715">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoTitle><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.1.
+Синхронизация с базой данных</p>
+
+<p class=MsoTitle><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><a
+name="_Toc452864069">Для синхронизации с базой данных необходимо открыть меню <u>E</u>dit
+и выбрать пункт <u>C</u>olumn… . В появившемся диалоговом окне «Column editor»
+необходимо выбрать кнопку Db Sync... .</a></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='mso-bookmark:_Toc452864069'>В ERwin имеется возможность учитывать
+особенности хранения данных в отдельных СУБД. Информация о физическом
+размещении может быть включена в модель и использована при прямом и обратном
+проектировании.</span></p>
+
+<h4><span style='mso-bookmark:_Toc452864069'><a name="_Toc157591114">2.3.3.
+Интерфейсы с СУБД</a></span></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span> поддерживает прямой
+интерфейс с основными СУБД: <span lang=EN-US style='mso-ansi-language:EN-US'>DB</span>2
+версий 2 и 3, <span lang=EN-US style='mso-ansi-language:EN-US'>Informix</span>
+версий 5.1, 6.0, 7.1, <span lang=EN-US style='mso-ansi-language:EN-US'>Ingres</span>,
+<span lang=EN-US style='mso-ansi-language:EN-US'>NetWare SQL</span>, <span
+lang=EN-US style='mso-ansi-language:EN-US'>ORACLE</span> версий 6 и 7, <span
+lang=EN-US style='mso-ansi-language:EN-US'>Progress</span>, <span lang=EN-US
+style='mso-ansi-language:EN-US'>Rdb</span> версий 4 и 6, <span lang=EN-US
+style='mso-ansi-language:EN-US'>SQL</span>/400 версий 2 и 3, <span lang=EN-US
+style='mso-ansi-language:EN-US'>SQLBase</span> версий 5 и 6, <span lang=EN-US
+style='mso-ansi-language:EN-US'>SQL Server</span> версий 4 и 6, <span
+lang=EN-US style='mso-ansi-language:EN-US'>Sybase</span> версии 4.2, <span
+lang=EN-US style='mso-ansi-language:EN-US'>Sybase System </span>10 и 11, <span
+lang=EN-US style='mso-ansi-language:EN-US'>Watcom SQL</span>. Поддерживаются
+как современные, так и предыдущие версии основных СУБД (рис.2.2).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:483pt;height:341.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="ERwin.files/image003.png" o:title="" gain="109227f"
+  grayscale="t"/>
+ <o:lock v:ext="edit" aspectratio="f"/>
+</v:shape><![endif]--><![if !vml]><img width=644 height=455
+src="ERwin.files/image004.jpg" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1402561716">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.2. Выбор СУБД для
+создания модели</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>ERwin поддерживает также
+настольные (desktop) СУБД: Microsoft Access, FoxPro, Clipper, dBASE III, dBASE
+IV и Paradox.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Проектирование
+на физическом уровне выполняется в терминах той базы данных, которую
+предполагается использовать в системе. ERwin позволяет учесть возможности СУБД
+различных производителей. Поэтому возможно преобразование физической схемы,
+спроектированной для одной СУБД, в другую. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для создания
+физической структуры БД может быть запрошена генерация DDL-скрипта (data definition
+language). При этом используется диалект SQL для выбранного типа и версии
+сервера. Имеется возможность сохранить сгенерированный код в файл или
+распечатать.</p>
+
+<h4><a name="_Toc452864070"></a><a name="_Toc157591115"><span style='mso-bookmark:
+_Toc452864070'>2.3.4. Поддержка средств 4GL</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin
+выпускается в нескольких различных редакциях, ориентированных на наиболее
+распространенные средства разработки 4GL. В числе поддерживаемых средств -
+PowerBuilder фирмы Powersoft, SQL Windows фирмы Gupta, Visual Basic фирмы
+Microsoft, Oracle*CASE фирмы Oracle.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Средства
+двунаправленного взаимодействия ERwin с базой данных обеспечивают управление
+информацией, ориентированной как на серверную, так и на клиентскую часть.
+Например, для PowerBuilder можно просматривать и редактировать расширенные
+атрибуты в редакторах ERwin.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Ориентация
+ERwin на средства 4GL позволяет задать для будущих приложений большинство
+параметров, непосредственно связанных с базой данных, уже на стадии
+проектирования информационной модели.</p>
+
+<h4><a name="_Toc452864071"></a><a name="_Toc157591116"><span style='mso-bookmark:
+_Toc452864071'>2.3.5. Программирование триггеров и процедур</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin
+реализует собственный макроязык для подготовки прототипов триггеров и процедур.
+Схема использования прототипов заключается в подготовке шаблона для различных
+типов триггеров (например, триггер, реализующий логику каскадного удаления, ON
+DELETE CASCADE). </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Базовые шаблоны встроены в
+ERwin, но пользователь может определить свои собственные шаблоны и использовать
+их вместо стандартных.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Макроязык
+шаблонов реализует большое количество макросимволов, ссылающихся на различные
+объекты базы данных, например:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l8 level1 lfo11;tab-stops:list 2.0cm'><![if !supportLists]><span
+lang=EN-US style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;mso-ansi-language:EN-US'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>%Action
+- </span>расширяется<span style='mso-ansi-language:EN-US'> </span>в<span
+lang=EN-US style='mso-ansi-language:EN-US'> UPDATE/INSERT/DELETE;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l8 level1 lfo11;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>%ForEachAtt(&lt;таблица&gt;,&lt;разделитель&gt;)
+{&lt;код макрокоманды&gt;} - циклическое выполнение группы операторов над
+каждым атрибутом таблицы;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l8 level1 lfo11;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>%ForEachEntity() {} - циклическое выполнение
+функций над всеми таблицами;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l8 level1 lfo11;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>%If, %else - операторы условного управления. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Например,
+шаблон триггера для реализации поддержки on delete cascade:</p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'>%Action<span
+style='mso-spacerun:yes'>    </span>/* ERwin Builtin %Datetime */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>    </span>/* %Parent %VerbPhrase %Child ON PARENT
+DELETE CASCADE */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>    </span>delete %Child<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>from %Child,deleted<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>      </span>where<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>        </span>/*<span style='mso-spacerun:yes'> 
+</span>%%JoinFKPK(%Child,deleted,&quot; = &quot;,&quot; and&quot;) */<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>        </span>%JoinFKPK(%Child,deleted,&quot; =
+&quot;,&quot; and&quot;)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+14.0pt;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Все
+макрофункции, которые могут использоваться в триггерах, могут использоваться
+также и в процедурах. Процедуры, как и триггеры, связываются с таблицей. Такой
+подход позволяет полностью исключить хаотичное внесение изменений в базу
+данных, так как модель в ERwin описывает все аспекты базы, в том числе
+обеспечиваемые триггерами.</p>
+
+<h4><a name="_Toc452864072"></a><a name="_Toc157591117"><span style='mso-bookmark:
+_Toc452864072'>2.3.6. Правила и начальные значения</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В ERwin
+поддерживаются два типа правил (проверок допустимости значений) и начальных (по
+умолчанию) значений. Правило и умолчание может быть указано для проверки со
+стороны клиента (например, в PowerBuilder) и со стороны сервера. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>При задании
+правила или умолчания для клиентской части эти атрибуты переносятся в
+репозиторий средства 4GL.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>На рис.2.3
+показан диалог для задания значений по умолчанию, устанавливаемых в
+PowerBuilder. В одном и том же диалоге задаются умолчания, используемые как на
+стороне клиента, так и на стороне сервера.</p>
+
+<h4><a name="_Toc452864073"></a><a name="_Toc157591118"><span style='mso-bookmark:
+_Toc452864073'>2.3.7. Домены</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='mso-spacerun:yes'> </span>Часто используемые комбинации свойств можно поименовать.
+Такая комбинация свойств, называемая доменом, может наследоваться. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Например,
+можно определить домен &quot;Дата&quot; для отображения в приложении всех
+колонок с датами в одном стиле, домен &quot;Дата рождения ребенка&quot;
+наследует все атрибуты домена &quot;Дата&quot; и вносит дополнительный атрибут
+- цвет отображения.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Пример
+определения домена показан на рис.2.4.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Назначение
+доменов для сервера аналогично назначению доменов для клиента. Различие
+заключается в том, что правила и начальные значения для сервера определяются в генерации
+схемы базы данных, а аналогичные атрибуты для клиента сохраняются в репозитории
+средства 4GL.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Другое
+назначение доменов для сервера - определение пользовательских типов данных.
+Пользовательскому типу данных ставится в соответствие тип, &quot;известный&quot;
+СУБД. При выполнении синхронизации с базой данных для СУБД, поддерживающих
+пользовательские типы, выполняются соответствующие команды. </p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:480pt;height:358.5pt' o:ole="" fillcolor="window">
+ <v:imagedata src="ERwin.files/image005.png" o:title="" gain="1.5625"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=640 height=478
+src="ERwin.files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1402561717">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.3. Определение
+умолчания для PowerBuilder</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:481.5pt;height:352.5pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image007.png" o:title="Определение домена"
+  gain="1.5625" grayscale="t"/>
+ <o:lock v:ext="edit" aspectratio="f"/>
+</v:shape><![endif]--><![if !vml]><img width=642 height=470
+src="ERwin.files/image008.jpg" v:shapes="_x0000_i1028"><![endif]></span><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.4. Определение
+домена</p>
+
+<h4><a name="_Toc452864074"></a><a name="_Toc157591119"><span style='mso-bookmark:
+_Toc452864074'>2.3.8. Генерация отчетов</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>По завершении
+работы над информационной моделью распечатываются логический и физический
+уровни диаграммы, а также отчет по соответствиям: сущность-таблица, атрибут-имя
+колонки, сущность-атрибуты. Дополнительная информация для группы разработчиков
+прикладных программ содержится в отчете &quot;Имена таблиц и колонок&quot;,
+который может быть построен с помощью ERwin. Выбор режима построения отчета
+показан на рис.2.5.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Сгенерированный
+отчет может быть сохранен на диске (колонки разделяются запятыми, выравниваются
+или разделяются табуляцией) или передан в текстовый редактор (или электронную
+таблицу) через интерфейс DDE.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:480.75pt;height:444.75pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image009.png" o:title="Варианты выдачи отчета"
+  gain="1.5625" grayscale="t"/>
+ <o:lock v:ext="edit" aspectratio="f"/>
+</v:shape><![endif]--><![if !vml]><img width=641 height=593
+src="ERwin.files/image010.jpg" v:shapes="_x0000_i1029"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.5. Выбор
+варианта отчета</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<h4><a name="_Toc452864075"></a><a name="_Toc157591120"><span style='mso-bookmark:
+_Toc452864075'>2.3.9. Настройка режимов отображения</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Диаграммы
+информационных моделей современных информационных систем обычно весьма велики,
+вследствие чего работать со всей диаграммой достаточно сложно как на стадии
+проектирования информационной модели, так и при разработке прикладного
+программного обеспечения. ERwin дает возможность работать не со всей
+диаграммой, а с логически законченной группой сущностей, называемой предметной
+областью (Subject Area). Переключение отображения с одной предметной области на
+другую производится выбором из раскрывающегося списка.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Рассмотрим
+информационную модель для некоторого абстрактного предприятия. В информационной
+системе задействованы бухгалтерия, склад, кадры. Сущности «сотрудник», «история
+работы», «дети» могут быть выделены в предметную область &quot;кадры&quot;.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Такой подход
+обладает рядом важных преимуществ. Во-первых, группа разработчиков программного
+обеспечения снабжается диаграммой той предметной области, с которой она
+работает. Во-вторых, при разработке информационной модели проектировщик может
+удалить с экрана уже спроектированные блоки, чтобы они не загромождали
+диаграмму. В-третьих, использование предметных областей стимулирует структурный
+подход к разработке информационной модели - выделение крупных блоков с
+последующей их детальной разработкой. Процесс разработки выполняется по
+технологии нисходящего проектирования.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Уровень
+детализации диаграммы информационной модели может изменяться проектировщиком.
+Например, могут отображаться только имена сущностей (таблиц), может быть
+включено/выключено отображение мощности связи, может быть включено/выключено
+отображение альтернативных ключей, может отображаться физическая или логическая
+модель. Для удобства проектировщика предусмотрена возможность присвоения имени
+группе параметров отображения. Определенные пользователем имена показываются на
+экране в виде закладок, что обеспечивает переключение с одного режима
+отображения на другой одним щелчком мыши.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Проектировщик
+информационной модели имеет возможность использовать цветовое и шрифтовое
+выделение для различных компонентов диаграммы. Выделение может быть выполнено
+как для всей модели (например, все внешние ключи отображаются синим цветом),
+так и для отдельного компонента (одна таблица, все атрибуты таблицы, один
+атрибут таблицы, одна связь и т.д.). Использование цветового и шрифтового
+выделения на диаграмме информационной модели делает ее более наглядной и
+позволяет проектировщику обратить внимание читателей диаграммы на ее отдельные
+элементы.</p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc452864076"></a><a
+name="_Toc157591121"><span style='mso-bookmark:_Toc452864076'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.4. Преимущества применения
+ERwin</span></span></a><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'> <o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Применение
+ERwin существенно повышает эффективность деятельности разработчиков
+информационных систем. Основные преимущества от использования <span lang=EN-US
+style='mso-ansi-language:EN-US'>Erwin</span>:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>существенное повышение скорости разработки за
+счет мощного редактора диаграмм и автоматической генерации базы данных, </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>автоматическая подготовка документации; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>отсутствие необходимости ручной подготовки
+SQL-предложений для создания базы данных; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>возможность легкого внесения изменения в модель
+при разработке и расширении системы; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>возможность автоматической подготовки отчетов по
+базе данных, соответствующих реальной структуре БД; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>повышение эффективности разработки прикладного
+программного обеспечения за счет использования удобных в работе диаграмм; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>возможность задания отображения данных в
+приложениях на стадии информационного моделирования за счет тесной интеграции
+со средствами 4GL; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>возможность обратного проектирования, что
+позволяет документировать и вносить изменения в существующие информационные
+системы; </p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l18 level1 lfo12;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>поддержка однопользовательских СУБД; это
+позволяет использовать для персональных систем современные технологии, что
+значительно упрощает переход от настольных систем к системам в технологии
+клиент-сервер (upsizing). </p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc452864077"></a><a
+name="_Toc157591122"><span style='mso-bookmark:_Toc452864077'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.5. Описание команд</span></span></a><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для более
+близкого знакомства с <span lang=EN-US style='mso-ansi-language:EN-US'>Case</span>-средством
+ERwin в данном разделе дается описание его основных команд. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>На рис.2.6
+приведен внешний вид главного меню <span lang=EN-US style='mso-ansi-language:
+EN-US'>Erwin. </span>Главное<span style='mso-ansi-language:EN-US'> </span>меню<span
+style='mso-ansi-language:EN-US'> </span>содержит<span style='mso-ansi-language:
+EN-US'> </span>пункты<span lang=EN-US style='mso-ansi-language:EN-US'> File,
+ModelMart, Edit, Tasks, Client, Server, Option, Window, Help.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;tab-stops:list 0cm'><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid;
+tab-stops:list 0cm'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:481.5pt;height:90pt'
+ fillcolor="window">
+ <v:imagedata src="ERwin.files/image011.png" o:title="Общее меню" gain="218453f"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=642 height=120
+src="ERwin.files/image012.gif" v:shapes="_x0000_i1030"><![endif]></span><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.6. Главное меню
+ERWin</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<h4><a name="_Toc452864078"></a><a name="_Toc157591123"><span style='mso-bookmark:
+_Toc452864078'>2.5.1. Описание команд меню File</span></a></h4>
+
+<p class=MsoNormal style='text-indent:35.45pt'>В состав меню <i
+style='mso-bidi-font-style:normal'>Файл</i> входят следующие команды:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l24 level1 lfo13;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>New - создает новый Erwin-файл данных;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Open - позволяет открыть уже существующий
+Erwin-файл;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Close - закрывает текущий файл;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Save - сохраняет текущий файл;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Save as - сохраняет текущий файл под другим
+именем;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Dictionary manager - позволяет выбрать язык, на котором
+будет создан SQL скрипт;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l15 level1 lfo14;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Exit - завершает сеанс работы с Erwin;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l3 level1 lfo15;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Print и Print Setup - осуществляют настройку
+печати;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l1 level1 lfo16;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>BPWin и Designer/2000 - осуществляют
+взаимодействие с CASE-средствами BPWin и Designer/2000.</p>
+
+<h4><a name="_Toc452864079"></a><a name="_Toc157591124"><span style='mso-bookmark:
+_Toc452864079'>2.5.2. Описание команд меню ModelMart</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Команды меню
+ModelMart обеспечивают согласованное проектирование БД и приложений при
+коллективной разработке в сетевой версии Erwin. </p>
+
+<h4><a name="_Toc452864080"></a><a name="_Toc157591125"><span style='mso-bookmark:
+_Toc452864080'>2.5.3. Описание команд меню Edit</span></a> </h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Состав команд
+меню <i style='mso-bidi-font-style:normal'>Edit</i> различается в зависимости от
+уровня моделирования (логический или физический). </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Команды<span
+style='mso-spacerun:yes'>  </span>меню <i style='mso-bidi-font-style:normal'>Edit</i><span
+style='mso-spacerun:yes'>  </span>позволяют:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l28 level1 lfo17;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>редактировать объекты схемы (под объектами в
+данном случае понимаются сущности, атрибуты, связи и др. в логической модели
+или таблицы, колонки, связи, индексы, триггеры и др. в физической модели);</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l6 level1 lfo18;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>создавать новые объекты;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l6 level1 lfo18;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>перерисовывать диаграмму;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l6 level1 lfo18;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>копировать объекты;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l6 level1 lfo18;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>вставлять объекты;</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l6 level1 lfo18;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>переходить к заданному объекту.</p>
+
+<h4><a name="_Toc452864081"></a><a name="_Toc157591126"><span style='mso-bookmark:
+_Toc452864081'>2.5.4. Описание команд меню Tasks</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Команды меню<span
+lang=EN-US style='mso-ansi-language:EN-US'>Tasks</span> предназначены для
+выполнения следующих задач:</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l14 level1 lfo19;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>генерация базы данных (описание выполнения
+данной задачи приведено в п.2.6);</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l14 level1 lfo19;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>обратное (реинженеринг) проектирование (см.
+п.2.3.1);</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l14 level1 lfo19;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>синхронизация с базой данных (см. рис.2.1);</p>
+
+<p class=MsoNormal style='margin-left:2.0cm;text-align:justify;text-indent:
+-21.25pt;mso-list:l14 level1 lfo19;tab-stops:list 2.0cm'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>генерация отчетов (см. рис.2.5). </p>
+
+<h4><a name="_Toc452864082"></a><a name="_Toc157591127"><span style='mso-bookmark:
+_Toc452864082'>2.5.5. Описание команд меню Client</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>ERwin
+выпускается в нескольких различных редакциях, ориентированных на наиболее
+распространенные средства разработки 4GL. В редакции Erwin, осуществляющей
+поддержку PowerBuilder фирмы Powersoft, в состав меню <i style='mso-bidi-font-style:
+normal'>Client</i><span lang=EN-US style='mso-ansi-language:EN-US'> входят
+следующие команды:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l23 level1 lfo20;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PB Edit Styles - позволяет создать новый или
+изменить существующий стиль редактирования данных. Этот стиль редактирования
+используется PowerBuilder для представления данных пользователю. Стиль также
+определяет, каким способом пользователь может редактировать или выбирать
+данные;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l31 level1 lfo21;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PB Display Format - позволяет создать новый или
+изменить существующий<span style='mso-spacerun:yes'>  </span>формат
+представления данных. Формат данных представляет собой фильтр, который
+позволяет вводить данные только по заданной маске. Маска задается с помощью цифр
+и букв, где цифры и буквы имеют специальное значение;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l10 level1 lfo22;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Validation Rule - позволяет создать новое или
+изменить существующее правило, по которому будет происходить проверка введенных
+данных. Это правило накладывает определенные ограничения на тип и значение вводимых
+пользователем данных. В появившемся диалоговом окне можно ввести сообщение,
+которое будет появляться, когда пользователь базы данных ввел неправильные
+значения. Можно установить опции, которые определяют, проверяются данные на
+сервере или в клиентском приложении;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l30 level1 lfo23;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Valid value - позволяет создать новые или
+изменить существующие области значений, в соответствии с которыми будут
+проверяться данные, вводимые пользователем в поля баз данных;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l5 level1 lfo24;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Default/Initial - позволяет создавать новые или
+изменять существующие способы заполнения полей базы данных по умолчанию. При
+добавлении в базу новой записи поля этой записи по умолчанию могут принять одно
+из созданных значений; </p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l5 level1 lfo24;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Target client - позволяет выбрать то средство
+разработки 4GL, которое будет использовать сгенерированную Erwin-схему (в
+данном случае выбран программный продукт PowerBuilder); </p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l20 level1 lfo25;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PB Sync option - позволяет настроить опции,
+которые определяют, какие данные и как синхронизировать с PowerBuilder;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l12 level1 lfo26;tab-stops:list 49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Sync ERWin with PB - выполняет синхронизацию
+ERWin с PowerBuilder. Для того, чтобы синхронизация прошла успешно, необходимо
+наличие драйверов ODBC.</p>
+
+<h4><a name="_Toc452864083"></a><a name="_Toc157591128"><span style='mso-bookmark:
+_Toc452864083'>2.5.6. Описание команд меню Server</span></a></h4>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l32 level1 lfo27;tab-stops:49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>СУБД Schema properties позволяет определить SQL
+скрипт, который будет выполняться до соединения и после соединения с базой данных
+на сервере;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l17 level1 lfo28;tab-stops:49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>СУБД Trigger Template позволяет задать вид
+действия, которое будет выполнено по отношению к главной или подчиненной
+таблице при определенных действиях пользователя с данными таблицы. Например,
+при удалении записи из главной таблицы запись из подчиненной таблицы тоже будет
+удалена;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l26 level1 lfo29;tab-stops:49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Validation Rule, Valid value, Default/Initial
+выполняют действия, аналогичные действию соответствующих команд меню Client, но
+для серверной части; </p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l21 level1 lfo30;tab-stops:49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Target Server позволяет выбрать необходимую СУБД
+с помощью диалога, представленного на рис.2.2;</p>
+
+<p class=MsoNormal style='margin-left:49.65pt;text-align:justify;text-indent:
+-14.2pt;mso-list:l21 level1 lfo30;tab-stops:49.65pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>СУБД Connection позволяет подсоединиться к
+серверу СУБД. Для соединения необходимо наличие драйверов.</p>
+
+<h4><a name="_Toc452864084"></a><a name="_Toc157591129"><span style='mso-bookmark:
+_Toc452864084'>2.5.7. Описание команд меню Option</span></a></h4>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Меню Option
+предоставляет команды, с помощью которых пользователь может по своему желанию
+настроить опции, влияющие на внешний вид окна ERWin и <span lang=EN-US
+style='mso-ansi-language:EN-US'>ER</span>-диаграммы.</p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc452864085"></a><a
+name="_Toc157591130"><span style='mso-bookmark:_Toc452864085'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.6. Пример разработки модели
+в ERwin</span></span></a><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для начала
+работы в Erwin необходимо запустить файл MMOPN32.exe в рабочем Erwin-каталоге
+или дважды щелкнуть на иконке «Logic Works ERwin_ERX 3.0», которая находится на
+рабочем столе или в папке «ERwin_ERX 3.0».</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Ниже на
+простом примере рассматривается процесс создания новой модели.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>Пример</i>. <o:p></o:p></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><i
+style='mso-bidi-font-style:normal'>Ведется учет служащих. Для каждого служащего
+хранится информация о детях и о списке занимавшихся этим служащим должностей.
+Для каждой должности хранится информация об окладах, получаемых служащим в
+период нахождения в данной должности.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для создания
+новой модели БД необходимо открыть меню <u>F</u>ile (см. рис.2.6) и выбрать
+пункт <u>N</u>ew… . В появившемся диалоговом окне «Erwin Template selection»
+необходимо<span style='mso-spacerun:yes'>  </span>выбрать режим «Blank
+diagram».</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для более
+быстрого доступа и дублирования функций меню имеется панель, представляющая
+собой ряд кнопок, обеспечивающих выбор элементов меню с помощью мыши, а также
+всплывающее меню. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>На первом этапе создается <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>логический
+уровень модели</i></b>. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для этого
+открывается меню <u>E</u>dit (см. рис.2.6) и выбирается пункт <u>L</u>ogical
+model. Во всплывающем меню, появляющемся при нажатии правой кнопки мыши, выбирается
+режим “Display Level / Entity”. Для отображения линейки инструментов
+открывается меню <u>W</u>indow (см. рис.2.6) и выбирается пункт <u>E</u>Rwin
+Toolbox. Линейка инструментов изображена на рис.2.7.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:331.5pt;height:194.25pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image013.png" o:title="Toolbox" gain="99297f"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=442 height=259
+src="ERwin.files/image014.jpg" v:shapes="_x0000_i1031"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.7. Линейка
+инструментов</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Логическая модель создается с
+помощью следующей последовательности основных шагов.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 1. Создание сущностей.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для
+рассматриваемого примера необходимо при помощи линейки инструментов создать
+сущности Worker (Служащий), Children (дети), History_Work (история_работы),
+History_Salary (история_зарплаты). </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для
+добавления новой сущности с помощью мыши выбирается кнопка Entity (см.
+рис.2.7). Затем указатель перемещается на то место, где необходимо поместить
+сущность, и кнопка мыши нажимается еще раз. Данная операция повторяется нужное
+количество раз по числу создаваемых сущностей, в данном примере – 4 раза. После
+помещения в основное окно необходимого количества сущностей следует нажать
+на<span style='mso-spacerun:yes'>  </span>кнопку Select (см. рис.2.7) для отмены
+режима выбора сущностей.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><i
+style='mso-bidi-font-style:normal'>Шаг 2. Описание сущностей.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>После выбора
+очередной сущности для нее задается подробное описание в редакторе &quot;Entity
+Editor&quot;. Это описание появится в отчетах ERwin и может быть отображено на
+диаграмме. Для запуска редактора необходимо открыть меню <u>E</u>dit (см.
+рис.2.6) и выбрать пункт <u>E</u>ntity… . В появившемся диалоговом окне «Entity
+Editor» (рис.2.8) в поле <span lang=EN-US style='mso-ansi-language:EN-US'>Definition</span>
+записываются описания для сущностей.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75"
+ style='width:419.25pt;height:437.25pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image015.png" o:title="Entity_Editor" gain="1.5625"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=559 height=583
+src="ERwin.files/image016.jpg" v:shapes="_x0000_i1032"><![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.8. Редактор
+сущностей</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><i
+style='mso-bidi-font-style:normal'>Шаг 3. Создание связей между сущностями.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Связи между
+сущностями задаются при помощи линейки инструментов (см. рис.2.7). Для
+добавления новых связей на ней имеется три кнопки (Identifying relationship,
+Many-to-Many relationshi<span lang=EN-US style='mso-ansi-language:EN-US'>p</span>,
+Non-Identifying relationship) с соответствующими функциями (кнопки на линейке
+инструментов могут изменяться). В рассматриваемом примере все сущности должны
+быть связаны идентифицирующей связью. Поэтому с помощью мыши необходимо выбрать
+кнопку Identifying relation<span lang=EN-US style='mso-ansi-language:EN-US'>ship</span>
+(см. рис.2.7). Затем следует переместить указатель на родительскую сущность,
+нажать кнопку мыши, переместить указатель на дочернюю сущность, нажать кнопку
+мыши еще раз. Эту операцию необходимо повторить нужное количество раз по числу
+связей между сущностями, в данном примере – 3 раза. После завершения связывания
+сущностей следует нажать на кнопку Select (см. рис.2.7) для отмены режима
+выбора связей между сущностями.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 4. Описание связей между сущностями.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>В
+рассматриваемом примере сущность &quot;Worker&quot; связана идентифицирующей
+связью &quot;является родителем&quot; с сущностью &quot;Children&quot;. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Описание
+связей выполняется в редакторе Relationship Editor. Для описания связи
+требуется открыть меню <u>E</u>dit (см. рис.2.6) и выбрать пункт <u>R</u>elationship…
+. В появившемся диалоговом окне «Relationship Editor» (рис.2.9) должны быть
+описаны связи между сущностями. Это описание появится в отчетах Erwin. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:483pt;height:437.25pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image017.png" o:title="" gain="1.5625"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=644 height=583
+src="ERwin.files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.9. Редактор
+связей </p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Кроме того,
+связи могут быть прокомментированы (кратко описаны) на <span lang=EN-US
+style='mso-ansi-language:EN-US'>ER</span>-диаграмме. Для комментирования связей
+на линейке инструментов (см. рис.2.7) мышью необходимо выбрать кнопку Text.
+Затем следует переместить указатель туда, куда желательно поместить
+комментарий, нажать кнопку мыши и набрать нужный текст (эту операцию повторить
+нужное количество раз в нужных местах). После окончания комментирования связей
+необходимо нажать на<span style='mso-spacerun:yes'>  </span>кнопку Select (см.
+рис.2.7) для отмены выбора данного режима. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Результат
+работы (шаги 1 - 4) отображен на диаграмме ERwin (рис.2.10).</p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:353.25pt;height:153pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="ERwin.files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=471 height=204
+src="ERwin.files/image020.jpg" v:shapes="_x0000_i1034"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1402561721">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'><span
+style='font-size:11.0pt;mso-bidi-font-size:14.0pt;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.10. Диаграмма
+уровня сущности</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 5. Описание атрибутов. <o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для описания
+атрибутов сущностей во всплывающем меню выбирается режим “Display Level / <u>A</u>ttribute.
+В основном меню выбирается пункт <u>E</u>dit и его подпункт <u>A</u>ttribute… .
+В появившемся редакторе &quot;Attribute Editor&quot; (рис.2.11) задаются имена
+ключевых (Primary key) и неключевых атрибутов. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для дочерних
+сущностей ключевые атрибуты не указываются вручную. ERwin обеспечивает их
+миграцию из родительской сущности (Foreign Key). </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для лучшего
+визуального восприятия созданной логической модели во всплывающем меню <span
+lang=EN-US style='mso-ansi-language:EN-US'>“Display options/<u>E</u>ntities” </span>выбираются<span
+style='mso-ansi-language:EN-US'> </span>все<span style='mso-ansi-language:EN-US'>
+</span>подпункты<span lang=EN-US style='mso-ansi-language:EN-US'>, </span>кроме<span
+lang=EN-US style='mso-ansi-language:EN-US'> “Logical Datatype/Domain”.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Результат
+создания логической модели изображен на диаграмме ERwin в нотации IDEF1X
+(рис.2.12).</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75"
+ style='width:476.25pt;height:358.5pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image021.png" o:title="Attribute Editor" gain="1.5625"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=635 height=478
+src="ERwin.files/image022.jpg" v:shapes="_x0000_i1035"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt;page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.11. Редактор
+атрибутов</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:417.75pt;height:225.75pt'
+ o:allowoverlap="f">
+ <v:imagedata src="ERwin.files/image023.png" o:title="Диаграмма уровня атрибутов"/>
+</v:shape><![endif]--><![if !vml]><img width=557 height=301
+src="ERwin.files/image024.jpg" v:shapes="_x0000_i1036"><![endif]></p>
+
+<p class=MsoNormal style='page-break-after:avoid'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.12. Диаграмма
+уровня атрибутов в нотации IDEF1X</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>На втором этапе создается <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>физический
+уровень модели</i></b>. </p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для создания
+физического уровня модели следует открыть меню <u><span lang=EN-US
+style='mso-ansi-language:EN-US'>E</span></u><span lang=EN-US style='mso-ansi-language:
+EN-US'>dit </span>и<span style='mso-ansi-language:EN-US'> </span>выбрать<span
+style='mso-ansi-language:EN-US'> </span>пункт<span style='mso-ansi-language:
+EN-US'> <u><span lang=EN-US>P</span></u><span lang=EN-US>hysical Model.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Физическая
+модель создается с помощью следующей последовательности основных шагов. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 1. Определение целевой СУБД.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для
+определения целевой СУБД создаваемой базы данных требуется открыть меню <u>S</u>erver
+и выбрать пункт <u>T</u>arget Server..., а в появившемся окне (см. рис.2.2)
+произвести нужные установки. В рассматриваемом примере выбрана СУБД SYBASE.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='font-size:12.0pt;
+mso-bidi-font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 2. Задание типов данных.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для задания
+типов данных для колонок таблиц нужно открыть меню <u>E</u>dit (см. рис.2.6) и
+выбрать пункт <u>C</u>olumn. В вызванном редакторе “Column Editor“ задаются
+типы данных для колонок таблиц сначала на закладке General, а затем, более
+детально, на закладке SYBASE. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'>Диалог, в котором происходит
+выбор типов данных, приведен на рис.2.13.</p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:476.25pt;height:339pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="ERwin.files/image025.png" o:title="" gain="99297f"
+  grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=635 height=452
+src="ERwin.files/image026.jpg" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1402561722">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.13. Определение
+типов данных для физической модели</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Результат
+работы отображен на диаграмме ERwin в нотации IDEF1X (рис.2.14). </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><i style='mso-bidi-font-style:
+normal'>Шаг 3. Создание базы данных.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>Для создания
+базы данных требуется открыть меню <u><span lang=EN-US style='mso-ansi-language:
+EN-US'>T</span></u><span lang=EN-US style='mso-ansi-language:EN-US'>asks </span>и<span
+style='mso-ansi-language:EN-US'> </span>выбрать<span style='mso-ansi-language:
+EN-US'> </span>пункт<span lang=EN-US style='mso-ansi-language:EN-US'> “<u>F</u>orward
+Engineer/Schema Generation”. </span>В рассматриваемом примере при этом будет
+выполнена команда &quot;Sybase schema generation&quot;. В результате ее
+выполнения ERwin построит пакет SQL-предложений генерации базы данных. </p>
+
+<p class=MsoNormal style='text-indent:35.45pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;page-break-after:avoid'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1038" type="#_x0000_t75"
+ style='width:468.75pt;height:279.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="ERwin.files/image027.png" o:title=""/>
+ <o:lock v:ext="edit" aspectratio="f"/>
+</v:shape><![endif]--><![if !vml]><img width=625 height=373
+src="ERwin.files/image028.jpg" v:shapes="_x0000_i1038"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1402561723">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.14. Диаграмма
+физической модели</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:35.45pt'>На рис.2.15
+показан диалог выбора параметров генерации БД. Из данного рисунка видно, что
+может быть задан фильтр (генерация не всех таблиц), пакет SQL-предложений можно
+просмотреть (preview), распечатать (print), сохранить в файл (report),
+выполнить генерацию (generate).</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:483pt;height:466.5pt' fillcolor="window">
+ <v:imagedata src="ERwin.files/image029.png" o:title="Schema generation"
+  gain="1.5625" grayscale="t"/>
+</v:shape><![endif]--><![if !vml]><img width=644 height=622
+src="ERwin.files/image030.jpg" v:shapes="_x0000_i1039"><![endif]></span><span
+style='font-size:12.0pt;mso-bidi-font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>Рис.2.15. Выбор
+параметров генерации базы данных</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc157591131"><span style='font-size:
+18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.7</span></a><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>. Задания для лабораторных
+работ<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:35.45pt'>С помощью <span lang=EN-US
+style='mso-ansi-language:EN-US'>Erwin </span>разработать <span lang=EN-US
+style='mso-ansi-language:EN-US'>IDEF</span>1<span lang=EN-US style='mso-ansi-language:
+EN-US'>X</span>-модели для следующих предметных областей:</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>библиотечный каталог;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>отдел кадров университета;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>студенты университета;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>деканат (сотрудники и студенты факультета);</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>расписание занятий преподавателей кафедры;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>6)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>расписание занятий студентов университета;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>7)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>учет результатов экзаменационных сессий студентов за
+весь период обучения;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>8)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>общежитие;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>9)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>школа;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>10)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>делопроизводство
+предприятия;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>11)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>делопроизводство
+профкома организации;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>12)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>учет
+материальных ценностей (склад);</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>13)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>магазины
+города;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>14)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>общественный
+транспорт города;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>15)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>клинические
+больницы города;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>16)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>справочная
+служба аптек;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>17)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>справочная
+бытуслуг;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>18)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>бронирование
+места на ж/д транспорте;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>19)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>домоуправление;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>20)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>бугалтерия
+предприятия;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>21)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>учет
+налогоплательщиков;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>22)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>оплата
+услуг телефонной сет;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>23)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>почта;</p>
+
+<p class=MsoNormal style='margin-left:70.9pt;text-align:justify;text-indent:
+-21.25pt;mso-list:l16 level1 lfo31;tab-stops:list 70.9pt'><![if !supportLists]><span
+style='mso-list:Ignore'>24)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><![endif]>банк.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt;mso-pagination:
+none;tab-stops:2.0cm'>Модель должна включать в себя не менее пяти сущностей,
+связанных между собой. Для разработанной модели сгенерировать соответствующие
+отчеты в среде Вр<span lang=EN-US style='mso-ansi-language:EN-US'>win</span>.</p>
+
+<p class=MsoBodyTextIndent><o:p>&nbsp;</o:p></p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc438906010"></a><a
+name="_Toc452864087"></a><a name="_Toc157591132"><span style='mso-bookmark:
+_Toc452864087'><span style='mso-bookmark:_Toc438906010'><span style='font-size:
+18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.8. Контрольные вопросы</span></span></span></a><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Case-средства. <span lang=EN-US style='mso-ansi-language:
+EN-US'>ERwin</span>. Его функции и задачи.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Методология <span lang=EN-US style='mso-ansi-language:
+EN-US'>IDEF</span>1<span lang=EN-US style='mso-ansi-language:EN-US'>X</span>.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Идентификация сущностей. Сущности в <span lang=EN-US
+style='mso-ansi-language:EN-US'>ERwin</span>.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Связи в <span lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>.
+Классификация связей.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Атрибуты в <span lang=EN-US style='mso-ansi-language:
+EN-US'>ERwin</span>. Классификация атрибутов.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Логический и физический уровни модели данных в <span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Последовательность создания логической модели данных в <span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Последовательность создания физической модели данных в <span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Альтернативные ключи.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Инвертированные индексы.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Унификация атрибутов.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Связи категоризации.</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-18.0pt;mso-list:l11 level1 lfo32;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='mso-list:Ignore'>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Реализация ссылочной целостности с помощью <span
+lang=EN-US style='mso-ansi-language:EN-US'>ERwin</span>.</p>
+
+<h3 align=center style='text-align:center;mso-pagination:widow-orphan lines-together;
+tab-stops:2.0cm list 118.6pt'><a name="_Toc157591133"></a><a
+name="_Toc452864088"><span style='mso-bookmark:_Toc157591133'><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;mso-bidi-font-family:"Times New Roman";
+letter-spacing:1.0pt;mso-bidi-font-weight:normal'>2.9. Литература</span></span></a><span
+style='mso-bookmark:_Toc157591133'><span style='font-size:18.0pt;mso-bidi-font-size:
+14.0pt;mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'> </span></span><span style='font-size:18.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman";letter-spacing:1.0pt;mso-bidi-font-weight:
+normal'><o:p></o:p></span></h3>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.0pt;
+mso-list:l7 level1 lfo33;tab-stops:56.0pt list 60.55pt'><![if !supportLists]><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=EN-US style='mso-ansi-language:EN-US'>IEEE
+Std</span>. 1320.2–1998. Стандарт IEEE по синтаксису и семантике языка
+концептуального моделирования IDEFIX97 (IDEF Object). – Введ. 1998-06-25. –
+Нью-Йорк : IEEE, 1998.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.0pt;
+mso-list:l7 level1 lfo33;tab-stops:56.0pt list 60.55pt'><![if !supportLists]><span
+style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Бахтизин, В. В. Технология разработки программного
+обеспечения: учеб. пособие / В. В. Бахтизин, Л. А. Глухова. – Минск : БГУИР,
+2010.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.0pt;
+mso-list:l7 level1 lfo33;tab-stops:56.0pt list 60.55pt'><![if !supportLists]><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Глухова, Л. А. Информационное моделирование с помощью
+CASE-средства ERwin 3.0 : учеб. пособие по курсу «Технология проектирования
+программ» для студ. спец. Т.10.02.00 «Программное обеспечение информационных
+технологий» / Л. А. Глухова, В. В. Бахтизин. – Минск : БГУИР, 1999.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.0pt;
+mso-list:l7 level1 lfo33;tab-stops:56.0pt list 60.55pt'><![if !supportLists]><span
+style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Маклаков, С. В. Создание информационных систем с
+AllFusion Modeling Suite / С. В. Маклаков. – М. : ДИАЛОГ-МИФИ, 2007.</p>
+
+<p class=MsoNormal style='margin-left:0cm;text-align:justify;text-indent:35.0pt;
+mso-list:l7 level1 lfo33;tab-stops:56.0pt list 60.55pt'><![if !supportLists]><span
+style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Черемных, С. В. Моделирование и анализ систем. <span
+lang=EN-US style='mso-ansi-language:EN-US'>IDEF</span>-технологии: практикум /
+С. В. Черемных, И. О. Семенов, В. С. Ручкин. – М. : Финансы и статистика, 2002.</p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:36.0pt;tab-stops:2.0cm'><b
+style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

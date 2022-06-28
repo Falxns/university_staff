@@ -1,0 +1,39 @@
+﻿  Main.cpp
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(86,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(99,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(101,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(103,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(105,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(114,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(144,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(153,41): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(170,63): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(177,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(207,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(246,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(269,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(311,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(316,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(322,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(338,29): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(347,78): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(361,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(386,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(427,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(430,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(440,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(447,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(454,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(461,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(471,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(478,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(485,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(492,19): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Work\Метра\LAB-3\LAB-3\Main\Main.cpp(519,1): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : см. объявление "freopen"
+  Создание кода
+  1 of 327 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Main.vcxproj -> D:\Work\Метра\LAB-3\LAB-3\Release\Main.exe

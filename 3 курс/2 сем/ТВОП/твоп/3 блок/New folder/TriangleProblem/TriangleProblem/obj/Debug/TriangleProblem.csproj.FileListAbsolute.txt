@@ -1,0 +1,19 @@
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.exe.config
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.exe
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.pdb
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.csprojResolveAssemblyReference.cache
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.Form1.resources
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.Properties.Resources.resources
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.csproj.GenerateResource.Cache
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.exe
+c:\users\аня\documents\visual studio 2017\Projects\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.exe.config
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\bin\Debug\TriangleProblem.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.csprojAssemblyReference.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.Form1.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.Properties.Resources.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.csproj.GenerateResource.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.csproj.CoreCompileInputs.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\TriangleProblem\TriangleProblem\obj\Debug\TriangleProblem.pdb

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5FA7AF83-063A-4DFC-B2AA-B0519372977D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Project62.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Library\TreeLib.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project62">
+        <MSBuild Projects="Project62.dproj"/>
+    </Target>
+    <Target Name="Project62:Clean">
+        <MSBuild Projects="Project62.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project62:Make">
+        <MSBuild Projects="Project62.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TreeLib">
+        <MSBuild Projects="Library\TreeLib.dproj"/>
+    </Target>
+    <Target Name="TreeLib:Clean">
+        <MSBuild Projects="Library\TreeLib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TreeLib:Make">
+        <MSBuild Projects="Library\TreeLib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project62;TreeLib"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project62:Clean;TreeLib:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project62:Make;TreeLib:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

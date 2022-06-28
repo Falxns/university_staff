@@ -1,0 +1,21 @@
+ m := 105263157000000000;
+    n := 105263157000000000;
+    IsCorrect := False;
+    repeat
+    begin
+        if m = 2 * n then
+            IsCorrect := True
+        else
+        begin
+            inc(n);
+            str(n , s1);
+            str(n , s2);
+            s2[1] := s1[Length(s1)];
+            for i := 1 to Length(s1) - 1 do
+                s2[i + 1] := s1[i];
+            val (s2 , m , Code);
+            Writeln(n,' ||| ',m);
+        end;
+    end;
+    until IsCorrect;
+    Writeln('Finish: ',n,' ||| ',m);

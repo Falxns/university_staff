@@ -1,0 +1,9 @@
+Запускаем RegIT.exe
+ "Next", затем "Register later"
+
+Запускаем Keygen.exe,
+  выбираем Продукт, жмём "Generate ID"
+
+копируем Registration ID в RegIT.exe
+
+Усё. двс.

@@ -1,0 +1,39 @@
+object GraphF: TGraphF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Gladkiy Maksim, 851001'
+  ClientHeight = 397
+  ClientWidth = 376
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = False
+  PopupMenu = PopupMenu
+  Position = poMainFormCenter
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PopupMenu: TPopupMenu
+    Left = 8
+  end
+  object MainMenu: TMainMenu
+    Left = 8
+    Top = 48
+    object FileMenu: TMenuItem
+      Caption = 'File'
+      object Save: TMenuItem
+        Caption = 'Save..'
+      end
+    end
+  end
+  object SaveFile: TSaveDialog
+    Left = 8
+    Top = 96
+  end
+end

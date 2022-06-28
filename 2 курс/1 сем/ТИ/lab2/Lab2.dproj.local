@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.574,=D:\Delphi C Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.761,=D:\Проги\TI\TI 2\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.880,D:\Work\ТИ\lab2\Unit1.pas=D:\Work\ТИ\lab2\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.542,D:\Delphi C Projects\Unit1.pas=D:\Проги\TI\TI 2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.880,D:\Work\ТИ\lab2\Unit1.dfm=D:\Work\ТИ\lab2\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.753,D:\Delphi C Projects\Project1.dproj=D:\Проги\TI\TI 2\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.542,D:\Delphi C Projects\Unit1.dfm=D:\Проги\TI\TI 2\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.426,D:\Work\ТИ\lab2\Project1.dproj=D:\Work\ТИ\lab2\Lab2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

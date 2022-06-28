@@ -1,0 +1,18 @@
+program Game;
+
+
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Main in 'Main.pas' {MainF},
+  Game in 'Game.pas' {GameF};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TMainF, MainF);
+  Application.CreateForm(TGameF, GameF);
+  Application.Run;
+end.

@@ -1,0 +1,34 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TMaksim = class(TForm)
+    PopupMenu: TPopupMenu;
+    Get: TButton;
+    Save: TSaveDialog;
+    Menu: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    SavetoFile: TMenuItem;
+    N1: TMenuItem;
+    Exit: TMenuItem;
+    procedure OpenFileClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Maksim: TMaksim;
+
+implementation
+
+{$R *.dfm}
+
+end.

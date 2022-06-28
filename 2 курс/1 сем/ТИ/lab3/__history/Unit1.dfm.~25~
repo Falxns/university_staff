@@ -1,0 +1,231 @@
+object Rabina: TRabina
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Rabina'
+  ClientHeight = 503
+  ClientWidth = 716
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TLabel
+    Left = 35
+    Top = 77
+    Width = 3
+    Height = 13
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 33
+    Width = 8
+    Height = 13
+    Alignment = taCenter
+    Caption = 'Q'
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 6
+    Height = 13
+    Alignment = taCenter
+    Caption = 'P'
+  end
+  object N: TLabel
+    Left = 8
+    Top = 58
+    Width = 12
+    Height = 13
+    Caption = 'N'
+  end
+  object B: TLabel
+    Left = 8
+    Top = 83
+    Width = 6
+    Height = 13
+    Caption = 'B'
+  end
+  object Label3: TLabel
+    Left = 352
+    Top = 348
+    Width = 86
+    Height = 13
+    Caption = #1058#1088#1077#1090#1100#1077' '#1079#1085#1072#1095#1077#1085#1080#1077
+  end
+  object Label4: TLabel
+    Left = 449
+    Top = 348
+    Width = 105
+    Height = 13
+    Caption = #1063#1077#1090#1074#1105#1088#1090#1086#1077' '#1079#1085#1072#1095#1077#1085#1080#1077
+  end
+  object Label5: TLabel
+    Left = 243
+    Top = 348
+    Width = 86
+    Height = 13
+    Caption = #1042#1090#1086#1088#1086#1077' '#1079#1085#1072#1095#1077#1085#1080#1077
+  end
+  object Label6: TLabel
+    Left = 125
+    Top = 348
+    Width = 80
+    Height = 13
+    Caption = #1050#1086#1085#1077#1095#1085#1099#1081' '#1092#1072#1081#1083
+  end
+  object Label7: TLabel
+    Left = 8
+    Top = 348
+    Width = 80
+    Height = 13
+    Caption = #1048#1089#1093#1086#1076#1085#1099#1081' '#1092#1072#1081#1083
+  end
+  object Pnumber: TEdit
+    Left = 20
+    Top = 5
+    Width = 121
+    Height = 20
+    TabOrder = 0
+    OnChange = PnumberChange
+  end
+  object Qnumber: TEdit
+    Left = 20
+    Top = 30
+    Width = 121
+    Height = 20
+    TabOrder = 1
+    OnChange = PnumberChange
+  end
+  object calculateN: TButton
+    Left = 147
+    Top = 3
+    Width = 119
+    Height = 25
+    Caption = #1055#1086#1076#1090#1074#1077#1088#1076#1080#1090#1100
+    Enabled = False
+    TabOrder = 2
+    OnClick = calculateNClick
+  end
+  object Nnumber: TEdit
+    Left = 20
+    Top = 55
+    Width = 121
+    Height = 20
+    Enabled = False
+    TabOrder = 3
+    OnChange = PnumberChange
+  end
+  object Bnumber: TEdit
+    Left = 20
+    Top = 80
+    Width = 121
+    Height = 20
+    TabOrder = 4
+    OnChange = PnumberChange
+  end
+  object cipher: TButton
+    Left = 147
+    Top = 32
+    Width = 119
+    Height = 25
+    Caption = #1047#1072#1096#1080#1092#1088#1086#1074#1072#1090#1100
+    Enabled = False
+    TabOrder = 5
+    OnClick = cipherClick
+  end
+  object FileText: TMemo
+    Left = 8
+    Top = 121
+    Width = 89
+    Height = 221
+    TabOrder = 6
+  end
+  object Open: TButton
+    Left = 272
+    Top = 3
+    Width = 121
+    Height = 25
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083
+    TabOrder = 7
+    OnClick = OpenClick
+  end
+  object CipherText: TMemo
+    Left = 125
+    Top = 121
+    Width = 89
+    Height = 221
+    TabOrder = 8
+  end
+  object SaveCipher: TButton
+    Left = 272
+    Top = 34
+    Width = 192
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1079#1072#1096#1080#1092#1088#1086#1074#1072#1085#1085#1099#1081' '#1092#1072#1081#1083
+    TabOrder = 9
+    OnClick = SaveCipherClick
+  end
+  object OpenCipher: TButton
+    Left = 272
+    Top = 59
+    Width = 192
+    Height = 25
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1079#1072#1096#1080#1092#1088#1086#1074#1072#1085#1085#1099#1081' '#1092#1072#1081#1083
+    TabOrder = 10
+    OnClick = OpenCipherClick
+  end
+  object saveFile: TButton
+    Left = 272
+    Top = 90
+    Width = 119
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1092#1072#1081#1083
+    TabOrder = 11
+    OnClick = saveFileClick
+  end
+  object Decipher: TButton
+    Left = 147
+    Top = 59
+    Width = 119
+    Height = 25
+    Caption = ' '#1056#1072#1089#1096#1080#1092#1088#1086#1074#1072#1090#1100
+    Enabled = False
+    TabOrder = 12
+    OnClick = DecipherClick
+  end
+  object SecByte: TMemo
+    Left = 240
+    Top = 121
+    Width = 89
+    Height = 221
+    TabOrder = 13
+  end
+  object ThByte: TMemo
+    Left = 349
+    Top = 121
+    Width = 89
+    Height = 221
+    TabOrder = 14
+  end
+  object FrByte: TMemo
+    Left = 463
+    Top = 121
+    Width = 89
+    Height = 221
+    TabOrder = 15
+  end
+  object OpenF: TOpenDialog
+    Left = 608
+    Top = 160
+  end
+  object SaveF: TSaveDialog
+    Left = 608
+    Top = 88
+  end
+end

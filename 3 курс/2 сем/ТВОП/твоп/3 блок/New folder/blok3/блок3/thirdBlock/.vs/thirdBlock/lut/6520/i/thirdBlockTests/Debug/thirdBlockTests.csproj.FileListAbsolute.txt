@@ -1,0 +1,6 @@
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\b\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\b\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlockTests\Debug\thirdBlockTests.csprojResolveAssemblyReference.cache
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlockTests\Debug\thirdBlockTests.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlockTests\Debug\thirdBlockTests.dll
+C:\Users\Екатерина\Desktop\thirdBlock\.vs\thirdBlock\lut\0\i\thirdBlockTests\Debug\thirdBlockTests.pdb

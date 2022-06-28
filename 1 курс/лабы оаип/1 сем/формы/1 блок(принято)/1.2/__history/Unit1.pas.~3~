@@ -1,0 +1,106 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  TMaksim = class(TForm)
+    PopupMenu: TPopupMenu;
+    Get: TButton;
+    Save: TSaveDialog;
+    Menu: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    SavetoFile: TMenuItem;
+    N1: TMenuItem;
+    Exit: TMenuItem;
+    Info: TMenuItem;
+    Developer: TMenuItem;
+    procedure OpenFileClick(Sender: TObject);
+    procedure SavetoFileClick(Sender: TObject);
+    procedure ExitClick(Sender: TObject);
+    procedure InfoClick(Sender: TObject);
+    procedure DeveloperClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Maksim: TMaksim;
+
+implementation
+
+{$R *.dfm}
+
+function CheckFileName(MyFile: string): string;
+var
+   i: byte;
+   IsCorrect: boolean;
+begin
+   IsCorrect := false;
+   i := 1;
+   while  not IsCorrect and (i <= Length(MyFile)) do
+   begin
+      if MyFile[i] = '.' then
+         IsCorrect := true;
+      inc(i);
+   end;
+   if not IsCorrect then
+      MyFile := MyFile + '.txt';
+   CheckFileName := MyFile;
+end;
+
+procedure TMaksim.DeveloperClick(Sender: TObject);
+begin
+    MessageDlg('Developer: Maksim Gladkiy', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.ExitClick(Sender: TObject);
+begin
+    Close;
+end;
+
+procedure TMaksim.InfoClick(Sender: TObject);
+begin
+    MessageDlg('This program determines the total volume (in liters) of 12 balls nested with each other with walls of 5mm. The internal diameter of the inner ball is 10cm. Considered that the balls are embedded in each other without gaps', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.SavetoFileClick(Sender: TObject);
+var
+   OutputFile: TextFile;
+   MyFile: string;
+   ButtonSelected: byte;
+begin
+   if Save.Execute then
+   begin
+      MyFile := Save.FileName;
+      MyFile := CheckFileName(MyFile);
+      if FileExists(MyFile) then
+      begin
+         ButtonSelected := MessageDlg('Do you want to rewrite the file?', mtConfirmation, [mbYes,mbNo], 0);
+         if ButtonSelected = mrYes then
+         begin
+            AssignFile(OutputFile, MyFile);
+            Rewrite(OutputFile);
+            Writeln(OutputFile, Result.Caption);
+            CloseFile(OutputFile);
+         end
+         else
+            DayChange(Sender);
+      end
+      else
+      begin
+         AssignFile(OutputFile, MyFile);
+         Rewrite(OutputFile);
+         WriteLn(OutputFile, Result.Caption);
+         CloseFile(OutputFile);
+      end;
+   end;
+end;
+
+end.

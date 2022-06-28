@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Client</name>
+    </assembly>
+    <members>
+        <member name="T:BSUIRMilitaryFaculty.LanStation.Client.ServerUnavailableException">
+            <summary>
+            Специальное исключение для указание на то,
+            что проблема связана с недоступностью сервера
+            </summary>
+        </member>
+        <member name="T:BSUIRMilitaryFaculty.LanStation.Client.Client">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.Client.Client.Start(System.String,System.String,System.Int32)">
+            <summary>
+            Установить соединение с сервером.
+            </summary>
+            <param name="name">Имя клиента, для которого устанавливается соединение.</param>
+        </member>
+        <member name="F:BSUIRMilitaryFaculty.LanStation.Client.Client.disablePlayer">
+            <summary>
+            Only for testing purposes
+            </summary>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.Client.Client.TurnToSimplex(System.Boolean)">
+            <summary>
+            true - simplex out
+            </summary>
+            <param name="isOut"></param>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.Client.Client.ClientExceptionCleanUp(System.Exception)">
+            <summary>
+            Этот метод вызывается если сервер не доступен 
+            Вызывается событие
+            Останавливается звук
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.Client.Client.Filler(System.IntPtr,System.Int32)">
+            <summary>
+            Читает данные из глобальной очереди и пишет их в буффер неуправляемого проигрывателя
+            </summary>
+            <param name="data"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.Client.Client.DataArrived(System.IntPtr,System.Int32)">
+            <summary>
+            Обработчик DataArrived является самым главным двигателем передачи звука
+            </summary>
+            <param name="data"></param>
+            <param name="size"></param>
+        </member>
+    </members>
+</doc>

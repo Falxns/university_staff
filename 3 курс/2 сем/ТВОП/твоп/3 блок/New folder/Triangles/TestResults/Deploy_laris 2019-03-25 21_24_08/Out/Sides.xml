@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <FirstSide>0</FirstSide>
+    <SecondSide>3</SecondSide>
+    <ThirdSide>3</ThirdSide>
+    <ExpectedResult>false</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <FirstSide>3</FirstSide>
+    <SecondSide>0</SecondSide>
+    <ThirdSide>3</ThirdSide>
+    <ExpectedResult>false</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <FirstSide>3</FirstSide>
+    <SecondSide>3</SecondSide>
+    <ThirdSide>0</ThirdSide>
+    <ExpectedResult>false</ExpectedResult>
+  </TestCase>
+</TestCases>

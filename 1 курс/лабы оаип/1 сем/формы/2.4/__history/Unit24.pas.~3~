@@ -1,0 +1,78 @@
+unit Unit24;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.Grids;
+
+type
+  TTMaxim = class(TForm)
+    Label1: TLabel;
+    Size: TEdit;
+    StringGrid1: TStringGrid;
+    StringGrid2: TStringGrid;
+    Change: TButton;
+    Create: TButton;
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    Openfile1: TMenuItem;
+    Savetofile: TMenuItem;
+    N1: TMenuItem;
+    Exit: TMenuItem;
+    Info: TMenuItem;
+    Developer: TMenuItem;
+    PopupMenu1: TPopupMenu;
+    SaveDialog1: TSaveDialog;
+    OpenDialog1: TOpenDialog;
+    procedure SizeChange(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TMaxim: TTMaxim;
+
+implementation
+
+{$R *.dfm}
+
+procedure TTMaxim.SizeChange(Sender: TObject);
+begin
+   Save.Enabled := False;
+   if (Length(Size.Text) > 0) then
+   begin
+      Create.Enabled := True;
+      if  (Length(Size.Text) > 2) then
+      begin
+         ShowMessage('Error. The number, you have entered is too hight.');
+         Create.Enabled := False;
+         Size.Clear;
+      end;
+   end
+   else
+      Create.Enabled := False;
+end;
+
+procedure TMaxim.SizeKeyPress(Sender: TObject; var Key: Char);
+var
+   Numerals: set of Char;
+begin
+   Numerals := ['0'..'9', #8];
+   with Sender as TEdit do
+   begin
+      if (Key = #13) and (Length(Text) = 0) then
+         Key := #0;
+      if not (Key in Numerals) then
+         Key := #0;
+      if (Length(Text) = 2) and (Key <> #8) then
+         Key := #0;
+      if (Length(Text) = 0) and (Key = '0') then
+         Key := #0;
+   end;
+end;
+
+end.

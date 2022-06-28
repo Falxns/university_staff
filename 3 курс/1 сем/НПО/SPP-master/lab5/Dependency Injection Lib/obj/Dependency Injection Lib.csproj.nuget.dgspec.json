@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\maksf\\Desktop\\SPP-master\\lab5\\Dependency Injection Lib\\Dependency Injection Lib.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\maksf\\Desktop\\SPP-master\\lab5\\Dependency Injection Lib\\Dependency Injection Lib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\maksf\\Desktop\\SPP-master\\lab5\\Dependency Injection Lib\\Dependency Injection Lib.csproj",
+        "projectName": "Dependency Injection Lib",
+        "projectPath": "C:\\Users\\maksf\\Desktop\\SPP-master\\lab5\\Dependency Injection Lib\\Dependency Injection Lib.csproj",
+        "packagesPath": "C:\\Users\\maksf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maksf\\Desktop\\SPP-master\\lab5\\Dependency Injection Lib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maksf\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.5, )"
+            },
+            "NLog.Config": {
+              "target": "Package",
+              "version": "[4.7.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\maksf\\.dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

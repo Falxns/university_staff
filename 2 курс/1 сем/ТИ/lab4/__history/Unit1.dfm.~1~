@@ -1,0 +1,111 @@
+object EDS: TEDS
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'EDS'
+  ClientHeight = 347
+  ClientWidth = 790
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 8
+    Width = 78
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' Q'
+  end
+  object Label2: TLabel
+    Left = 168
+    Top = 8
+    Width = 73
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' P'
+  end
+  object Label3: TLabel
+    Left = 304
+    Top = 8
+    Width = 52
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' h'
+  end
+  object Label4: TLabel
+    Left = 558
+    Top = 8
+    Width = 89
+    Height = 13
+    Caption = #1042#1074#1077#1076#1080#1090#1077' X'
+  end
+  object Label5: TLabel
+    Left = 718
+    Top = 8
+    Width = 6
+    Height = 13
+    Caption = 'Y'
+  end
+  object Label6: TLabel
+    Left = 456
+    Top = 8
+    Width = 7
+    Height = 13
+    Caption = 'G'
+  end
+  object QNumber: TEdit
+    Left = 8
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object PNumber: TEdit
+    Left = 144
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object HNumber: TEdit
+    Left = 280
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object XNumber: TEdit
+    Left = 534
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object YNumber: TEdit
+    Left = 670
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object Calculate: TButton
+    Left = 22
+    Top = 58
+    Width = 529
+    Height = 25
+    Caption = #1042#1099#1095#1080#1089#1083#1080#1090#1100' '#1082#1083#1102#1095
+    TabOrder = 5
+    OnClick = CalculateClick
+  end
+  object GNumber: TEdit
+    Left = 407
+    Top = 31
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+end

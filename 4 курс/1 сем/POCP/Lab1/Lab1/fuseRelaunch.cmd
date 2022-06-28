@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/maksf/Desktop/POCP/Lab1/Lab1/TB_dop3_isim_beh.exe" -prj "C:/Users/maksf/Desktop/POCP/Lab1/Lab1/TB_dop3_beh.prj" "work.TB_dop3" 

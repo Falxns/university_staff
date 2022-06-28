@@ -1,0 +1,58 @@
+program Project5;
+
+{$APPTYPE CONSOLE}
+
+uses
+    System.SysUtils;
+
+var
+    i,n:integer;
+    x,y:array of integer;
+    abx,aby,bcx,bcy,opr,k,l:integer;
+    IsCorrect : Boolean;
+
+begin
+    k := 0;
+    l := 0;
+    if n=3 then
+        writeln('Vypukli')
+    else
+    //сделать исключение для треугольника(всегда выпуклый)
+    IsCorrect := false;
+    repeat
+        try
+            Readln(n);
+            if n > 2 then
+                IsCorrect := true
+            else
+                Writeln('Its not polygon. Use numbers [3..',High(Integer),']');
+        except
+            Writeln('Use numbers [3..',High(Integer),']');
+        end;
+    until IsCorrect;
+    if n = 3 then
+        writeln('Polygon is convex');
+    SetLength(x,n);
+    SetLength(y,n);
+    for i := 0 to n-1 do
+        readln(x[i],y[i]);
+    //x[n+1] := x[0];
+    //y[n+1] := y[0];
+    for i := 1 to n-1 do
+    begin
+        abx := x[i] - x[i-1];
+        aby := y[i] - y[i-1];
+        bcx := x[i+1] - x[i];
+        bcy := y[i+1] - y[i];
+        opr := abx * bcy - aby * bcx;
+        if opr > 0 then
+            inc(k)
+        else
+            inc(l);
+    end;
+    if ((k > 0)and(l=0))or((k=0)and(l>0)) then
+        writeln('Vypukli')
+    else
+        writeln('Ne vypukli');
+    readln;
+end.

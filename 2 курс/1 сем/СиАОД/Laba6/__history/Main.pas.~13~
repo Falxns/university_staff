@@ -1,0 +1,38 @@
+unit Main;
+
+interface
+
+uses
+    Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+    Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+    TMainF = class(TForm)
+        Inp: TEdit;
+        Out: TLabel;
+        Calc: TButton;
+        procedure InpKeyPress(Sender: TObject; var Key: Char);
+    private
+        { Private declarations }
+    public
+        { Public declarations }
+end;
+
+const
+    Operand: set of Char = ['A'..'Z', 'a'..'z'];
+    Operation: set of Char = ['+', '-', '*', '/', '^'];
+
+var
+  MainF: TMainF;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMainF.InpKeyPress(Sender: TObject; var Key: Char);
+begin
+    if (not (Key in Operand))or(not (Key in Operation)) then
+        Key := #0;
+end;
+
+end.

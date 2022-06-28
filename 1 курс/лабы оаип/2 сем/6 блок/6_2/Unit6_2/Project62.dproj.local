@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.913,=C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.996,=C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.618,C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Проги\Блок 6\6_2\Unit62.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,D:\Проги\Блок 6\6_3\Unit6_2\6_2\MyUnit.pas=D:\Проги\Блок 6\6_3\Unit6_2\6_2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.618,C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Проги\Блок 6\6_2\Unit62.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,=D:\Проги\Блок 6\6_3\Unit6_2\6_2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.387,C:\Users\Алексей\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Проги\Блок 6\6_2\Project62.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.163,=D:\Проги\Блок 6\6_3\Unit6_2\6_2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.938,=D:\Проги\Блок 6\6_3\Unit6_2\6_2\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,45 @@
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csprojResolveAssemblyReference.cache
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe.config
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe.config
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csprojResolveAssemblyReference.cache
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.dll
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.pdb
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe.config
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csprojAssemblyReference.cache
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csproj.CopyComplete
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.dll
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.pdb
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe.config
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csprojAssemblyReference.cache
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csproj.CopyComplete
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.dll
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.pdb

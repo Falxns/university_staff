@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+	float Diameter, Volume;
+	float Pi = 3.1415926535897932385;
+	int Quantity = 12;
+
+	printf("Determine the total volume (in liters) of 12 balls nested with each other with walls of 5mm\n");
+	printf("The internal diameter of the inner ball is 10cm. Consider that the balls are embedded in each other without gaps\n");
+
+	Diameter = 0.1;
+	Volume = Pi * Diameter * Diameter * Diameter / 6;
+	for (int i = 1; i < Quantity; i++)
+	{
+		Diameter += 0.01;
+		Volume += Pi * Diameter * Diameter * Diameter / 6;
+	}
+	Volume = 1000 * Volume;
+	printf("The volume of balls is %.5f liters", Volume);
+	return 0;
+}

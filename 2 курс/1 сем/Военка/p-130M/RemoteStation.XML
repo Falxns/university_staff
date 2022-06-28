@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RemoteStation</name>
+    </assembly>
+    <members>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.RemoteStation.ConnObject.CheckName(System.String)">
+            <summary>
+            Проверяет есть ли уже такая fio в списке - то добавляет символ в конец чтобы fio различались
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.RemoteStation.ConnObject.VoiceTransfer(System.Int32,System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id">clGuid</param>
+            <param name="bufer">m_RecBuffer буфер записи с клиента</param>
+            <param name="offset">0</param>
+            <param name="count">длинна m_RecBuffer буфера записи с клиента</param>
+            <param name="time">Время (вроде ни где не меняется)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BSUIRMilitaryFaculty.LanStation.RemoteStation.ConnObject.ChangeUsers">
+            <summary>
+            Метод создаёт копию контейнера пользователей
+            и дёргает событие для оповещения об изменении в списке юзеров
+            </summary>
+        </member>
+    </members>
+</doc>

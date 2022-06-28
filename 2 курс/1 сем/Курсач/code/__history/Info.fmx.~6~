@@ -1,0 +1,121 @@
+object InfoF: TInfoF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'INFO'
+  ClientHeight = 230
+  ClientWidth = 400
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object imgBack: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Size.Width = 400.000000000000000000
+    Size.Height = 230.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lInfo: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 100.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'INFORMATION'
+    TabOrder = 7
+  end
+  object lLevel: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 5.000000000000000000
+    Position.Y = 70.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '- Use ARROWS to choose level'
+    TabOrder = 5
+  end
+  object lJump: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 5.000000000000000000
+    Position.Y = 110.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '- Use SPACE to jump'
+    TabOrder = 4
+  end
+  object lStart: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 5.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '- Use ENTER to start game'
+    TabOrder = 1
+  end
+  object lReturn: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 5.000000000000000000
+    Position.Y = 90.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '- Use ESC to return to main menu'
+    TabOrder = 0
+  end
+  object lMusic: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 5.000000000000000000
+    Position.Y = 130.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = '- In SETTINGS you can turn off the music'
+    TabOrder = 3
+  end
+  object lSkins: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 15.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'and choose one of the skins'
+    TabOrder = 2
+  end
+  object lFun: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 100.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'asinastra'
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'HAVE FUN!'
+    TabOrder = 6
+  end
+end

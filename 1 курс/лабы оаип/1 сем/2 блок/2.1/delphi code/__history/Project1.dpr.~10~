@@ -1,0 +1,65 @@
+program Project5;
+
+{$APPTYPE CONSOLE}
+
+uses
+    System.SysUtils;
+
+var
+    x,y : array of integer;
+    Num , i , FirstVectorX , FirstVectorY , SecondVectorX , SecondVectorY , Determinator : Integer;
+    FirstCounter , SecondCounter : Byte;
+    IsCorrect : Boolean;
+
+begin
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Num);
+            if Num > 2 then
+                IsCorrect := true
+            else
+                Writeln('Its not polygon. Use numbers [3..',High(Integer),']');
+        except
+            Writeln('Use numbers [3..',High(Integer),']');
+        end;
+    until IsCorrect;
+    if Num = 3 then
+        Writeln('Triangle is always convex')
+    else
+        begin
+            SetLength(x,Num + 1);
+            SetLength(y,Num + 1);
+            for i := 0 to Num - 1 do
+                repeat
+                    IsCorrect := true;
+                    try
+                        Readln(x[i],y[i]);
+                    except
+                        Writeln('Use numbers [', Low(Integer),'..',High(Integer),']');
+                        IsCorrect := false;
+                    end;
+                until IsCorrect;
+            x[Num] := x[0];
+            y[Num] := y[0];
+            FirstCounter := 0;
+            SecondCounter := 0;
+            for i := 1 to Num - 1 do
+            begin
+                FirstVectorX := x[i] - x[i - 1];
+                FirstVectorY := y[i] - y[i - 1];
+                SecondVectorX := x[i + 1] - x[i];
+                SecondVectorY := y[i + 1] - y[i];
+                Determinator := FirstVectorX * SecondVectorY - FirstVectorY * SecondVectorX;
+                if Determinator > 0 then
+                    inc(FirstCounter)
+                else
+                    inc(SecondCounter);
+            end;
+            if ((FirstCounter > 0)and(SecondCounter=0))or((FirstCounter=0)and(SecondCounter>0)) then
+                writeln('Polygon is convex')
+            else
+                writeln('Polygon is not convex');
+        end;
+    readln;
+end.

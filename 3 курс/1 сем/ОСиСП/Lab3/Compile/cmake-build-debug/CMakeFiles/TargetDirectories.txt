@@ -1,0 +1,6 @@
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/injectDll.dir
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/library.dir
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/app.dir
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/cmake-build-debug/CMakeFiles/test.dir

@@ -1,0 +1,10 @@
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\bin\Debug\TriangleApp.exe.config
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\bin\Debug\TriangleApp.exe
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\bin\Debug\TriangleApp.pdb
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.csprojResolveAssemblyReference.cache
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.MainForm.resources
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.Properties.Resources.resources
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.csproj.GenerateResource.Cache
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.csproj.CoreCompileInputs.cache
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.exe
+E:\6 сем\тестирование\3 блок\TriangleApp\TriangleApp\obj\Debug\TriangleApp.pdb

@@ -1,0 +1,25 @@
+object SettingsF: TSettingsF
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Settings'
+  ClientHeight = 300
+  ClientWidth = 300
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnMute: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 50.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'MUTE'
+    TextSettings.Font.Size = 30.000000000000000000
+    OnClick = btnMuteClick
+  end
+end

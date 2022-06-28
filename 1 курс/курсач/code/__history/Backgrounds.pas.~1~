@@ -1,0 +1,68 @@
+unit Skins;
+
+interface
+
+uses
+    System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+    FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+    FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+
+type
+    TSkinsF = class(TForm)
+        FirstChoice: TButton;
+        SecChoice: TButton;
+        ThirdChoice: TButton;
+        BackGr1: TImage;
+        BackGr2: TImage;
+        BackGr3: TImage;
+        procedure FirstChoiceClick(Sender: TObject);
+        procedure SecChoiceClick(Sender: TObject);
+        procedure FormCreate(Sender: TObject);
+        procedure ThirdChoiceClick(Sender: TObject);
+    private
+        { Private declarations }
+    public
+        { Public declarations }
+end;
+
+var
+    SkinsF: TSkinsF;
+
+implementation
+
+{$R *.fmx}
+
+uses Play, Main;
+
+procedure TSkinsF.FormCreate(Sender: TObject);
+begin
+    FirstChoice.Enabled := false;
+    SecChoice.Enabled := true;
+    ThirdChoice.Enabled := true;
+end;
+
+procedure TSkinsF.FirstChoiceClick(Sender: TObject);
+begin
+    FirstChoice.Enabled := false;
+    SecChoice.Enabled := true;
+    ThirdChoice.Enabled := true;
+    GameF.Background.Bitmap.LoadFromFile('D:\Work\курсач\pics\Background1.jpg');
+end;
+
+procedure TSkinsF.SecChoiceClick(Sender: TObject);
+begin
+    SecChoice.Enabled := false;
+    FirstChoice.Enabled := true;
+    ThirdChoice.Enabled := true;
+    GameF.Background.Bitmap.LoadFromFile('D:\Work\курсач\pics\Background2.jpg');
+end;
+
+procedure TSkinsF.ThirdChoiceClick(Sender: TObject);
+begin
+    ThirdChoice.Enabled := false;
+    FirstChoice.Enabled := true;
+    SecChoice.Enabled := true;
+    GameF.Background.Bitmap.LoadFromFile('D:\Work\курсач\pics\Background3.jpg');
+end;
+
+end.

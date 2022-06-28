@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+	int Num10, Num2;
+	printf("This program looks for the smallest K for which M to the power K greater than N\n");
+	printf("Use natural numbers, M should be greater than 1, N should be greater than M\n");
+	scanf_s("%d%d",&Num10,&Num2);
+	int Num1 = Num10;
+        int Power = 1;
+	if (Num10 > 1 && Num2 > Num10)
+	{
+		while (Num1 < Num2)
+		{
+			Power++;
+			Num1 *= Num10;
+		}
+		printf("The smallest K for which M to the power K greater than N is : %d", Power);
+	}
+	else
+		printf("You should use natural numbers, M should be greater than 1, N should be greater than M\n");
+	return 0;
+}

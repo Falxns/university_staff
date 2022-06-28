@@ -1,0 +1,172 @@
+unit Unit62;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.StdCtrls, System.ImageList, FMX.ImgList,
+  FMX.Menus, MyUnit;
+
+type
+   PTree = ^Tree;
+
+   Tree = record
+      Num, LeftCount, RightCount: Byte;
+      Up: PTree;
+      Left: PTree;
+      Right: PTree;
+   end;
+
+   TLab_6_2 = class(TForm)
+    AddPanel: TPanel;
+    AddRight: TButton;
+    AddLeft: TButton;
+    ImageList1: TImageList;
+    MainMenu1: TMainMenu;
+    Help: TMenuItem;
+    Exit: TMenuItem;
+    AboutTheDeveloper: TMenuItem;
+    AboutTheProgram: TMenuItem;
+    Find: TButton;
+    PointLabel: TLabel;
+    Result: TLabel;
+    HowToUse: TMenuItem;
+    procedure FormShow(Sender: TObject);
+    procedure AddRightClick(Sender: TObject);
+    procedure AddLeftClick(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+      Shift: TShiftState);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure ExitClick(Sender: TObject);
+    procedure AboutTheDeveloperClick(Sender: TObject);
+    procedure AboutTheProgramClick(Sender: TObject);
+    procedure FindClick(Sender: TObject);
+    procedure HowToUseClick(Sender: TObject);
+   private
+      Count, Step, Buffer: Integer;
+      Values: MyUnit.ArrV;
+   public
+    { Public declarations }
+   end;
+
+var
+  Lab_6_2: TLab_6_2;
+
+const
+   Wid = 20;
+   down = 40;
+
+implementation
+
+{$R *.fmx}
+
+procedure TLab_6_2.AboutTheDeveloperClick(Sender: TObject);
+begin
+   MessageDlg('This program developed by Temofievich Alexey, gr.851001.',TMsgDlgType.mtInformation, mbOKCancel, 0);
+end;
+
+procedure TLab_6_2.AboutTheProgramClick(Sender: TObject);
+begin
+   MessageDlg('This program finds vertices, whose lengths of the left and right subtrees are different.',TMsgDlgType.mtInformation, mbOKCancel, 0);
+end;
+
+procedure TLab_6_2.AddLeftClick(Sender: TObject);
+var
+   Num: Byte;
+begin
+   AddLeft.Enabled := True;
+   AddRight.Enabled := True;
+   MyUnit.AddL;
+   MyUnit.CirDraw(Lab_6_2);
+   MyUnit.DrawL(Lab_6_2);
+   Num := MyUnit.PTemp.Num;
+   PointLabel.Text := 'You are at the vertex ' + IntToStr(Num);
+end;
+
+procedure TLab_6_2.AddRightClick(Sender: TObject);
+var
+   Num: Byte;
+begin
+   AddLeft.Enabled := True;
+   AddRight.Enabled := True;
+   MyUnit.AddR;
+   MyUnit.CirDraw(Lab_6_2);
+   MyUnit.DrawL(Lab_6_2);
+   Num := MyUnit.PTemp.Num;
+   PointLabel.Text := 'You are at the vertex ' + IntToStr(Num);
+end;
+
+procedure TLab_6_2.ExitClick(Sender: TObject);
+begin
+   Close;
+end;
+
+procedure TLab_6_2.FindClick(Sender: TObject);
+var
+   i: Byte;
+begin
+   i := 1;
+   Values := MyUnit.Find;
+   Result.Text := 'Vertex numbers for which the height of the right subtree is not equal to the height of the left subtree is:';
+   while Values[i] <> 0 do
+   begin
+      Result.Text := Result.Text + ' ' + IntToStr(Values[i]);
+      inc(i);
+   end;
+end;
+
+procedure TLab_6_2.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+var
+   ButtonSelected: Byte;
+begin
+   ButtonSelected := MessageDlg('Are you sure you want to exit?',TMsgDlgType.mtConfirmation, mbYesNo, 0);
+   if ButtonSelected <> mrYes then
+      CanClose := False;
+end;
+
+procedure TLab_6_2.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
+var
+   Num: Byte;
+begin
+   AddRight.Enabled := False;
+   AddLeft.Enabled := False;
+   Num := MyUnit.PTemp.Num;
+   case Key of
+      vkUp:
+         Num := MyUnit.Up;
+      vkLeft:
+         Num := MyUnit.Left;
+      vkRight:
+         Num := MyUnit.Right;
+   end;
+   PointLabel.Text := 'You are at the vertex ' + IntToStr(Num);
+   {if PTemp^.Left = nil then
+   begin
+      IsRight := False;
+      AddLeft.Enabled := True;
+   end;
+   if PTemp^.Right = nil then
+   begin
+      IsRight := True;
+      AddRight.Enabled := True;
+   end;
+   if (Buffer > (5 * Down)) then
+   begin
+      AddRight.Enabled := False;
+      AddLeft.Enabled := False;
+   end; }
+end;
+
+procedure TLab_6_2.FormShow(Sender: TObject);
+begin
+   MyUnit.Start(Lab_6_2.Width);
+   MyUnit.CirDraw(Lab_6_2);
+end;
+
+procedure TLab_6_2.HowToUseClick(Sender: TObject);
+begin
+   MessageDlg('Use the keys ''Up'', ''Left'', ''Right'' to move around the tree.',TMsgDlgType.mtInformation, mbOKCancel, 0);
+end;
+
+end.

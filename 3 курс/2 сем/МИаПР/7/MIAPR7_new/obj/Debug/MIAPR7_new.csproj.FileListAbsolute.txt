@@ -1,0 +1,28 @@
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\bin\Debug\MIAPR7_new.exe.config
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\bin\Debug\MIAPR7_new.exe
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\bin\Debug\MIAPR7_new.pdb
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.Form1.resources
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.Properties.Resources.resources
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.csproj.GenerateResource.Cache
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.exe
+C:\Users\Hp\Desktop\учеба\МИАПР\MIAPR7_new\MIAPR7_new\obj\Debug\MIAPR7_new.pdb
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\bin\Debug\MIAPR7_new.exe.config
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MIAPR7_new.exe
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MIAPR7_new.pdb
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\bin\Debug\MIAPR7_new.exe
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\bin\Debug\MIAPR7_new.pdb
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MIAPR7_new.csprojResolveAssemblyReference.cache
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MIAPR7_new.Properties.Resources.resources
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MIAPR7_new.csproj.GenerateResource.Cache
+F:\Лабы\МиАПР\MiAPR_7\MIAPR7_new\obj\Debug\MiAPR_7.Form1.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\bin\Debug\MIAPR7_new.exe.config
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\bin\Debug\MIAPR7_new.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\bin\Debug\MIAPR7_new.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.csprojAssemblyReference.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MiAPR_7.Form1.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.Properties.Resources.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.csproj.GenerateResource.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\миапр\7\MIAPR7_new\obj\Debug\MIAPR7_new.csproj.CoreCompileInputs.cache

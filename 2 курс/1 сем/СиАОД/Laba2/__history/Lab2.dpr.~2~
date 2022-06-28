@@ -1,0 +1,37 @@
+program Lab2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+begin
+    Writeln('Первый многочлен:');
+    A := ReadMN;
+    Write('Итоговый многочлен: ');
+    WriteMN(A);
+    Writeln;
+
+    Writeln('Второй многочлен:');
+    B := ReadMN;
+    Write('Итоговый многочлен: ');
+    WriteMN(B);
+    Writeln;
+
+    Write('Многочлены ');
+    if not Equality(A, B) then
+        Write('не ');
+    Write('равны.');
+    Writeln;
+
+    Write('Задайте значение X.');
+    Readln(x);
+    Writeln('Значение первого многочлена: ', Meaning(A,x));
+    Writeln('Значение второго многочлена: ', Meaning(B,x));
+    Add(C, A, B);
+    Write('Сумма многочленов: ');
+    WriteMN(C);
+    Readln;
+end.

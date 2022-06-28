@@ -1,0 +1,185 @@
+object Maksim: TMaksim
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Convex'
+  ClientHeight = 573
+  ClientWidth = 688
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PopupMenu = PopupMenu
+  Position = poDesktopCenter
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TextOne: TLabel
+    Left = 8
+    Top = 16
+    Width = 204
+    Height = 24
+    Caption = 'Enter number of points'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Result: TLabel
+    Left = 8
+    Top = 83
+    Width = 4
+    Height = 16
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 6
+    Top = 83
+    Width = 12
+    Height = 24
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 6
+    Top = 105
+    Width = 12
+    Height = 24
+    Caption = 'Y'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Size: TEdit
+    Left = 218
+    Top = 22
+    Width = 39
+    Height = 21
+    PopupMenu = PopupMenu
+    TabOrder = 0
+    OnChange = SizeChange
+    OnKeyPress = SizeKeyPress
+  end
+  object Get: TButton
+    Left = 48
+    Top = 150
+    Width = 75
+    Height = 25
+    Caption = 'Get'
+    TabOrder = 1
+    OnClick = GetClick
+  end
+  object Check: TButton
+    Left = 263
+    Top = 20
+    Width = 75
+    Height = 25
+    Caption = 'Check'
+    TabOrder = 3
+    OnClick = CheckClick
+  end
+  object SG: TStringGrid
+    Left = 24
+    Top = 65
+    Width = 314
+    Height = 79
+    ColCount = 10
+    DefaultColWidth = 24
+    DefaultRowHeight = 20
+    Enabled = False
+    FixedCols = 0
+    RowCount = 3
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+    PopupMenu = PopupMenu
+    ScrollBars = ssNone
+    TabOrder = 2
+    OnClick = SGClick
+    OnKeyPress = SGKeyPress
+    ColWidths = (
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24)
+    RowHeights = (
+      20
+      20
+      20)
+  end
+  object Menu: TMainMenu
+    Left = 456
+    Top = 192
+    object File1: TMenuItem
+      Caption = 'File'
+      object Openfile: TMenuItem
+        Caption = 'Open file'
+        ShortCut = 16463
+        OnClick = OpenfileClick
+      end
+      object Savetofile: TMenuItem
+        Caption = 'Save to file'
+        ShortCut = 16467
+        OnClick = SavetofileClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Exit: TMenuItem
+        Caption = 'Exit'
+        ShortCut = 16453
+        OnClick = ExitClick
+      end
+    end
+    object About: TMenuItem
+      Caption = 'About'
+      object Info: TMenuItem
+        Caption = 'Info'
+        ShortCut = 16457
+        OnClick = InfoClick
+      end
+      object Developer: TMenuItem
+        Caption = 'Developer'
+        ShortCut = 16452
+        OnClick = DeveloperClick
+      end
+    end
+  end
+  object Open: TOpenDialog
+    Left = 480
+    Top = 56
+  end
+  object Save: TSaveDialog
+    Left = 448
+    Top = 144
+  end
+  object PopupMenu: TPopupMenu
+    Left = 416
+    Top = 240
+  end
+end

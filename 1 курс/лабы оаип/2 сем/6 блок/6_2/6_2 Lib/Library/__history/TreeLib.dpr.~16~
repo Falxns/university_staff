@@ -1,0 +1,228 @@
+library TreeLib;
+
+{ Important note about DLL memory management: ShareMem must be the
+  first unit in your library's USES clause AND your project's (select
+  Project-View Source) USES clause if your DLL exports any procedures or
+  functions that pass strings as parameters or function results. This
+  applies to all strings passed to and from your DLL--even those that
+  are nested in records and classes. ShareMem is the interface unit to
+  the BORLNDMM.DLL shared memory manager, which must be deployed along
+  with your DLL. To avoid using BORLNDMM.DLL, pass string information
+  using PChar or ShortString parameters. }
+
+uses
+ // FMX.Forms,
+  //FMX.StdCtrls,
+  //FMX.Objects,
+  //System.UITypes,
+  System.SysUtils,
+  System.Classes
+  //FMX.Graphics,
+  //System.Types
+  ;
+
+type
+   PTree = ^Tree;
+
+   Tree = record
+      Num, LeftCount, RightCount: Byte;
+      Up: PTree;
+      Left: PTree;
+      Right: PTree;
+   end;
+
+   ArrV = array [1..63] of Byte;
+
+var
+   //ArrC: array [1..63] of TCircle;
+   //Root, PTemp: PTree;
+   //Count, Step, Buffer: Integer;
+   //Temp: Single;
+   k: Byte;
+   Values: ArrV;
+
+{$R *.res}
+
+procedure _AddR(var PTemp: PTree; var Element: Byte);  stdcall;
+begin
+   PTemp^.Right^.Up := PTemp;
+   PTemp := PTemp^.Right;
+   PTemp^.Num := Element;
+   PTemp^.Left := nil;
+   PTemp^.Right := nil;
+end;
+
+function _CheckLeft(var PTemp: PTree): Boolean; stdcall;
+begin
+   Result := False;
+   if PTemp^.Left = nil then
+      Result := True;
+end;
+
+function _CheckRight(var PTemp: PTree): Boolean; stdcall;
+begin
+   Result := False;
+   if PTemp^.Right = nil then
+      Result := True;
+end;
+
+{function _CheckDown: Boolean; stdcall;
+begin
+   Result := True;
+   if (Buffer > (5 * Down)) then
+      Result := False;
+end;
+
+procedure _DrawL(Form: TForm); stdcall;
+var
+   Brush: TStrokeBrush;
+begin
+   Brush := TStrokeBrush.Create(TBrushKind.Solid, TAlphaColorRec.Black);
+   Brush.Thickness := 1;
+   with Form, Canvas do
+   begin
+      BeginScene;
+      if not (IsRight) then
+         DrawLine(PointF(step + Count * 2 + wid/2, Buffer - 2*down + wid),PointF(Step + wid/2, Buffer - Down),1, Brush)
+      else
+         DrawLine(PointF(step - Count * 2 + wid/2, Buffer - 2*down + wid),PointF(Step + wid/2, Buffer - Down),1, Brush);
+      EndScene;
+   end;
+end;   }
+
+{function _Up: Byte; stdcall;
+   var
+   i: Byte;
+begin
+   i := PTemp^.Num;
+   if PTemp^.Up <> nil then
+   begin
+      PTemp := PTemp^.Up;
+      i := PTemp^.Num;
+      Count := Count * 2;
+      Buffer := Buffer - Down;
+      Step := Trunc(ArrC[i].Position.X);
+   end;
+   Result := i;
+end;
+
+function _Left: Byte; stdcall;
+var
+   i: Byte;
+begin
+   i := PTemp^.Num;
+   if PTemp^.Left <> nil then
+   begin
+      PTemp := PTemp^.Left;
+      i := PTemp^.Num;
+      Count := Count div 2;
+      Buffer := Buffer + Down;
+      Step := Trunc(ArrC[i].Position.X);
+   end;
+   Result := i;
+end;
+
+function _Right: Byte; stdcall;
+var
+   i: Byte;
+begin
+   i := PTemp^.Num;
+   if PTemp^.Right <> nil then
+   begin
+      PTemp := PTemp^.Right;
+      i := PTemp^.Num;
+      Count := Count div 2;
+      Buffer := Buffer + Down;
+      Step := Trunc(ArrC[i].Position.X);
+   end;
+   Result := i;
+end;}
+
+procedure _AddL(var PTemp: PTree; var Element: Byte); stdcall;
+begin
+   PTemp^.Left^.Up := PTemp;
+   PTemp := PTemp^.Left;
+   PTemp^.Num := Element;
+   PTemp^.Left := nil;
+   PTemp^.Right := nil;
+end;
+
+procedure _Start(var PTemp, Root: PTree; var Element: Byte); stdcall;
+begin
+   Root^.Up := nil;
+   PTemp := Root;
+   Element := 1;
+   PTemp^.Num := Element;
+   PTemp^.Left := nil;
+   PTemp^.Right := nil;
+end;
+ {
+procedure _CirDraw(Form: TForm); stdcall;
+var
+   TempC: TCircle;
+   TempL: TLabel;
+begin
+   PTemp^.Num := Element;
+   PTemp^.Left := nil;
+   PTemp^.Right := nil;
+   TempC := TCircle.Create(Form);
+   TempC.Parent := Form;
+   TempC.Width := Wid;
+   TempC.Height := Wid;
+   if IsRight then
+      TempC.Position.X := Count + Step
+   else
+      TempC.Position.X := Step - Count;
+   Step := Trunc(TempC.Position.X);
+   Count := Count div 2;
+   TempC.Position.Y := Buffer;
+   TempC.Fill.Color := TAlphaColorRec.Red;
+   TempL := TLabel.Create(TempC);
+   TempL.Parent := TempC;
+   TempL.Width := wid;
+   TempL.Height := wid;
+   TempL.Position.X := 3;
+   TempL.Text := IntToStr(Element);
+   ArrC[Element] := TempC;
+   Buffer := Buffer + Down;
+   Inc(Element);
+end;  }
+
+function LeftRightCenter(P: PTree): Byte;
+begin
+   if P.Left <> nil then
+      P.LeftCount := 1 + LeftRightCenter(P.Left)
+   else
+      P.LeftCount := 0;
+   if P.Right <> nil then
+      P.RightCount := 1 + LeftRightCenter(P.Right)
+   else
+      P.RightCount := 0;
+   LeftRightCenter := P.LeftCount + P.RightCount;
+   if P.LeftCount <> P.RightCount then
+   begin
+      Values[k] := P.Num;
+      inc(k);
+   end;
+end;
+
+function _Find(Root: PTree): ArrV; stdcall;
+begin
+   LeftRightCenter(Root);
+   Result := Values;
+   k := 1;
+end;
+
+exports
+   _Find,
+   _Start,
+   _AddL,
+   //_Right,
+   //_Left,
+   //_Up,
+   //_CheckDown,
+   _CheckRight,
+   _CheckLeft,
+   _AddR;
+begin
+end.

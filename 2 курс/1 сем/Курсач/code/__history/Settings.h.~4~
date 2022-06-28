@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------
+
+#ifndef SettingsH
+#define SettingsH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include "Main.h"
+//---------------------------------------------------------------------------
+class TSettingsF : public TForm
+{
+__published:	// IDE-managed Components
+	TButton *btnMute;
+private:	// User declarations
+public:		// User declarations
+	__fastcall TSettingsF(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TSettingsF *SettingsF;
+//---------------------------------------------------------------------------
+#endif

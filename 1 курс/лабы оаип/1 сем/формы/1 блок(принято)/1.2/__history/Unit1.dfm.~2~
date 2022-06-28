@@ -1,0 +1,52 @@
+object Maksim: TMaksim
+  Left = 0
+  Top = 0
+  Caption = 'Total volume of 12 balls '
+  ClientHeight = 231
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Get: TButton
+    Left = 232
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Get'
+    TabOrder = 0
+  end
+  object PopupMenu: TPopupMenu
+    Left = 440
+    Top = 176
+  end
+  object Save: TSaveDialog
+    Left = 376
+    Top = 176
+  end
+  object Menu: TMainMenu
+    Left = 376
+    Top = 128
+    object File1: TMenuItem
+      Caption = 'File'
+      object SavetoFile: TMenuItem
+        Caption = 'Save to file'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Exit: TMenuItem
+        Caption = 'Exit'
+      end
+    end
+    object About1: TMenuItem
+      Caption = 'About'
+    end
+  end
+end

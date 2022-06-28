@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+	int Num, mas[20];
+	printf("This program calculates sum of all entered elements, with each term being an element multiplied by its serial number\n");
+	printf("Enter the number of elements [2..20]\n");
+	scanf_s("%d", &Num);
+	if (Num > 1 && Num < 21)
+	{
+		for (int i = 0; i < Num; i++)
+		{
+			printf("%d element: ", i + 1);
+			scanf_s("%d", &mas[i]);
+		}
+		int Sum = mas[0];
+		for (int i = 1; i < Num; i++)
+			Sum += (i + 1) * mas[i];
+		printf("The sum of all entered elements: %d", Sum);
+	}
+	else printf("You should use number [2..20]");
+	return 0;
+}

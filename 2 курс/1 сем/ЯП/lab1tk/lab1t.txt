@@ -1,0 +1,65 @@
+#include <malloc.h>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+#define ctUnknown 0
+#define ctSymbol 1
+#define ctOpenTag 2
+#define ctSlash 3
+#define ctCloseTag 4
+
+const char transitions[9][5] = {
+	{ 0, 0, 0, 0, 0 },
+	{ 0, 0, 2, 0, 0 },
+	{ 0, 3, 0, 0, 0 },
+	{ 0, 3, 0, 0, 4 },
+	{ 0, 4, 5, 0, 0 },
+	{ 0, 0, 0, 6, 0 },
+	{ 0, 7, 0, 0, 0 },
+	{ 0, 7, 0, 0, 8 },
+	{ 0, 0, 0, 0, 0 }
+};
+
+int getCharType(char currentChar)
+{
+	switch (currentChar)
+	{
+		case '>':
+		return ctCloseTag;
+		break;
+		case '<':
+		return ctOpenTag;
+		break;
+		case '/':
+		return ctSlash;
+		break;
+	default:
+		if ((currentChar >= 'A') && (currentChar <= 'Z') || (currentChar >= 'a') && (currentChar <= 'z')) {
+			return ctSymbol;
+		}
+		return ctUnknown;
+		break;
+	}
+}
+
+void main() {
+	while (1)
+	{
+		printf("Enter tag to check: \n");
+		char inputString[100];
+		gets(inputString);
+		int state = 1;
+		for (int i = 0; i < strlen(inputString); i++)
+		{
+			state = transitions[state][getCharType(inputString[i])];
+		}
+		if (state == 8) {
+			printf("Correct tag ^_^ \n");
+		}
+		else {
+			printf("Incorrect tag :c \n");
+		}
+		printf("\n");
+	}
+}

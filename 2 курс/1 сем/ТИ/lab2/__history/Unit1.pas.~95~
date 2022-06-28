@@ -1,0 +1,243 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Math;
+
+const
+   FrsNum = 27;
+   ScNum = 8;
+   ThNum = 7;
+   FrNum = 1;
+   Mask = 67108863; //011111111111111111111111111
+   MaxSize = 65536;
+   MaxByte = 50;
+   Modul = 2;
+   MaxBit = 8;
+
+type
+   ArrB = array of Byte;
+   StatArrB = array [1..MaxSize] of Byte;
+   TForm1 = class(TForm)
+      TC1: TMemo;
+      TC2: TMemo;
+      TempKey: TMemo;
+      StartBtn: TButton;
+      SaveFile: TSaveDialog;
+      OpenInputFile: TOpenDialog;
+      Key: TEdit;
+      Label1: TLabel;
+      Label2: TLabel;
+      Label3: TLabel;
+      Label4: TLabel;
+      procedure StartBtnClick(Sender: TObject);
+      procedure OpenInputF(Sender: TObject);
+      procedure SaveF(Sender: TObject);
+      procedure ReadFromFile(Sender: TObject);
+      procedure Generat(Sender: TObject; var Num: Integer; Count: Int64; ByteArr: StatArrB);
+      procedure SaveOutputF(Sender: TObject; KeyArr: ArrB; Count: Int64; ByteArr: StatArrB);
+   private
+      InputFile, OutputFile: File of Byte;
+      Siz, Counter: Int64;
+   public
+    { Public declarations }
+   end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+function CheckStr(Str: String): String;
+var
+   BinSet : Set of char;
+   i: Byte;
+   Buf: String;
+begin
+   i := 1;
+   BinSet := ['1','0'];
+   Buf := '';
+   while i < Length(Str) do
+   begin
+      if Str[i] in BinSet then
+         Buf := Buf + Str[i];
+      inc(i);
+   end;
+   if Length(Buf) < FrsNum then
+   begin
+      while Length(Buf) <> FrsNum do
+         Buf := Buf + '0';
+   end;
+   if Length(Buf) > 27 then
+   begin
+      delete(Buf, 28, Length(Buf));
+   end;
+
+end;
+
+function IntToBin(Number: Byte): string;
+var
+    BinStr: string;
+    count, i: Integer;
+begin
+    BinStr := '';
+    Count := 0;
+    while (Number <> 0) do
+    begin
+        BinStr := IntToStr(Number mod Modul) + BinStr;
+        Number := Number div Modul;
+        inc(Count);
+    end;
+    if (Count < MaxBit) then
+    begin
+        for i := 1 to (MaxBit - count) do
+           BinStr := '0' + BinStr;
+    end;
+    Result := BinStr;
+end;
+
+function StrToNum(Str: String): Byte;
+var
+    Sum, i, Num: integer;
+    N: real;
+begin
+   Sum := 0;
+   for i := 1 to length(str) do
+   begin
+      if Str[i] <> '0' then
+      begin
+          N := Power(2, Length(Str)- i );
+          Num := Round(N);
+          Sum := Sum + Num;
+      end;
+   end;
+   Result := Sum;
+end;
+
+procedure TForm1.Generat(Sender: TObject; var Num: Integer; Count: Int64; ByteArr: StatArrB);
+var
+   i: Int64;
+   Bit: Byte;
+   KeyArr: ArrB;
+begin
+    SetLength(KeyArr, Count*8);
+   for i := 0 to (Count*8 - 1) do
+   begin
+      bit :=  ((Num shr (FrsNum - 1)) and 1) xor ((Num shr (ScNum - 1)) and 1) xor ((Num shr (ThNum - 1)) and 1) xor ((Num shr (FrNum - 1)) and 1);
+      KeyArr[i] := (Num shr (FrsNum - 1)) and 1 ;
+      Num := ((Num and Mask) shl 1) xor bit; // обнуление старшего бита,
+        //сдвиг влево и присваиваем младшему значение bit
+      if i < MaxByte*8 then
+      begin
+         TempKey.Text := TempKey.Text + IntToStr(KeyArr[i]);
+         if (i + 1) mod 8 = 0 then
+            TempKey.Text := TempKey.Text + ' ';
+      end;
+   end;
+   SaveOutputF(Sender, KeyArr, Count, ByteArr);
+end;
+
+procedure TForm1.SaveOutputF(Sender: TObject; KeyArr: ArrB; Count: Int64; ByteArr: StatArrB);
+var
+   i, j: Int64;
+   k, Num: Byte;
+   Res: ArrB;
+   SaveLine: String;
+begin
+   j := 0;
+   SetLength(Res, 8*Count);
+   for i := 1 to Count do
+   begin
+      SaveLine := '';
+      for k := 1 to 8 do
+      begin
+         Res[j] := ((ByteArr[i] shr (7 - (j) mod 8)) and 1) xor KeyArr[j];
+         if i <= MaxByte then
+            TC2.Text := TC2.Text + IntToStr(Res[j]);
+         SaveLine := SaveLine + IntToStr(Res[j]);
+         inc(j);
+      end;
+      Num := StrToNum(SaveLine);
+      Write(OutputFile, Num);
+      if i <= MaxByte then
+         TC2.Text := TC2.Text + ' ';
+   end;
+end;
+
+procedure TForm1.OpenInputF(Sender: TObject);
+begin
+   if OpenInputFile.Execute then
+   begin
+      try
+         AssignFile(InputFile, OpenInputFile.FileName);
+         Reset(InputFile);
+         Siz := FileSize(InputFile);
+      except
+         MessageDlg('Check entered data. Try again.', mtError, [mbRetry], 0);
+         CloseFile(InputFile);
+      end;
+   end;
+end;
+
+procedure TForm1.SaveF(Sender: TObject);
+begin
+   if SaveFile.Execute then
+   begin
+      try
+         AssignFile(OutputFile, SaveFile.FileName);
+         Rewrite(OutputFile);
+      except
+
+      end;
+   end;
+end;
+
+procedure TForm1.ReadFromFile(Sender: TObject);
+var
+   Buf: String;
+   i, Count: Int64;
+   Num: Integer;
+   TempByte: Byte;
+   ByteArr: StatArrB;
+begin
+   Num := StrToNum(CheckStr(Key.Text));
+   while Counter < Siz do
+   begin
+      i := 1;
+      Count := 0;
+      while (i < MaxSize) and (Counter < Siz) do
+      begin
+         inc(Counter);
+         inc(Count);
+         BlockRead(InputFile, TempByte, 1);
+         ByteArr[i] := TempByte;
+         if Counter <= MaxByte then
+         begin
+            TC1.Text := TC1.Text + IntToBin(TempByte) + ' ';
+         end;
+         inc(i);
+      end;
+      Generat(Sender, Num, Count, ByteArr);
+   end;
+end;
+
+procedure TForm1.StartBtnClick(Sender: TObject);
+begin
+   TC1.Clear;
+   TC2.Clear;
+   TempKey.Clear;
+   Counter := 0;
+   MessageDlg('Open input and output files', mtInformation, [mbOK], 0);
+   OpenInputF(Sender);
+   SaveF(Sender);
+   ReadFromFile(Sender);
+
+   CloseFile(InputFile);
+   CloseFile(OutputFile);
+end;
+
+end.

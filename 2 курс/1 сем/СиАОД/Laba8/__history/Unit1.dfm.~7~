@@ -1,0 +1,233 @@
+object Form1: TForm1
+  Left = 204
+  Top = 124
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Graphs'
+  ClientHeight = 759
+  ClientWidth = 1376
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbCountElem: TLabel
+    Left = 719
+    Top = 8
+    Width = 50
+    Height = 20
+    Caption = 'Vertex:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbFinishPoint: TLabel
+    Left = 871
+    Top = 8
+    Width = 51
+    Height = 20
+    Caption = 'End to:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbStartPoint: TLabel
+    Left = 788
+    Top = 8
+    Width = 81
+    Height = 20
+    Caption = 'Begin from:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbTextMaxWay: TLabel
+    Left = 731
+    Top = 273
+    Width = 136
+    Height = 16
+    Caption = #1057#1072#1084#1099#1081' '#1076#1083#1080#1085#1085#1099#1081' '#1087#1091#1090#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbTextMinWay: TLabel
+    Left = 731
+    Top = 297
+    Width = 140
+    Height = 16
+    Caption = #1057#1072#1084#1099#1081' '#1082#1086#1088#1086#1090#1082#1080#1081' '#1087#1091#1090#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbTextCenterGraph: TLabel
+    Left = 731
+    Top = 321
+    Width = 84
+    Height = 16
+    Caption = #1062#1077#1085#1090#1088' '#1075#1088#1072#1092#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbMaxWay: TLabel
+    Left = 963
+    Top = 273
+    Width = 6
+    Height = 20
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbMinWay: TLabel
+    Left = 963
+    Top = 297
+    Width = 6
+    Height = 20
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbCenterGraph: TLabel
+    Left = 963
+    Top = 321
+    Width = 6
+    Height = 20
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbAllWay: TLabel
+    Left = 731
+    Top = 369
+    Width = 58
+    Height = 16
+    Caption = #1042#1089#1077' '#1087#1091#1090#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object gbGraphView: TGroupBox
+    Left = 10
+    Top = 8
+    Width = 703
+    Height = 689
+    Caption = 'gbGraphView'
+    TabOrder = 0
+    object imgGraphView: TImage
+      Left = 2
+      Top = 15
+      Width = 699
+      Height = 672
+      Align = alClient
+    end
+  end
+  object strgrAdjTab: TStringGrid
+    Left = 717
+    Top = 59
+    Width = 396
+    Height = 158
+    ColCount = 6
+    FixedColor = clWhite
+    FixedCols = 0
+    RowCount = 6
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAlwaysShowEditor]
+    TabOrder = 1
+    OnKeyDown = strgrAdjTabKeyDown
+  end
+  object seCountElem: TSpinEdit
+    Left = 717
+    Top = 31
+    Width = 65
+    Height = 22
+    MaxValue = 10
+    MinValue = 1
+    TabOrder = 2
+    Value = 6
+    OnChange = seCountElemChange
+  end
+  object btnGraphPaint: TButton
+    Left = 1064
+    Top = 286
+    Width = 201
+    Height = 41
+    Caption = #1055#1086#1089#1090#1088#1086#1080#1090#1100' '#1075#1088#1072#1092
+    TabOrder = 3
+    OnClick = btnGraphPaintClick
+  end
+  object seFinishPoint: TSpinEdit
+    Left = 871
+    Top = 31
+    Width = 65
+    Height = 22
+    MaxValue = 10
+    MinValue = 0
+    TabOrder = 4
+    Value = 5
+  end
+  object seStartPoint: TSpinEdit
+    Left = 788
+    Top = 31
+    Width = 65
+    Height = 22
+    MaxValue = 10
+    MinValue = 0
+    TabOrder = 5
+    Value = 0
+  end
+  object btnDoCalculation: TButton
+    Left = 1064
+    Top = 358
+    Width = 201
+    Height = 41
+    Caption = #1053#1072#1081#1090#1080' '#1087#1091#1090#1080
+    Enabled = False
+    TabOrder = 6
+    OnClick = btnDoCalculationClick
+  end
+  object mmAllWay: TMemo
+    Left = 728
+    Top = 392
+    Width = 321
+    Height = 208
+    TabOrder = 7
+  end
+end

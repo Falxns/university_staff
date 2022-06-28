@@ -1,0 +1,36 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+	int Day;
+ 
+	printf("This program defines the day of week by entering numbers 1..7,\n");
+	scanf("%d", &Day);
+ 
+	switch (Day) {
+	    case 1:
+	        printf("This day is Monday");
+	        break;
+	    case 2:
+	        printf("This day is Tuesday");
+	        break;
+	    case 3:
+	        printf("This day is Wednesday");
+	        break;
+	    case 4:
+	        printf("This day is Thursday");
+	        break;
+	    case 5:
+	        printf("This day is Friday");
+	        break;
+	    case 6:
+	        printf("This day is Saturday");
+	        break;
+	    case 7:
+	        printf("This day is Sunday");
+	        break;    
+	    default:
+	        printf("Wrong number");
+	}    
+	return 0;
+}

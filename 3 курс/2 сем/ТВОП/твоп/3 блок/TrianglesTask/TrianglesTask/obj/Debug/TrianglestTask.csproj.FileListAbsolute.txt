@@ -1,0 +1,10 @@
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe.config
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.exe
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\bin\Debug\TrianglesTask.pdb
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglestTask.csprojAssemblyReference.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Form1.resources
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.Properties.Resources.resources
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglestTask.csproj.GenerateResource.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglestTask.csproj.CoreCompileInputs.cache
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.exe
+D:\ТВОП\3_Blok\TrianglesTask\TrianglesTask\obj\Debug\TrianglesTask.pdb

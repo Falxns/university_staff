@@ -1,0 +1,140 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Maksim Gladkiy. Group: 851001'
+  ClientHeight = 293
+  ClientWidth = 487
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = False
+  PopupMenu = PopupMenu
+  Position = poDesktopCenter
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 0
+    Top = 2
+    Width = 48
+    Height = 24
+    Caption = 'Menu'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object SG: TStringGrid
+    Left = 0
+    Top = 32
+    Width = 485
+    Height = 260
+    ColCount = 4
+    DefaultColWidth = 120
+    DefaultRowHeight = 25
+    FixedCols = 0
+    RowCount = 10
+    PopupMenu = PopupMenu
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Add: TButton
+    Left = 54
+    Top = 1
+    Width = 100
+    Height = 25
+    Caption = 'Add..'
+    TabOrder = 1
+    OnClick = AddClick
+  end
+  object Edit: TButton
+    Left = 151
+    Top = 1
+    Width = 100
+    Height = 25
+    Caption = 'Edit..'
+    TabOrder = 2
+    OnClick = EditClick
+  end
+  object Delete: TButton
+    Left = 248
+    Top = 1
+    Width = 100
+    Height = 25
+    Caption = 'Delete..'
+    TabOrder = 3
+    OnClick = DeleteClick
+  end
+  object Show: TButton
+    Left = 344
+    Top = 1
+    Width = 100
+    Height = 25
+    Caption = 'Show..'
+    TabOrder = 4
+    OnClick = ShowClick
+  end
+  object MainMenu: TMainMenu
+    Left = 8
+    Top = 248
+    object FileM: TMenuItem
+      Caption = 'File'
+      object Openfile: TMenuItem
+        Caption = 'Open file..'
+        ShortCut = 16463
+        OnClick = OpenfileClick
+      end
+      object Savetofile: TMenuItem
+        Caption = 'Save to file..'
+        ShortCut = 16467
+        OnClick = SavetofileClick
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Exit: TMenuItem
+        Caption = 'Exit'
+        ShortCut = 16453
+        OnClick = ExitClick
+      end
+    end
+    object About: TMenuItem
+      Caption = 'About'
+      object Developer: TMenuItem
+        Caption = 'Developer'
+        ShortCut = 16452
+        OnClick = DeveloperClick
+      end
+      object Info: TMenuItem
+        Caption = 'Info'
+        ShortCut = 16457
+        OnClick = InfoClick
+      end
+    end
+  end
+  object PopupMenu: TPopupMenu
+    Left = 48
+    Top = 248
+  end
+  object Open: TOpenDialog
+    DefaultExt = '*.txt'
+    Filter = 'DataBase|*.db'
+    Left = 88
+    Top = 248
+  end
+  object Save: TSaveDialog
+    DefaultExt = '*.txt'
+    Filter = 'DataBase|*.db'
+    Left = 120
+    Top = 248
+  end
+end

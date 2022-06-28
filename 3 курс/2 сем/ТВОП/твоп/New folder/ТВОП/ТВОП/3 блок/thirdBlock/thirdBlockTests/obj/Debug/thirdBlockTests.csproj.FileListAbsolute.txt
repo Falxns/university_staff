@@ -1,0 +1,10 @@
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlockTests.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.csprojResolveAssemblyReference.cache
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.dll
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\obj\Debug\thirdBlockTests.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlockTests\bin\Debug\thirdBlock.exe.config

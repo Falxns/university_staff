@@ -1,0 +1,88 @@
+unit List;
+
+interface
+
+uses
+      Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+      Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.Menus;
+
+type
+    TListForm = class(TForm)
+        ListSG: TStringGrid;
+        PopupMenu: TPopupMenu;
+        MainMenu: TMainMenu;
+    SaveFile: TSaveDialog;
+        FileMenu: TMenuItem;
+        Save1: TMenuItem;
+        N: TMenuItem;
+        Exit: TMenuItem;
+        procedure FormCreate(Sender: TObject);
+        procedure ExitClick(Sender: TObject);
+        procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Save1Click(Sender: TObject);
+    end;
+
+var
+    ListForm: TListForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure TListForm.ExitClick(Sender: TObject);
+begin
+    Close;
+end;
+
+procedure TListForm.FormClose(Sender: TObject; var Action: TCloseAction);
+var
+    i, j: ShortInt;
+begin
+    for j := 0 to ListSG.RowCount - 1 do
+        for i := 1 to ListSG.ColCount - 1 do
+            ListSG.Cells[i, j] := '';
+end;
+
+procedure TListForm.FormCreate(Sender: TObject);
+var
+    i: ShortInt;
+begin
+    for i := 1 to 9 do
+        ListSG.Cells[0, i - 1] := IntToStr(i);
+    ListSG.FixedCols := 1;
+end;
+
+procedure TListForm.Save1Click(Sender: TObject);
+var
+    outputFile: TextFile;
+    MyFile: string;
+    ButtonSelected: byte;
+begin
+    if SaveFile.Execute then
+    begin
+        MyFile := SaveFile.FileName;
+        MyFile := CheckFileName(MyFile);
+        if FileExists(MyFile) then
+        begin
+            ButtonSelected := MessageDlg('Do you want to rewrite the file?', mtConfirmation, [mbYes,mbNo], 0);
+            if ButtonSelected = mrYes then
+            begin
+                AssignFile(outputFile, MyFile);
+                Rewrite(outputFile);
+                writeln(outputFile, result.Caption);
+                CloseFile(outputFile);
+            end
+            else
+                SaveClick(Sender);
+        end
+        else
+        begin
+            AssignFile(outputFile, MyFile);
+            Rewrite(outputFile);
+            WriteLn(outputFile, result.Caption);
+            CloseFile(outputFile);
+        end;
+    end;
+end;
+
+end.

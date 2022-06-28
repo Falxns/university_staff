@@ -1,0 +1,130 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.Grids, Vcl.StdCtrls;
+
+type
+    TProduct = Record
+        Title: String[15];
+        Sort: String[1];
+        Price: String[5];
+        Date: String[10];
+    end;
+    TBaseProd = array of TProduct;
+    TMainForm = class(TForm)
+    SG: TStringGrid;
+    MainMenu: TMainMenu;
+    PopupMenu: TPopupMenu;
+    FileM: TMenuItem;
+    About: TMenuItem;
+    Openfile: TMenuItem;
+    Savetofile: TMenuItem;
+    N1: TMenuItem;
+    Exit: TMenuItem;
+    Developer: TMenuItem;
+    Info: TMenuItem;
+    Open: TOpenDialog;
+    Save: TSaveDialog;
+    Add: TButton;
+    Edit: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Label1: TLabel;
+    procedure InfoClick(Sender: TObject);
+    procedure DeveloperClick(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure ExitClick(Sender: TObject);
+    procedure AddClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure EditClick(Sender: TObject);
+  public
+    ProdList: TBaseProd;
+  end;
+
+var
+  MainForm: TMainForm;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2;
+
+procedure TMainForm.AddClick(Sender: TObject);
+begin
+    MainForm.Visible := false;
+    with AddF as TAddF do
+    begin
+        PrName.Clear;
+        PrSort.Clear;
+        PrPrice.Clear;
+        Day.Clear;
+        Month.Clear;
+        Year.Clear;
+        Submit.Enabled := false;
+        Caption := 'Add product';
+        Submit.Caption := 'Add';
+        ShowModal;
+    end;
+    Edit.Enabled := true;
+end;
+
+
+
+procedure TMainForm.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+var
+    ButtonSelected: Byte;
+begin
+    ButtonSelected := MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes,mbNo], 0);
+    if ButtonSelected <> mrYes then
+        CanClose := False;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+    Edit.Enabled := false;
+    with SG as TStringGrid do
+    begin
+        Cells[0, 0] := 'Product title';
+        Cells[1, 0] := 'Sort';
+        Cells[2, 0] := 'Price';
+        Cells[3, 0] := 'Date of delivery';
+    end;
+end;
+
+procedure TMainForm.EditClick(Sender: TObject);
+begin
+    MainForm.Visible := false;
+    with AddF as TAddF do
+    begin
+        Caption := 'Edit product';
+        PrName.Text := ProdList[SG.Row - 1].Title;
+        PrSort.Text := ProdList[SG.Row - 1].Sort;
+        PrPrice.Text := ProdList[SG.Row - 1].Price;
+        Day.Text := Copy(ProdList[SG.Row - 1].Date, 1, 2);
+        Month.Text := Copy(ProdList[SG.Row - 1].Date, 4, 2);
+        Year.Text := Copy(ProdList[SG.Row - 1].Date, 7, 4);
+        Submit.Caption := 'Edit';
+        ShowModal;
+    end;
+end;
+
+procedure TMainForm.ExitClick(Sender: TObject);
+begin
+    Close;
+end;
+
+procedure TMainForm.DeveloperClick(Sender: TObject);
+begin
+    MessageDlg('This program is developed by Maksim Gladkiy.', mtInformation, [mbOk], 0);
+end;
+
+procedure TMainForm.InfoClick(Sender: TObject);
+begin
+    MessageDlg('This is a prototype of shop.' + #10#13 + 'You can add products, edit their information and delete them.' + #10#13 + 'Program find''s products of first sort, which were brought last month, and sort them in alphabet order.', mtInformation, [mbOk], 0);
+end;
+
+end.

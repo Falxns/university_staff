@@ -1,0 +1,82 @@
+---------OPERATORS------------>
+operator                 f1j
+------------------------------->
+quickSort()              3
+[]                       50
+,                        23
+{}                       22
+=                        54
+;                        151
+()                       4
++                        8
+/                        2
+while()                  4
+<=                       2
+<                        25
+++                       24
+>                        3
+--                       3
+if()                     6
+return                   2
+SortByBubble()           3
+for()                    22
+-                        9
+SortByInsert()           2
+SortByRevers()           2
+ShellSort()              2
+/=                       1
+>=                       1
+-=                       1
+main()                   1
+printf()                 26
+scanf()                  1
+&                        1
+rand()                   4
+%                        4
+getch()                  1
+--------------------------------->
+n1 = 33                  N1 = 467
+
+---------OPERANDS---------------->
+operand                  f2i
+------------------------------->
+arr                      10
+left                     5
+right                    5
+i                        88
+j                        39
+tmp                      3
+pivot                    3
+2                        3
+mas                      41
+1000                     6
+size                     13
+0                        27
+1                        12
+buf                      6
+count                    5
+100                      3
+maximum                  4
+position                 5
+k                        9
+t                        4
+n                        18
+"Enter the size of array: "1
+"%d"                     1
+20                       4
+"Source array:"          4
+"%d "                    8
+"\n"                     6
+"Sorted by bubble: "     1
+"\n\n\n"                 3
+"Sorted by inserts: "    1
+"Sorted by reverses: "   1
+"Sorted by Shell: "      1
+x                        1
+5                        1
+--------------------------------->
+n2 = 34                  N2 = 342
+
+-------------TOTAL---------------->
+n = 67                   N = 809
+V = 4907,46615508034

@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Add product'
+  ClientHeight = 309
+  ClientWidth = 645
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = AddMenu
+  OldCreateOrder = False
+  PopupMenu = MainForm.PopupMenu
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Submit: TButton
+    Left = 216
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    ModalResult = 6
+    PopupMenu = MainForm.PopupMenu
+    TabOrder = 0
+    OnClick = SubmitClick
+  end
+  object Cancel: TButton
+    Left = 328
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'Cancel'
+    ModalResult = 6
+    TabOrder = 1
+  end
+  object AddMenu: TMainMenu
+    Left = 8
+    Top = 256
+    object Help: TMenuItem
+      Caption = 'Help'
+      ShortCut = 16456
+      OnClick = HelpClick
+    end
+  end
+end

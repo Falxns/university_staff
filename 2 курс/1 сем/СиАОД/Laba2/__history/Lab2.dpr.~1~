@@ -1,0 +1,28 @@
+program Lab2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+begin
+    writeln('Первый многочлен:');
+    A := ReadMN;
+    write('Итоговый многочлен: ');
+    WriteMN(A);
+    writeln;
+
+    writeln('Второй многочлен:');
+    B := ReadMN;
+    write('Итоговый многочлен: ');
+    WriteMN(B);
+    writeln;
+
+    write('Многочлены ');
+    if not Equality(A, B) then
+        write('не ');
+    write('равны.');
+    writeln;
+end.

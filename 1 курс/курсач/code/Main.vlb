@@ -1,0 +1,10 @@
+﻿[BlankPop]
+Coordinates=73,1,69,36
+
+[]
+Coordinates=116,10,45,58
+
+[btnExit]
+Coordinates=10,10,96,58
+Visible=True
+

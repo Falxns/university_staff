@@ -1,0 +1,86 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Main'
+  ClientHeight = 591
+  ClientWidth = 745
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = Menu
+  OldCreateOrder = False
+  PopupMenu = BlankPopUp
+  OnCloseQuery = FormCloseQuery
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StringGrid1: TStringGrid
+    Left = 8
+    Top = 8
+    Width = 400
+    Height = 400
+    ColCount = 8
+    DefaultColWidth = 50
+    DefaultRowHeight = 50
+    FixedCols = 0
+    RowCount = 8
+    FixedRows = 0
+    PopupMenu = BlankPopUp
+    ScrollBars = ssNone
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 424
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    PopupMenu = BlankPopUp
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 137
+    Top = 424
+    Width = 75
+    Height = 25
+    Caption = 'Button2'
+    PopupMenu = BlankPopUp
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 218
+    Top = 424
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    PopupMenu = BlankPopUp
+    TabOrder = 3
+  end
+  object Menu: TMainMenu
+    Top = 544
+    object Info: TMenuItem
+      Caption = 'Info'
+      OnClick = InfoClick
+    end
+    object Developer: TMenuItem
+      Caption = 'Developer'
+      OnClick = DeveloperClick
+    end
+    object Exit: TMenuItem
+      Caption = 'Exit'
+      OnClick = ExitClick
+    end
+  end
+  object BlankPopUp: TPopupMenu
+    Left = 40
+    Top = 544
+  end
+  object Tick: TTimer
+    Left = 88
+    Top = 544
+  end
+end

@@ -1,0 +1,14 @@
+program Lab_7_2;
+
+uses
+  Vcl.Forms,
+  Main in 'Main.pas' {Ilya};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TIlya, Ilya);
+  Application.Run;
+end.

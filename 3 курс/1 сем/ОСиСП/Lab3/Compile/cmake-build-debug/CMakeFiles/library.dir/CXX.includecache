@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/library/library.cpp
+library.h
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/library/library.h
+windows.h
+-
+stdio.h
+-
+new
+-
+vector
+-
+
+C:/Users/maksf/Desktop/OSISP/Lab3/Compile/library/library.h
+

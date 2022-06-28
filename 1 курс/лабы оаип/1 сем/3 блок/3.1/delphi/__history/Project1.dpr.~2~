@@ -1,0 +1,251 @@
+program Project9;
+
+{$APPTYPE CONSOLE}
+
+uses
+    SysUtils;
+
+const
+    MinLength = 1;
+    MaxLength = 255;
+
+procedure ChangeString(Num: Byte;var MyString: String);
+var
+    i: Byte;
+    Leng : Integer;
+begin
+    Leng := Length(MyString);
+    if Num > Leng then
+        for i := 1 to Num - Leng do
+            Insert('.', MyString, 1)
+    else
+        Delete(MyString, 1, Leng - Num);
+end;
+
+function ChoiceInput(): Char;
+var
+    Input: Char;
+    IsCorrect: Boolean;
+begin
+    repeat
+        Readln(Input);
+        Input := UpCase(Input);
+        if (Input = 'Y')or(Input = 'N') then
+            IsCorrect := true
+        else
+        begin
+            IsCorrect := false;
+            Write('Incorrect input. Enter Y(Yes) or N(No): ');
+        end;
+    until IsCorrect;
+    ChoiceInput := Input;
+end;
+
+procedure OutputConsole(MyString: String);
+begin
+    Write('Changed string is: ');
+    Writeln(MyString);
+end;
+
+procedure ShowAnswerFile(var NewFile: TextFile; MyString: String);
+begin
+    Write(NewFile, 'Changed string is: ');
+    Write(NewFile, MyString);
+end;
+
+procedure OutputFile(MyString: String);
+var
+    IsCorrect: Boolean;
+    NewFile: TextFile;
+    NameOfFile: String;
+begin
+    Write('Enter the name of file (.txt): ');
+    IsCorrect := false;
+    repeat
+        Readln(NameOfFile);
+        if (not FileExists(NameOfFile)) then
+            Write('File does not exist. Try again: ')
+        else
+        begin
+            IsCorrect := true;
+            Assign(NewFile, NameOfFile);
+            Write('Would you like to rewrite the file? Enter Y(Yes) or N(No): ');
+            if ChoiceInput = 'Y' then
+                try
+                    Rewrite(NewFile);
+                    ShowAnswerFile(NewFile, MyString);
+                except
+                    Write('Access is not allowed. Try again: ');
+                    IsCorrect:= false;
+                end
+            else
+                try
+                    Append(NewFile);
+                    ShowAnswerFile(NewFile, MyString);
+                except
+                    Write('Access is not allowed. Try again: ');
+                    IsCorrect:= false;
+                end;
+        end;
+    until IsCorrect;
+    Close(NewFile);
+end;
+
+{function CheckInput(Min, Max: Integer): Real;
+var
+    Number: Real;
+    IsCorrect: Boolean;
+begin
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Number);
+            if (Number >= Min) and (Number <= Max) then
+                IsCorrect := true
+            else
+                Writeln('Enter number from interval [', Min, '..', Max, ']: ');
+        except
+            Writeln('Check entered data. Enter number from interval [', Min, '..', Max, ']: ');
+        end;
+    until IsCorrect;
+    CheckInput := Number;
+end;}
+
+function CheckLength(Min, Max: Byte): Byte;
+var
+    Length: Byte;
+    IsCorrect: Boolean;
+begin
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Length);
+            if (Length >= Min) and (Length <= Max) then
+                IsCorrect := true
+            else
+                Writeln('Enter number from interval [', Min, '..', Max, ']: ');
+        except
+            Writeln('Check entered data. Enter number from interval [', Min, '..', Max, ']: ');
+        end;
+    until IsCorrect;
+    CheckLength := Length;
+end;
+
+procedure GetDataConsole(var Length: Byte; var MyString: String);
+begin
+    Write('Enter N:');
+    Length := CheckLength(MinLength, MaxLength);
+    Write('Enter your string: ');
+    Readln(MyString);
+end;
+
+{function CheckInputFile(Min, Max: Integer; var MyFile: TextFile): Boolean;
+var
+    IsCorrect: Boolean;
+    Number: Real;
+begin
+    IsCorrect := true;
+    while (not SeekEof(MyFile)) and (IsCorrect) do
+        try
+            Readln(MyFile, Number);
+            if (Number <= Min) or (Number >= Max) then
+                IsCorrect := false;
+        except
+            IsCorrect := false;
+        end;
+    CheckInputFile := IsCorrect;
+end;}
+
+{function ReadFromFile(var MyFile: TextFile; var Size: Byte; var Matrix: TArray): Boolean;
+var
+    i, j: Byte;
+begin
+    if CheckInputFile(MinInt, MaxInt, MyFile) then
+    begin
+        reset(MyFile);
+        i := 0;
+        while not Eof(MyFile) do
+        begin
+            j := 0;
+            while not Eoln(MyFile) do
+            begin
+                Read(MyFile, Matrix[i][j]);
+                inc(j);
+            end;
+            Readln(MyFile);
+            inc(i);
+        end;
+        if i = j then
+        begin
+            Size := i - 1;
+            ReadFromFile := true;
+        end
+        else
+        begin
+            Writeln('This is not square matrix. Try again.');
+            ReadFromFile := false;
+        end;
+    end
+    else
+    begin
+        CloseFile(MyFile);
+        ReadFromFile := false;
+        Write('Check entered data. Enter number from interval ', MinInt, '..', MaxInt, '. Try Again: ');
+    end;
+end;}
+
+{procedure GetDataFile(var Length: Byte; var MyString: String);
+var
+    IsCorrect: Boolean;
+    NameOfFile: String;
+    MyFile: TextFile;
+begin
+    Write('Enter file name(.txt): ');
+    repeat
+        Readln(NameOfFile);
+        if (not FileExists(NameOfFile)) then
+        begin
+            WriteLn('File does not exist. Try again: ');
+            IsCorrect := false;
+        end
+        else
+        begin
+            AssignFile(MyFile, NameOfFile);
+            Reset(MyFile);
+            if SeekEof(MyFile) then
+            begin
+                Writeln('File is empty. Try again: ');
+                IsCorrect := false;
+            end
+            else
+                IsCorrect := ReadFromFile(MyFile, Length, Matrix);
+        end;
+    until IsCorrect;
+    CloseFile(MyFile);
+end;}
+
+procedure Main();
+var
+    MyString: String;
+    Length: Byte;
+begin
+    Writeln('This program converts the entered string into a string of length N as follows:');
+    Writeln('If length of the string is greater than N, then discard the first characters, if length of the string is less than N, then add points at the beginning.');
+    Write('Would you like to use File input instead of Console input? Enter Y(Yes) or N(No): ');
+    if ChoiceInput = 'Y' then
+        //GetDataFile(Length, MyString)
+    else
+        GetDataConsole(Length, MyString);
+    ChangeString(Length, MyString);
+    Write('Would you like to write down the answer to File instead of Console? Enter Y(Yes) or N(No): ');
+    if ChoiceInput = 'Y' then
+        OutputFile(MyString)
+    else
+        OutputConsole(MyString);
+    Writeln('Press "Enter" to exit.');
+    Readln;
+end;
+
+begin
+    Main;
+end.

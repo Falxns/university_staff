@@ -1,0 +1,33 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.Grids;
+
+type
+  TMain = class(TForm)
+    SG: TStringGrid;
+    SGR: TStringGrid;
+    SortBtn: TButton;
+    RowsAm: TEdit;
+    ColumnsAm: TEdit;
+    Text1: TLabel;
+    Text2: TLabel;
+    CheckBtn: TButton;
+    Popup: TPopupMenu;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Main: TMain;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018.11.13 09:17:36.302,D:\лабы оаип\3.1 Arina\Project1.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018.11.13 09:18:34.721,D:\лабы оаип\3.1 Arina\Lab3_1.dproj=D:\лабы оаип\3.1 Arina\Project1.dproj</Transaction>
+    <Transaction>2018.11.13 09:19:22.390,=D:\лабы оаип\3.1 Arina\New1.txt</Transaction>
+    <Transaction>2018.11.13 09:19:38.199,D:\лабы оаип\3.1 Arina\input1.txt=D:\лабы оаип\3.1 Arina\New1.txt</Transaction>
+    <Transaction>2018.11.13 09:20:03.058,D:\лабы оаип\3.1 Arina\Win32\Debug\input1.txt=D:\лабы оаип\3.1 Arina\input1.txt</Transaction>
+    <Transaction>2018.11.13 09:20:46.005,=D:\лабы оаип\3.1 Arina\New1.txt</Transaction>
+    <Transaction>2018.11.13 09:20:58.691,D:\лабы оаип\3.1 Arina\input2.txt=D:\лабы оаип\3.1 Arina\New1.txt</Transaction>
+    <Transaction>2018.11.13 09:21:13.979,D:\лабы оаип\3.1 Arina\Win32\Debug\input2.txt=D:\лабы оаип\3.1 Arina\input2.txt</Transaction>
+  </Transactions>
+  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Win32"/>
+    <File Path="Win32\Debug"/>
+    <File Path="Win32\Debug\input1.txt"/>
+    <File Path="Win32\Debug\input2.txt"/>
+  </ProjectSortOrder>
+</BorlandProject>

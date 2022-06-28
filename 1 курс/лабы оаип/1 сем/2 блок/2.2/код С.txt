@@ -1,0 +1,50 @@
+#include <stdio.h>
+ 
+struct TArr
+{
+    __int64 MyArray[7];
+};
+ 
+__int64 FindNumber(int i)
+{
+    __int64 Number = i, Prev = 0, Step = 1, Digit = i;
+    do
+    {
+        Step *= 10;
+        Number += Step * ((Digit * 2) % 10 + Prev);
+        Prev = (Digit * 2) / 10;
+        Digit = Number / Step;
+    } while ((Digit != i) || (Prev != 0));
+    Number -= Digit * Step;
+    return Number;
+}
+ 
+struct TArr GetArray()
+{
+    __int64 MyArr[7];
+    printf_s("This program searches for the smallest number, which, when you rearrange the last digit to the first one, is twice as large as the original\n");
+    printf_s("This is the list of required numbers :\n");
+    for (int i = 0; i < 7; i++)
+    {
+        MyArr[i] = FindNumber(i + 2);
+        printf_s("%d : %I64d\n", i + 2, MyArr[i]);
+    }
+    struct TArr MyArray = { MyArr[0],  MyArr[1],  MyArr[2],  MyArr[3],  MyArr[4],  MyArr[5],  MyArr[6] };
+    return MyArray;
+}
+ 
+void ShowAnswer(TArr MyArray)
+{
+    __int64 Min = MyArray.MyArray[6];
+    for (int i = 0; i < 7; i++)
+        if (MyArray.MyArray[i] < Min)
+            Min = MyArray.MyArray[i];
+    printf_s("Minimum required number is : %I64d", Min);
+}
+ 
+int main()
+{
+    TArr NumArr = GetArray();
+    ShowAnswer(NumArr);
+    return 0;
+}

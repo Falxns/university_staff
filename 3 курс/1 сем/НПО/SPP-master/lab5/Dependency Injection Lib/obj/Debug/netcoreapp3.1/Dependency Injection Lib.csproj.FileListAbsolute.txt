@@ -1,0 +1,10 @@
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\bin\Debug\netcoreapp3.1\Dependency Injection Lib.deps.json
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\bin\Debug\netcoreapp3.1\Dependency Injection Lib.dll
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\bin\Debug\netcoreapp3.1\Dependency Injection Lib.pdb
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.csprojAssemblyReference.cache
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.AssemblyInfoInputs.cache
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.AssemblyInfo.cs
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.csproj.CoreCompileInputs.cache
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.dll
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\obj\Debug\netcoreapp3.1\Dependency Injection Lib.pdb
+C:\Users\maksf\Desktop\SPP-master\lab5\Dependency Injection Lib\bin\Debug\netcoreapp3.1\NLog.config

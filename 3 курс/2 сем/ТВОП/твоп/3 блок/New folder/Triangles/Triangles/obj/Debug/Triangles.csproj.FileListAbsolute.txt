@@ -1,0 +1,70 @@
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.Cache
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\bin\Debug\Triangles.exe.config
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\bin\Debug\Triangles.exe
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\bin\Debug\Triangles.pdb
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.exe
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.pdb
+D:\ПОИТ 3 курс\ТВОП\3 блок\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\bin\Debug\Triangles.exe.config
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\bin\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\bin\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Triangles\Triangles\obj\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\bin\Debug\Triangles.exe.config
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\bin\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\bin\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Triangles\Triangles\obj\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\obj\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\bin\Debug\Triangles.exe.config
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\bin\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Triangles\Triangles\bin\Debug\Triangles.pdb
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\bin\Debug\Triangles.exe.config
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\bin\Debug\Triangles.exe
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\bin\Debug\Triangles.pdb
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.exe
+D:\ПОИТ 3 курс\ТВОП\3 блок\yana\Triangles\Triangles\obj\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\bin\Debug\Triangles.exe.config
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\bin\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\bin\Debug\Triangles.pdb
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.exe
+F:\MyFiles_YanaFiles_DONOTOUCH\Курс_3_Сем_2\ТВОП\Блок_3\Дубль два\Новая папка\Triangles\Triangles\obj\Debug\Triangles.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\bin\Debug\Triangles.exe.config
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\bin\Debug\Triangles.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\bin\Debug\Triangles.pdb
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.csprojAssemblyReference.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.Form1.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.Properties.Resources.resources
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.csproj.GenerateResource.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.csproj.CoreCompileInputs.cache
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.exe
+C:\Users\Asus-PC\Desktop\Новая папка\3 курс\твоп\3 блок\New folder\Triangles\Triangles\obj\Debug\Triangles.pdb

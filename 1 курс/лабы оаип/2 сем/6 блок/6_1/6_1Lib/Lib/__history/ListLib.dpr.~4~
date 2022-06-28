@@ -1,0 +1,25 @@
+library ListLib;
+
+uses
+   System.SysUtils,
+   System.Classes;
+
+type
+   Pointer = ^TText;
+   TText = Record
+      Data: String[15];
+      Next: Pointer;
+   end;
+
+{$R *.res}
+
+procedure AddEl(var Head, CopyHead: Pointer);
+begin
+   New(Head);
+   Head^.Data := '';
+   Head^.Next := nil;
+   CopyHead := Head;
+end;
+
+begin
+end.

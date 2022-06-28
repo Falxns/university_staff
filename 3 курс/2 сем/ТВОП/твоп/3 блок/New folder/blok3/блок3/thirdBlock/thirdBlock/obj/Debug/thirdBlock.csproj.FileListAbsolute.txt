@@ -1,0 +1,34 @@
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojResolveAssemblyReference.cache
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+D:\3 курс\2 семестр\ТВОП\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojResolveAssemblyReference.cache
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csproj.CoreCompileInputs.cache
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+D:\Универ\6 сем\TVOP\ТВОП\3 блок\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojResolveAssemblyReference.cache
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+C:\Users\Екатерина\Desktop\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojAssemblyReference.cache
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\5-6 сем\6 сем\2018\TVOP\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe.config
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\bin\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\bin\Debug\thirdBlock.pdb
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csprojAssemblyReference.cache
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\obj\Debug\thirdBlock.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\obj\Debug\thirdBlock.exe
+C:\Users\user\Desktop\stydies\6-thTemer\TVOP\блок3\thirdBlock\thirdBlock\obj\Debug\thirdBlock.pdb

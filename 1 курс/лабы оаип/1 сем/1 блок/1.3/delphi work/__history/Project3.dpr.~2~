@@ -1,0 +1,37 @@
+program Project3;
+
+{$APPTYPE CONSOLE}
+
+uses
+  System.SysUtils;
+
+var
+    M,N,K,M0 : integer;
+    IsCorrect : boolean;
+
+begin
+    writeln('This program looks for the smallest K for which M to the power K greater than N');
+    writeln('Use natural numbers, M should be greater than 1, N should be greater than M');
+    K := 1;
+    repeat
+        try
+            IsCorrect := false;
+            readln(M0,N);
+            if (M0 > 1) and (N > M0) then
+                IsCorrect := true
+            else
+                writeln('You should use natural numbers, M should be greater than 1, N should be greater than M');
+        except
+            IsCorrect := false;
+            writeln('You should use natural numbers, M should be greater than 1, N should be greater than M');
+        end;
+    until IsCorrect;
+    M := M0;
+    while M < N do
+    begin
+        inc(K);
+        M := M * M0;
+    end;
+    writeln('The smallest K for which M to the power K greater than N is:', K);
+    readln;
+end.

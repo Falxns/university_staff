@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <malloc.h>
+
+int main()
+{
+	const int HighInt = 2147483647, Low = 3;
+	int* x;
+	int* y;
+	int Num;
+	printf_s("This program checks, if the polygon is convex.\nEnter the number of sides:\n");
+	scanf_s("%d", &Num);
+	while (Num < 3)
+	{
+		printf_s("Its not polygon. Use numbers [%d..%d]\n", Low, HighInt);
+		scanf_s("%d", &Num);
+	}
+	if (Num == 3)
+		printf_s("Triangle is always convex.\n");
+	else
+	{
+		x = (int*)malloc(sizeof(int)*(Num + 1));
+		y = (int*)malloc(sizeof(int)*(Num + 1));
+		for (int i = 0; i < Num; i++)
+		{
+			printf_s("Enter the coordinates of point.\n");
+			scanf_s("%d %d", &x[i], &y[i]);
+		}
+		x[Num] = x[0];
+		y[Num] = y[0];
+		int FirstCounter = 0;
+		int SecondCounter = 0;
+		for (int i = 1; i < Num; i++)
+		{
+			int FirstVectorX = x[i] - x[i - 1];
+			int FirstVectorY = y[i] - y[i - 1];
+			int SecondVectorX = x[i + 1] - x[i];
+			int SecondVectorY = y[i + 1] - y[i];
+			int Determinator = FirstVectorX * SecondVectorY - FirstVectorY * SecondVectorX;
+			if (Determinator > 0)
+			{
+				FirstCounter++;
+			}
+			else
+			{
+				SecondCounter++;
+			}
+		}
+		if (((FirstCounter > 0) && (SecondCounter == 0)) || ((FirstCounter == 0) && (SecondCounter > 0)))
+		{
+			printf_s("Polygon is convex.");
+		}
+		else
+		{
+			printf_s("Polygon is not convex.");
+		}
+	}
+	return 0;
+}

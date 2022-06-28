@@ -1,0 +1,96 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus;
+
+type
+  TMaksim = class(TForm)
+    Text: TLabel;
+    Menu: TMainMenu;
+    File1: TMenuItem;
+    About1: TMenuItem;
+    Openfile1: TMenuItem;
+    Savetofile1: TMenuItem;
+    N1: TMenuItem;
+    Info1: TMenuItem;
+    Developer1: TMenuItem;
+    Day: TEdit;
+    Get: TButton;
+    Result: TLabel;
+    procedure N1Click(Sender: TObject);
+    procedure Info1Click(Sender: TObject);
+    procedure Developer1Click(Sender: TObject);
+    procedure DayChange(Sender: TObject);
+    procedure GetClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Maksim: TMaksim;
+
+implementation
+
+{$R *.dfm}
+
+procedure TMaksim.Developer1Click(Sender: TObject);
+begin
+    MessageDlg('Developer: Maksim Gladkiy', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.GetClick(Sender: TObject);
+var
+    Number, MissingAge: Integer;
+begin
+    Number := StrToInt(Day.Text);
+    case Number of
+        1:Result.Caption := 'This day is Monday';
+        2:Result.Caption := 'This day is Tuesday';
+        3:Result.Caption := 'This day is Wednesday';
+        4:Result.Caption := 'This day is Thursday';
+        5:Result.Caption := 'This day is Friday';
+        6:Result.Caption := 'This day is Saturday';
+        7:Result.Caption := 'This day is Sunday';
+        else
+            Result.Caption := 'Enter number 1-7';
+    end;
+    Savetofile1.Enabled := true;
+end;
+
+procedure TMaksim.DayChange(Sender: TObject);
+begin
+    Result.Caption := '';
+    if (Length(Day.Text) > 0) then
+    begin
+       Get.Enabled := true;
+       if (StrToInt(Day.Text) > 7) then
+       begin
+           ShowMessage('Error. The number, you have entered, is too high.');
+           Get.Enabled := false;
+           Day.Clear;
+       end;
+    end
+    else
+       Get.Enabled := false;
+end;
+
+procedure TMaksim.Info1Click(Sender: TObject);
+begin
+    MessageDlg('This program defines the day of week by entering numbers 1..7', mtInformation, [mbOk], 0);
+end;
+
+procedure TMaksim.N1Click(Sender: TObject);
+var
+   ButtonSelected: Byte;
+begin
+   ButtonSelected := MessageDlg('Are you sure you want to exit?', mtConfirmation, [mbYes,mbNo], 0);
+   if ButtonSelected = mrYes then
+      Close;
+end;
+
+end.

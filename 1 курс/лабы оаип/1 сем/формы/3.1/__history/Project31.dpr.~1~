@@ -1,0 +1,14 @@
+program Project31;
+
+uses
+  Vcl.Forms,
+  Unit31 in 'Unit31.pas' {Lab_3_1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TLab_3_1, Lab_3_1);
+  Application.Run;
+end.

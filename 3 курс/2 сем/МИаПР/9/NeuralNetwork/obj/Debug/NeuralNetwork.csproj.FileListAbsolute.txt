@@ -1,0 +1,11 @@
+E:\Универ\5 сем\МиАПР\Работы\Lab9\NeuralNetwork\bin\Debug\NeuralNetwork.dll
+E:\Универ\5 сем\МиАПР\Работы\Lab9\NeuralNetwork\bin\Debug\NeuralNetwork.pdb
+E:\Универ\5 сем\МиАПР\Работы\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.csprojResolveAssemblyReference.cache
+E:\Универ\5 сем\МиАПР\Работы\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.dll
+E:\Универ\5 сем\МиАПР\Работы\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.pdb
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\bin\Debug\NeuralNetwork.dll
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\bin\Debug\NeuralNetwork.pdb
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.csprojAssemblyReference.cache
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.csproj.CoreCompileInputs.cache
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.dll
+D:\study\Bsuir_Lab\6sem\МиАПР\миапр\Lab9\NeuralNetwork\obj\Debug\NeuralNetwork.pdb

@@ -1,0 +1,172 @@
+unit Main;
+
+interface
+
+uses
+    Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+    Dialogs, StdCtrls, ExtCtrls;
+
+type
+    TMainF = class(TForm)
+        Img: TImage;
+        Label1: TLabel;
+        Time: TTimer;
+        Label2: TLabel;
+        procedure TimeTimer(Sender: TObject);
+        procedure Label2Click(Sender: TObject);
+        procedure FormActivate(Sender: TObject);
+        procedure Click_(Sender: TObject);
+        procedure Click_2(Sender: TObject);
+    private
+        { Private declarations }
+    public
+        { Public declarations }
+    end;
+
+var
+    MainF: TMainF;
+    ArrA, ArrB: array [1..200, 1..400] of Integer;
+    t: Integer;
+    Flag: Boolean;
+
+implementation
+
+{$R *.dfm}
+
+procedure draw(k:integer);
+var
+    i, j: Integer;
+begin
+    for i := 0 to 100 do
+        for j := 0 to 200 do
+        begin
+            if ArrA[i,j] = 1 then
+                MainF.Label1.Canvas.Pixels[i,j] := clYellow
+            else
+                if ArrA[i,j] = 2 then
+                    MainF.Label1.Canvas.Pixels[i,j] := clWhite
+                else
+                    MainF.Label1.Canvas.Pixels[i,j] := clBlack;
+        end;
+end;
+
+procedure init;
+var
+    i, j: Integer;
+begin
+    for i := 1 to 100 do
+        for j := 1 to 200 do
+        begin
+            if MainF.Label1.Canvas.Pixels[i,j]=clYellow then
+                ArrA[i,j] := 1;
+            if MainF.Label1.Canvas.Pixels[i,j]=clBlack then
+                ArrA[i,j] := 2;
+        end;
+end;
+
+procedure move;
+var
+    i, j: Integer;
+begin
+    Flag := true;
+    for i := 2 to 99 do
+        for j := 198 downto 1 do
+        begin
+            if ArrA[i,j] = 2 then
+                ArrB[i,j] := 2;
+            if ArrA[i,j] = 1 then
+            begin
+                ArrB[i,j] := 1;
+                if ArrB[i,j+1] = 0 then
+                begin
+                    Flag := false;
+                    ArrB[i,j] := 0;
+                    ArrB[i,j+1] := 1;
+                end
+                else
+                    if Random(2) = 1 then
+                    begin
+                        if ArrB[i+1,j+1] = 0 then
+                        begin
+                            Flag := false;
+                            ArrB[i,j] := 0;
+                            ArrB[i+1,j+1] := 1;
+                        end
+                    end
+                    else
+                        if ArrB[i-1,j+1] = 0 then
+                        begin
+                            Flag := false;
+                            ArrB[i,j] := 0;
+                            ArrB[i-1,j+1] := 1;
+                        end
+            end;
+        end;
+    ArrA:=ArrB;
+end;
+
+procedure turn;
+var
+    i, j: Integer;
+begin
+    for i := 1 to 100 do
+        for j := 1 to 199 do
+            ArrB[i,j] := ArrA[i,200-j];
+    ArrA := ArrB;
+end;
+
+procedure schet;
+var
+    i, j, n: Integer;
+begin
+    n := 0;
+    for i := 1 to 100 do
+        for j := 1 to 100 do
+            if ArrA[i,j] = 1 then
+            begin
+                n := n+1;
+                t := t+1;
+                MainF.Label2.Caption := IntToStr(t div 10);
+            end;
+    if Flag then
+    begin
+        t := 0;
+        turn;
+    end;
+end;
+
+procedure TMainF.TimeTimer(Sender: TObject);
+begin
+move;
+schet;
+draw(1);
+application.ShowMainForm:=false;
+end;
+
+procedure TMainF.Label2Click(Sender: TObject);
+begin
+             
+init;
+end;
+
+procedure TMainF.FormActivate(Sender: TObject);
+begin
+form1.Height:=213;
+form1.Width:=100;
+image1.Picture.LoadFromFile('send.bmp');
+label1.Canvas.Draw(0,0,image1.Picture.Bitmap);
+init;
+
+end;
+
+procedure TMainF.Click_(Sender: TObject);
+begin
+close;
+end;
+
+procedure TMainF.Click_2(Sender: TObject);
+begin
+ close;
+end;
+
+end.

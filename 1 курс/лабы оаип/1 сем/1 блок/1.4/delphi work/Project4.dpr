@@ -1,0 +1,48 @@
+program Project4;
+
+{$APPTYPE CONSOLE}
+
+uses
+    System.SysUtils;
+
+var
+    Numbers : array of Integer;
+    Sum , Num: Integer;
+    i , Length : Byte;
+    IsCorrect : Boolean;
+
+begin
+    Writeln('This program calculates sum of all entered elements, with each term being an element multiplied by its serial number');
+    Writeln('Enter the number of elements [2..20]');
+    IsCorrect := false;
+    repeat
+        try
+            Readln(Num);
+            if (Num > 1) and (Num < 21) then
+                IsCorrect := true
+            else
+                Writeln('You should use number [2..20]');
+        except
+            Writeln('You should use number [2..20]');
+        end;
+    until IsCorrect;
+    SetLength(Numbers , Num);
+    Length := Num - 1;
+    IsCorrect := false;
+    for i := 0 to Length do
+        repeat
+            try
+                Write(i+1, ' element: ');
+                Read(Numbers[i]);
+                IsCorrect := true;
+            except
+                Writeln('You should use numbers [-2147483648..2147483647]');
+                IsCorrect := false;
+            end;
+        until IsCorrect;
+    Sum := Numbers[0];
+    for i := 1 to Length do
+        Sum := Sum + (i + 1) * Numbers[i];
+    Writeln('The sum of all entered elements: ',Sum);
+    Readln;
+end.

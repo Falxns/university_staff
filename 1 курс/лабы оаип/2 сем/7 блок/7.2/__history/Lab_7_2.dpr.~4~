@@ -1,0 +1,16 @@
+program Lab_7_2;
+
+uses
+  Vcl.Forms,
+  Main in 'Main.pas' {MainF},
+  List in 'List.pas' {ListF};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TMainF, MainF);
+  Application.CreateForm(TListF, ListF);
+  Application.Run;
+end.

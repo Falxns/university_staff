@@ -1,0 +1,30 @@
+ERWin V4.0 (c) Computer Associates WinNT/2k
+ Date: 2001-03-13
+ ERwin - Database Design Made Easy
+ Industry-leading data modeling solution that creates and maintains
+ databases, data warehouses, and enterprise data resource models.
+ ERwin models visualize data structures in a manner that assists you
+ in organizing, managing, and even mitigating the complexities of
+ data, database technologies, and the deployment environment.
+ Databases are not only developed faster, their quality and
+ maintainability are dramatically improved. 
+ http://www.cai.com/products/alm/erwin/erwin_pd1.pdf
+ http://www.cai.com/products/alm/erwin/erwin_product_flash4.pdf
+  Run .exe and install.
+ After installation run regIT from the start menu
+ (CA Registration group)
+ If asked for email or name just make up FAKE ones.
+ Select Get Custumer ID By Phone.
+ Make up country, Custumer ID and Zipcode
+ Leave regIT open and go on to 8)
+ Copy keygen.exe to C:\CA_LIC and run it.
+ In both keygen and regit select "Product Name":
+ ERWin 4.0
+ Generate ID in keygen and paste to regIT.
+ Create registration code and paste to keygen.
+ Notice that regIT creates 2 reg codes but only 1 of them
+ will work (you will have to try both by pasting them to
+ keygen and hit generate keycode then paste it in the
+ keycode field in regIT). Most likely to be working is the
+ 2nd one.
+ 
